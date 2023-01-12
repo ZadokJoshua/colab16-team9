@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MechanicQuotes_Domain\MechanicQuotes_Domain.csproj" />
+  </ItemGroup>
+
 </Project>
