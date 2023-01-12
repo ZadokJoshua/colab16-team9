@@ -1,4 +1,4 @@
-namespace MechanicQuotes.API
+namespace DrCarQuotes_WebAPI
 {
     public class WeatherForecast
     {

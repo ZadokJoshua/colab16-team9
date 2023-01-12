@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace DrCarQuotes_Domain.Entities;
 
-namespace MechanicQuotes_Domain.Entities
+public class Quote
 {
-    internal class Quote
-    {
-    }
 }

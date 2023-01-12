@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace MechanicQuotes.API.Controllers
+namespace DrCarQuotes_WebAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
