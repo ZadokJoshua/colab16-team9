@@ -1,6 +1,6 @@
-# Mechanic Quotes [Web API]
+# Dr. Car Quotes [Web API]
 
-> MechanicQuotes is a tool that allows car owners to quickly learn price ranges for needed repairs and maintenance, and compare prices at different auto shops.
+> Dr. Car Quotes is a tool that allows car owners to quickly learn price ranges for needed repairs and maintenance, and compare prices at different auto shops.
 
 [Frontend Repo](https://github.com/Innocent9712/colab16-team9)
 
