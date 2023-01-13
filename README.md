@@ -1,5 +1,3 @@
-# Dr. Car Quotes [Web API]
-
 <p align="center">
 <img src="https://user-images.githubusercontent.com/65626254/212429512-61264310-43b1-4b82-92e9-ebc6bcf77700.png" width="200" height="200" />
 </p>
