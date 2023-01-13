@@ -1,5 +1,4 @@
-﻿using MechanicQuotes_Domain.Entities;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DrCarQuotes_Domain.Entities;
 
@@ -18,5 +17,7 @@ public class Quote
 
     [ForeignKey(nameof(RepairId))]
     public int RepairId { get; set; }
-    public Repair? Repair { get; set; }
+    public RepairService? Repair { get; set; }
+
+    public decimal Price { get; set; }
 }

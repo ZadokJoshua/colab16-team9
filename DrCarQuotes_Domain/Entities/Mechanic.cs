@@ -1,8 +1,7 @@
-﻿using DrCarQuotes_Domain.Entities;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MechanicQuotes_Domain.Entities;
+namespace DrCarQuotes_Domain.Entities;
 
 public class Mechanic
 {
