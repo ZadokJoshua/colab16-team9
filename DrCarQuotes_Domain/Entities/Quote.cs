@@ -15,8 +15,8 @@ public class Quote
     public int CarId { get; set; }
     public Car? Car { get; set; }
 
-    [ForeignKey(nameof(RepairId))]
-    public int RepairId { get; set; }
+    [ForeignKey(nameof(RepairServiceId))]
+    public int RepairServiceId { get; set; }
     public RepairService? Repair { get; set; }
 
     public decimal Price { get; set; }
