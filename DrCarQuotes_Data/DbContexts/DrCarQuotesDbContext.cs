@@ -16,6 +16,10 @@ public class DrCarQuotesDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Quote>()
+                    .Property(q => q.Price)
+                    .HasColumnType("decimal(18,2)");
+
         modelBuilder.Entity<Car>().HasData(
             new Car { Id = 1, Make = "BMW", Model = "I4", Year = 2012 },
             new Car { Id = 2, Make = "Audi", Model = "A6", Year = 2005 },
@@ -52,11 +56,11 @@ public class DrCarQuotesDbContext : DbContext
 
         modelBuilder.Entity<RepairService>().HasData(
             new RepairService { Id = 1, Name = "Oil Change" },
-            new RepairService { Id = 3, Name = "Brake Pads" },
-            new RepairService { Id = 4, Name = "Windshield Wiper" },
-            new RepairService { Id = 5, Name = "Air Filter" },
-            new RepairService { Id = 6, Name = "Spark Plug" },
-            new RepairService { Id = 7, Name = "Tire Change" }
+            new RepairService { Id = 2, Name = "Brake Pads" },
+            new RepairService { Id = 3, Name = "Windshield Wiper" },
+            new RepairService { Id = 4, Name = "Air Filter" },
+            new RepairService { Id = 5, Name = "Spark Plug" },
+            new RepairService { Id = 6, Name = "Tire Change" }
             );
 
         modelBuilder.Entity<Quote>()
@@ -67,20 +71,20 @@ public class DrCarQuotesDbContext : DbContext
                 new Quote { Id = 4, CarId = 4, MechanicId = 4, RepairServiceId = 4, Price = 125 },
                 new Quote { Id = 5, CarId = 5, MechanicId = 5, RepairServiceId = 5, Price = 150 },
                 new Quote { Id = 6, CarId = 6, MechanicId = 6, RepairServiceId = 6, Price = 200 },
-                new Quote { Id = 7, CarId = 7, MechanicId = 7, RepairServiceId = 7, Price = 225 },
-                new Quote { Id = 8, CarId = 8, MechanicId = 8, RepairServiceId = 1, Price = 250 },
-                new Quote { Id = 9, CarId = 9, MechanicId = 9, RepairServiceId = 2, Price = 275 },
-                new Quote { Id = 10, CarId = 10, MechanicId = 10, RepairServiceId = 3, Price = 300 },
-                new Quote { Id = 11, CarId = 1, MechanicId = 11, RepairServiceId = 4, Price = 325 },
-                new Quote { Id = 12, CarId = 2, MechanicId = 12, RepairServiceId = 5, Price = 350 },
-                new Quote { Id = 13, CarId = 3, MechanicId = 13, RepairServiceId = 6, Price = 375 },
-                new Quote { Id = 14, CarId = 4, MechanicId = 14, RepairServiceId = 7, Price = 400 },
-                new Quote { Id = 15, CarId = 5, MechanicId = 15, RepairServiceId = 1, Price = 425 },
-                new Quote { Id = 16, CarId = 6, MechanicId = 16, RepairServiceId = 2, Price = 450 },
-                new Quote { Id = 17, CarId = 7, MechanicId = 17, RepairServiceId = 3, Price = 475 },
-                new Quote { Id = 18, CarId = 8, MechanicId = 18, RepairServiceId = 4, Price = 500 },
-                new Quote { Id = 19, CarId = 9, MechanicId = 19, RepairServiceId = 5, Price = 525 },
-                new Quote { Id = 20, CarId = 10, MechanicId = 20, RepairServiceId = 6, Price = 550 });
+                new Quote { Id = 7, CarId = 7, MechanicId = 7, RepairServiceId = 1, Price = 225 },
+                new Quote { Id = 8, CarId = 8, MechanicId = 8, RepairServiceId = 2, Price = 250 },
+                new Quote { Id = 9, CarId = 9, MechanicId = 9, RepairServiceId = 3, Price = 275 },
+                new Quote { Id = 10, CarId = 1, MechanicId = 10, RepairServiceId = 4, Price = 300 },
+                new Quote { Id = 11, CarId = 1, MechanicId = 11, RepairServiceId = 5, Price = 325 },
+                new Quote { Id = 12, CarId = 2, MechanicId = 12, RepairServiceId = 6, Price = 350 },
+                new Quote { Id = 13, CarId = 3, MechanicId = 13, RepairServiceId = 1, Price = 375 },
+                new Quote { Id = 14, CarId = 1, MechanicId = 14, RepairServiceId = 2, Price = 400 },
+                new Quote { Id = 15, CarId = 5, MechanicId = 15, RepairServiceId = 3, Price = 425 },
+                new Quote { Id = 16, CarId = 6, MechanicId = 16, RepairServiceId = 4, Price = 450 },
+                new Quote { Id = 17, CarId = 7, MechanicId = 17, RepairServiceId = 5, Price = 475 },
+                new Quote { Id = 18, CarId = 8, MechanicId = 18, RepairServiceId = 6, Price = 500 },
+                new Quote { Id = 19, CarId = 9, MechanicId = 19, RepairServiceId = 1, Price = 525 },
+                new Quote { Id = 20, CarId = 10, MechanicId = 20, RepairServiceId = 2, Price = 550 });
 
         base.OnModelCreating(modelBuilder);
     }
