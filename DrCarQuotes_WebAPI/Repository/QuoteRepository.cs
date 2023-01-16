@@ -16,7 +16,9 @@ public class QuoteRepository : IQuoteRepository
 
     public async Task<IEnumerable<Quote>> GetBestQuotesByZipCodeAndRepairService(string zipCode, int repairServiceId, int carId)
     {
-        var quotes = await _context.Quotes.Include(q => q.Mechanic).Where(q => q.Mechanic.ZipCode == zipCode && q.RepairServiceId == repairServiceId && q.CarId == carId).OrderBy(q => q.Price)
+        var quotes = await _context.Quotes.Include(q => q.Mechanic)
+            .Where(q => q.Mechanic.ZipCode == zipCode && q.RepairServiceId == repairServiceId && q.CarId == carId)
+            .OrderBy(q => q.Price)
             .Take(3)
             .ToListAsync();
 
