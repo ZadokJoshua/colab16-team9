@@ -2,11 +2,13 @@ using DrCarQuotes_Data.DbContexts;
 using DrCarQuotes_WebAPI.Repository;
 using DrCarQuotes_WebAPI.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
+
+Log.Logger = new LoggerConfiguration().WriteTo.Console().CreateLogger();
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+builder.Host.UseSerilog();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
