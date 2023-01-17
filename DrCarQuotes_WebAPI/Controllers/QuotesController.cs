@@ -27,7 +27,7 @@ public class QuotesController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult> GetQuoteById(int id)
+    public async Task<IActionResult> GetQuoteById(int id)
     {
         var quote = await _quoteRepository.GetQuote(id);
 
