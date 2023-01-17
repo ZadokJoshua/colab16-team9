@@ -19,6 +19,7 @@ builder.Services.AddDbContextPool<DrCarQuotesDbContext>(options =>
 });
 
 builder.Services.AddScoped<IQuoteRepository, QuoteRepository>();
+builder.Services.AddScoped<ICarRepository, CarRepository>();
 
 var app = builder.Build();
 

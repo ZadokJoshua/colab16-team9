@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DrCarQuotes_WebAPI.Controllers;
 
-[Route("api/Quotes")]
+[Route("api/quotes")]
 [ApiController]
 public class QuotesController : ControllerBase
 {
@@ -18,7 +18,7 @@ public class QuotesController : ControllerBase
         _quoteRepository = quoteRepository;
     }
 
-    [HttpGet("GetBestQuotes")]
+    [HttpGet("get-best-quotes")]
     public async Task<IActionResult> GetBestQuotesByZipCodeAndRepairService([Required] string zipCode, [Required] int repairServiceId, [Required] int carId)
     {
         var quotes = await _quoteRepository.GetBestQuotesByZipCodeAndRepairService(zipCode, repairServiceId, carId);
