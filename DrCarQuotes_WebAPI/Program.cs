@@ -1,5 +1,6 @@
 using DrCarQuotes_Data.DbContexts;
 using DrCarQuotes_WebAPI.Repository;
+using DrCarQuotes_WebAPI.Services;
 using DrCarQuotes_WebAPI.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -20,6 +21,7 @@ builder.Services.AddDbContextPool<DrCarQuotesDbContext>(options =>
 
 builder.Services.AddScoped<IQuoteRepository, QuoteRepository>();
 builder.Services.AddScoped<ICarRepository, CarRepository>();
+builder.Services.AddScoped<IRepairServiceRepository, RepairServiceRepository>();
 
 var app = builder.Build();
 

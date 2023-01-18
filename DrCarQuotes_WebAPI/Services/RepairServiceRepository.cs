@@ -18,4 +18,9 @@ public class RepairServiceRepository : IRepairServiceRepository
     {
         return await _context.RepairServices.ToListAsync();
     }
+
+    public async Task<RepairService?> GetRepairServiceByIdAsync(int repairServiceId)
+    {
+        return await _context.RepairServices.Where(r => r.Id == repairServiceId).FirstOrDefaultAsync();
+    }
 }

@@ -23,7 +23,7 @@ public class CarsController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetCar(int id)
+    public async Task<IActionResult> GetCarById(int id)
     {
         var car = await _carRepository.GetCarAsync(id);
 
