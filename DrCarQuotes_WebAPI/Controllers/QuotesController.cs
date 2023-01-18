@@ -1,6 +1,6 @@
 ﻿using DrCarQuotes_Domain.Entities;
 using DrCarQuotes_WebAPI.Repository;
-using DrCarQuotes_WebAPI.Repository.Interfaces;
+using DrCarQuotes_WebAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;

@@ -1,6 +1,6 @@
 using DrCarQuotes_Data.DbContexts;
 using DrCarQuotes_WebAPI.Repository;
-using DrCarQuotes_WebAPI.Repository.Interfaces;
+using DrCarQuotes_WebAPI.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 

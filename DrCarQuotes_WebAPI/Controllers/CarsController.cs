@@ -1,4 +1,4 @@
-﻿using DrCarQuotes_WebAPI.Repository.Interfaces;
+﻿using DrCarQuotes_WebAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,5 +20,18 @@ public class CarsController : ControllerBase
     {
         var cars = await _carRepository.GetCarsAsync();
         return Ok(cars);
+    }
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetCar(int id)
+    {
+        var car = await _carRepository.GetCarAsync(id);
+
+        if (car is null)
+        {
+            return NotFound();
+        }
+
+        return Ok(car);
     }
 }

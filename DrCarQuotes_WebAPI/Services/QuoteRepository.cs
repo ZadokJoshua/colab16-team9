@@ -1,6 +1,6 @@
 ﻿using DrCarQuotes_Data.DbContexts;
 using DrCarQuotes_Domain.Entities;
-using DrCarQuotes_WebAPI.Repository.Interfaces;
+using DrCarQuotes_WebAPI.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace DrCarQuotes_WebAPI.Repository;
@@ -26,13 +26,13 @@ public class QuoteRepository : IQuoteRepository
         return quotes;
     }
 
-    public async Task<Quote?> GetQuote(int id)
+    public async Task<Quote?> GetQuote(int quoteId)
     {
         var quote = await _context.Quotes
             .Include(q => q.Car)
             .Include(q => q.Mechanic)
             .Include(q => q.Repair)
-            .FirstOrDefaultAsync(q => q.Id == id);
+            .FirstOrDefaultAsync(q => q.Id == quoteId);
 
         return quote;
     }

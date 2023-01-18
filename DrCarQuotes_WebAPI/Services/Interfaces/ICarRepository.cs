@@ -1,6 +1,6 @@
 ﻿using DrCarQuotes_Domain.Entities;
 
-namespace DrCarQuotes_WebAPI.Repository.Interfaces;
+namespace DrCarQuotes_WebAPI.Services.Interfaces;
 
 public interface ICarRepository
 {
