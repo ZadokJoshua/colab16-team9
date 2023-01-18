@@ -13,9 +13,13 @@ public class CarRepository : ICarRepository
     {
         _context = context;
     }
-    public async Task<IEnumerable<Car>> GetCars()
+    public async Task<IEnumerable<Car>> GetCarsAsync()
     {
-        IEnumerable<Car> cars = await _context.Cars.ToListAsync();
-        return cars;
+        return await _context.Cars.ToListAsync();
+    }
+
+    public async Task<Car?> GetCarAsync(int carId)
+    {
+        return await _context.Cars.Where(c => c.Id == carId).FirstOrDefaultAsync();
     }
 }

@@ -4,5 +4,6 @@ namespace DrCarQuotes_WebAPI.Repository.Interfaces;
 
 public interface ICarRepository
 {
-    Task<IEnumerable<Car>> GetCars();
+    Task<IEnumerable<Car>> GetCarsAsync();
+    Task<Car?> GetCarAsync(int carId);
 }
