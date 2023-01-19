@@ -39,20 +39,21 @@ public class DrCarQuotesDbContext : DbContext
             new Mechanic { Id = 4, Name = "Hill Auto Repair", Phone = "+1684580823", Address = "261 Shirlington Rd, Arlington, VA 22206, United States", ZipCode = "22206" },
             new Mechanic { Id = 5, Name = "A & Y Auto Masters", Phone = "+1784585823", Address = "143 Build America Dr, Woodbridge, VA 22191, United States", ZipCode = "22191" },
             new Mechanic { Id = 6, Name = "Car Doctors Auto Shop", Phone = "+1984548823", Address = "3600 Rhawn St, Philadelphia, PA 19136, United States", ZipCode = "19136" },
-    new Mechanic { Id = 7, Name = "Auto Express", Phone = "+1984548823", Address = "567 Elm St, Corona, NY 11368, United States", ZipCode = "20374" },
-    new Mechanic { Id = 8, Name = "Car Care Pro", Phone = "+1784585823", Address = "890 Main St, Corona, NY 11368, United States", ZipCode = "20374" },
-    new Mechanic { Id = 9, Name = "Car Repair Guys", Phone = "+1684580823", Address = "123 Park Ave, Corona, NY 11368, United States", ZipCode = "20374" },
-    new Mechanic { Id = 10, Name = "Master Auto Shop", Phone = "+1344588823", Address = "456 Pine St, Philadelphia, PA 19136, United States", ZipCode = "19136" },
-    new Mechanic { Id = 11, Name = "Pro Auto Repair", Phone = "+1384588223", Address = "789 Oak St, Philadelphia, PA 19136, United States", ZipCode = "19136" },
-    new Mechanic { Id = 12, Name = "Auto Repair Pro", Phone = "+1234588823", Address = "321 Maple St, Philadelphia, PA 19136, United States", ZipCode = "19136" },
-    new Mechanic { Id = 13, Name = "Auto Repair Zone", Phone = "+1984548823", Address = "912 Elm St, Corona, NY 11368, United States", ZipCode = "20374" },
-    new Mechanic { Id = 14, Name = "Auto Care Guys", Phone = "+1784585823", Address = "890 Main St, Corona, NY 11368, United States", ZipCode = "20374" },
-    new Mechanic { Id = 15, Name = "Auto Repair Pro", Phone = "+1684580823", Address = "123 Park Ave, Corona, NY 11368, United States", ZipCode = "20374" },
-    new Mechanic { Id = 16, Name = "Car Repair Pro", Phone = "+1344588823", Address = "456 Pine St, Philadelphia, PA 19136, United States", ZipCode = "19136" },
-    new Mechanic { Id = 17, Name = "Auto Repair Guys", Phone = "+1384588223", Address = "789 Oak St, Philadelphia, PA 19136, United States", ZipCode = "19136" },
-    new Mechanic { Id = 18, Name = "Auto Repair Express", Phone = "+1234588823", Address = "321 Maple St, Philadelphia, PA 19136, United States", ZipCode = "19136" },
-    new Mechanic { Id = 19, Name = "Auto Repair Shop", Phone = "+1984548823", Address = "567 Elm St, Corona, NY 11368, United States", ZipCode = "20374" },
-    new Mechanic { Id = 20, Name = "Auto Repair Pro", Phone = "+1784585823", Address = "890 Main St, Corona, NY 11368, United States", ZipCode = "20374" });
+            new Mechanic { Id = 7, Name = "Auto Express", Phone = "+1984548823", Address = "567 Elm St, Corona, NY 11368, United States", ZipCode = "20374" },
+            new Mechanic { Id = 8, Name = "Car Care Pro", Phone = "+1784585823", Address = "890 Main St, Corona, NY 11368, United States", ZipCode = "20374" },
+            new Mechanic { Id = 9, Name = "Car Repair Guys", Phone = "+1684580823", Address = "123 Park Ave, Corona, NY 11368, United States", ZipCode = "20374" },
+            new Mechanic { Id = 10, Name = "Master Auto Shop", Phone = "+1344588823", Address = "456 Pine St, Philadelphia, PA 19136, United States", ZipCode = "19136" },
+            new Mechanic { Id = 11, Name = "Pro Auto Repair", Phone = "+1384588223", Address = "789 Oak St, Philadelphia, PA 19136, United States", ZipCode = "19136" },
+            new Mechanic { Id = 12, Name = "Auto Repair Pro", Phone = "+1234588823", Address = "321 Maple St, Philadelphia, PA 19136, United States", ZipCode = "19136" },
+            new Mechanic { Id = 13, Name = "Auto Repair Zone", Phone = "+1984548823", Address = "912 Elm St, Corona, NY 11368, United States", ZipCode = "20374" },
+            new Mechanic { Id = 14, Name = "Auto Care Guys", Phone = "+1784585823", Address = "890 Main St, Corona, NY 11368, United States", ZipCode = "20374" },
+            new Mechanic { Id = 15, Name = "Auto Repair Pro", Phone = "+1684580823", Address = "123 Park Ave, Corona, NY 11368, United States", ZipCode = "20374" },
+            new Mechanic { Id = 16, Name = "Car Repair Pro", Phone = "+1344588823", Address = "456 Pine St, Philadelphia, PA 19136, United States", ZipCode = "19136" },
+            new Mechanic { Id = 17, Name = "Auto Repair Guys", Phone = "+1384588223", Address = "789 Oak St, Philadelphia, PA 19136, United States", ZipCode = "19136" },
+            new Mechanic { Id = 18, Name = "Auto Repair Express", Phone = "+1234588823", Address = "321 Maple St, Philadelphia, PA 19136, United States", ZipCode = "19136" },
+            new Mechanic { Id = 19, Name = "Auto Repair Shop", Phone = "+1984548823", Address = "567 Elm St, Corona, NY 11368, United States", ZipCode = "20374" },
+            new Mechanic { Id = 20, Name = "Auto Repair Pro", Phone = "+1784585823", Address = "890 Main St, Corona, NY 11368, United States", ZipCode = "20374" }
+    );
 
         modelBuilder.Entity<RepairService>().HasData(
             new RepairService { Id = 1, Name = "Oil Change" },
@@ -94,30 +95,6 @@ public class DrCarQuotesDbContext : DbContext
         }
 
         modelBuilder.Entity<Quote>().HasData(quotes);
-
-
-        //modelBuilder.Entity<Quote>()
-        //.HasData(
-        //    new Quote { Id = 1, CarId = 1, MechanicId = 1, RepairServiceId = 1, Price = 43 },
-        //        new Quote { Id = 2, CarId = 2, MechanicId = 2, RepairServiceId = 2, Price = 75 },
-        //        new Quote { Id = 3, CarId = 3, MechanicId = 3, RepairServiceId = 3, Price = 100 },
-        //        new Quote { Id = 4, CarId = 4, MechanicId = 4, RepairServiceId = 4, Price = 125 },
-        //        new Quote { Id = 5, CarId = 5, MechanicId = 5, RepairServiceId = 5, Price = 150 },
-        //        new Quote { Id = 6, CarId = 6, MechanicId = 6, RepairServiceId = 6, Price = 200 },
-        //        new Quote { Id = 7, CarId = 7, MechanicId = 7, RepairServiceId = 1, Price = 225 },
-        //        new Quote { Id = 8, CarId = 8, MechanicId = 8, RepairServiceId = 2, Price = 72 },
-        //        new Quote { Id = 9, CarId = 9, MechanicId = 9, RepairServiceId = 3, Price = 102 },
-        //        new Quote { Id = 10, CarId = 1, MechanicId = 10, RepairServiceId = 4, Price = 300 },
-        //        new Quote { Id = 11, CarId = 1, MechanicId = 11, RepairServiceId = 5, Price = 325 },
-        //        new Quote { Id = 12, CarId = 2, MechanicId = 12, RepairServiceId = 6, Price = 350 },
-        //        new Quote { Id = 13, CarId = 3, MechanicId = 13, RepairServiceId = 1, Price = 39 },
-        //        new Quote { Id = 14, CarId = 1, MechanicId = 14, RepairServiceId = 2, Price = 70 },
-        //        new Quote { Id = 15, CarId = 5, MechanicId = 15, RepairServiceId = 3, Price = 425 },
-        //        new Quote { Id = 16, CarId = 6, MechanicId = 16, RepairServiceId = 4, Price = 450 },
-        //        new Quote { Id = 17, CarId = 7, MechanicId = 17, RepairServiceId = 5, Price = 475 },
-        //        new Quote { Id = 18, CarId = 8, MechanicId = 18, RepairServiceId = 6, Price = 500 },
-        //        new Quote { Id = 19, CarId = 9, MechanicId = 19, RepairServiceId = 1, Price = 39 },
-        //        new Quote { Id = 20, CarId = 10, MechanicId = 20, RepairServiceId = 2, Price = 71 });
 
         base.OnModelCreating(modelBuilder);
     }
