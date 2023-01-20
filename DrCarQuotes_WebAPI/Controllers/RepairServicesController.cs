@@ -16,6 +16,7 @@ public class RepairServicesController : ControllerBase
     }
 
     [HttpGet]
+    [ResponseCache(Duration = 120, Location = ResponseCacheLocation.Any)]
     public async Task<IActionResult> GetRepairServices()
     {
         var repairServices = await _repairServiceRepository.GetRepairServicesAsync();

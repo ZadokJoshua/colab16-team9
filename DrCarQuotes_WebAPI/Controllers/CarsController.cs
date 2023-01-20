@@ -16,6 +16,7 @@ public class CarsController : ControllerBase
     }
 
     [HttpGet("get-all-cars")]
+    [ResponseCache(Duration = 120, Location = ResponseCacheLocation.Any)]
     public async Task<IActionResult> GetCars()
     {
         var cars = await _carRepository.GetCarsAsync();

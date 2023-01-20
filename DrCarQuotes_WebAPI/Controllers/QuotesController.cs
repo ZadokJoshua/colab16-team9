@@ -19,6 +19,7 @@ public class QuotesController : ControllerBase
     }
 
     [HttpGet("get-best-quotes")]
+    [ResponseCache(Duration = 120, Location = ResponseCacheLocation.Any)]
     public async Task<IActionResult> GetBestQuotesByZipCodeAndRepairService([Required] string zipCode, [Required] int repairServiceId, [Required] int carId)
     {
         var quotes = await _quoteRepository.GetBestQuotesByZipCodeAndRepairService(zipCode, repairServiceId, carId);
