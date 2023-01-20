@@ -5,6 +5,7 @@ namespace DrCarQuotes_Domain.Entities;
 
 public class Mechanic
 {
+    [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 

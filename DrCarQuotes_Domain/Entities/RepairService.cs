@@ -5,6 +5,7 @@ namespace DrCarQuotes_Domain.Entities;
 
 public class RepairService
 {
+    [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 

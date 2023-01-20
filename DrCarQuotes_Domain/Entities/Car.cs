@@ -5,6 +5,7 @@ namespace DrCarQuotes_Domain.Entities;
 
 public class Car
 {
+    [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
@@ -15,6 +16,8 @@ public class Car
     public string? Model { get; set; }
 
     public int Year { get; set; }
+
+    public string? ImageUrl { get; set; }
 
     ICollection<Quote> Quotes { get; set; } = new List<Quote>();
 }
