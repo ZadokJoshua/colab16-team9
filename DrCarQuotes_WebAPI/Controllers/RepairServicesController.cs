@@ -15,7 +15,7 @@ public class RepairServicesController : ControllerBase
         _repairServiceRepository = repairServiceRepository;
     }
 
-    [HttpGet]
+    [HttpGet("get-all-repairservices")]
     [ResponseCache(Duration = 120, Location = ResponseCacheLocation.Any)]
     public async Task<IActionResult> GetRepairServices()
     {
