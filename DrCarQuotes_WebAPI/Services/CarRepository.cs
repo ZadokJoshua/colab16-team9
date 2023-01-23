@@ -22,4 +22,9 @@ public class CarRepository : ICarRepository
     {
         return await _context.Cars.Where(c => c.Id == carId).FirstOrDefaultAsync();
     }
+
+    public async Task<bool> HasCarAsync(int carId)
+    {
+        return await _context.Cars.AnyAsync(c => c.Id.Equals(carId));
+    }
 }

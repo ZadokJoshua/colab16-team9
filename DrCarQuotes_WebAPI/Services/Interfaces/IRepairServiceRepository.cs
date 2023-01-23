@@ -6,4 +6,5 @@ public interface IRepairServiceRepository
 {
     Task<IEnumerable<RepairService>> GetRepairServicesAsync();
     Task<RepairService?> GetRepairServiceByIdAsync(int repairServiceId);
+    Task<bool> HasRepairServiceAsync(int repairServiceId);
 }
