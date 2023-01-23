@@ -3,6 +3,7 @@ using DrCarQuotes_Data.DbContexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DrCarQuotesData.Migrations
 {
     [DbContext(typeof(DrCarQuotesDbContext))]
-    partial class DrCarQuotesDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230122020839_AddCarImageUrlMigration")]
+    partial class AddCarImageUrlMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,7 +54,7 @@ namespace DrCarQuotesData.Migrations
                         new
                         {
                             Id = 1,
-                            ImageUrl = "https://i.ibb.co/1f1H4Kh/bmw-i4.png",
+                            ImageUrl = "https://i.ibb.co/ZNt3Xnb/bmw.png",
                             Make = "BMW",
                             Model = "I4",
                             Year = 2012
@@ -59,7 +62,7 @@ namespace DrCarQuotesData.Migrations
                         new
                         {
                             Id = 2,
-                            ImageUrl = "https://i.ibb.co/rFfRJ32/audi-a4.png",
+                            ImageUrl = "https://i.ibb.co/Qm4HrKM/audi-1.png",
                             Make = "Audi",
                             Model = "A6",
                             Year = 2005
@@ -67,7 +70,7 @@ namespace DrCarQuotesData.Migrations
                         new
                         {
                             Id = 3,
-                            ImageUrl = "https://i.ibb.co/d2ngH6z/fiat-500.png",
+                            ImageUrl = "https://i.ibb.co/cgxsYC4/fiat-2-1.png",
                             Make = "Fiat",
                             Model = "500x",
                             Year = 2020
@@ -75,7 +78,7 @@ namespace DrCarQuotesData.Migrations
                         new
                         {
                             Id = 4,
-                            ImageUrl = "https://i.ibb.co/31YRJsq/toyota-hilux.png",
+                            ImageUrl = "https://i.ibb.co/Sc1vPQn/toyota-1.png",
                             Make = "Toyota",
                             Model = "Hilux",
                             Year = 2015
@@ -83,7 +86,7 @@ namespace DrCarQuotesData.Migrations
                         new
                         {
                             Id = 5,
-                            ImageUrl = "https://i.ibb.co/tMsWsB6/acura-enclave.png",
+                            ImageUrl = "https://i.ibb.co/wLLG760/acura-enclave-1.png",
                             Make = "Acura",
                             Model = "Enclave",
                             Year = 2020
@@ -91,7 +94,7 @@ namespace DrCarQuotesData.Migrations
                         new
                         {
                             Id = 6,
-                            ImageUrl = "https://i.ibb.co/PMHXsCZ/gmc-cayon.png",
+                            ImageUrl = "https://i.ibb.co/4Y6Yt8s/gmc-1-1.png",
                             Make = "GMC",
                             Model = "Canyon",
                             Year = 2020
@@ -99,7 +102,7 @@ namespace DrCarQuotesData.Migrations
                         new
                         {
                             Id = 7,
-                            ImageUrl = "https://i.ibb.co/L9q23ZB/ford-escape.png",
+                            ImageUrl = "https://i.ibb.co/1v9dfs8/ford-escape-1.png",
                             Make = "Ford",
                             Model = "Edge",
                             Year = 2016
@@ -107,7 +110,7 @@ namespace DrCarQuotesData.Migrations
                         new
                         {
                             Id = 8,
-                            ImageUrl = "https://i.ibb.co/L9q23ZB/ford-escape.png",
+                            ImageUrl = "https://i.ibb.co/1v9dfs8/ford-escape-1.png",
                             Make = "Ford",
                             Model = "Escape",
                             Year = 2021
@@ -115,7 +118,7 @@ namespace DrCarQuotesData.Migrations
                         new
                         {
                             Id = 9,
-                            ImageUrl = "https://i.ibb.co/rFfRJ32/audi-a4.png",
+                            ImageUrl = "https://i.ibb.co/Qm4HrKM/audi-1.png",
                             Make = "Audi",
                             Model = "A4",
                             Year = 2020
@@ -123,7 +126,7 @@ namespace DrCarQuotesData.Migrations
                         new
                         {
                             Id = 10,
-                            ImageUrl = "https://i.ibb.co/CWNhbHd/chev-cruze.png",
+                            ImageUrl = "https://i.ibb.co/1bGzSvP/chey-1.png",
                             Make = "Chevrolet",
                             Model = "Cruze",
                             Year = 2019
@@ -357,7 +360,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1,
                             CarId = 1,
                             MechanicId = 1,
-                            Price = 40.905927326873075m,
+                            Price = 47.312213084312699m,
                             RepairServiceId = 1
                         },
                         new
@@ -365,7 +368,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 2,
                             CarId = 1,
                             MechanicId = 1,
-                            Price = 175.911738345997608m,
+                            Price = 218.754383944864762m,
                             RepairServiceId = 2
                         },
                         new
@@ -373,7 +376,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 3,
                             CarId = 1,
                             MechanicId = 1,
-                            Price = 23.922177481003944m,
+                            Price = 20.22049426119574m,
                             RepairServiceId = 3
                         },
                         new
@@ -381,7 +384,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 4,
                             CarId = 1,
                             MechanicId = 1,
-                            Price = 122.299065350601477m,
+                            Price = 132.426705300368855m,
                             RepairServiceId = 4
                         },
                         new
@@ -389,7 +392,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 5,
                             CarId = 1,
                             MechanicId = 1,
-                            Price = 63.549817270336581m,
+                            Price = 55.328425303505217m,
                             RepairServiceId = 5
                         },
                         new
@@ -397,7 +400,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 6,
                             CarId = 1,
                             MechanicId = 1,
-                            Price = 247.98595051057674m,
+                            Price = 227.0518083183743818m,
                             RepairServiceId = 6
                         },
                         new
@@ -405,7 +408,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 7,
                             CarId = 2,
                             MechanicId = 1,
-                            Price = 47.163356763340145m,
+                            Price = 35.548064434046597m,
                             RepairServiceId = 1
                         },
                         new
@@ -413,7 +416,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 8,
                             CarId = 2,
                             MechanicId = 1,
-                            Price = 168.780757788813421m,
+                            Price = 225.780756725949687m,
                             RepairServiceId = 2
                         },
                         new
@@ -421,7 +424,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 9,
                             CarId = 2,
                             MechanicId = 1,
-                            Price = 48.7647727835788m,
+                            Price = 36.268546475228598m,
                             RepairServiceId = 3
                         },
                         new
@@ -429,7 +432,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 10,
                             CarId = 2,
                             MechanicId = 1,
-                            Price = 101.824058811672046m,
+                            Price = 144.0516588985954507m,
                             RepairServiceId = 4
                         },
                         new
@@ -437,7 +440,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 11,
                             CarId = 2,
                             MechanicId = 1,
-                            Price = 46.0939288462868911m,
+                            Price = 54.00160245844272477m,
                             RepairServiceId = 5
                         },
                         new
@@ -445,7 +448,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 12,
                             CarId = 2,
                             MechanicId = 1,
-                            Price = 207.42843010107161m,
+                            Price = 215.0697211889277317m,
                             RepairServiceId = 6
                         },
                         new
@@ -453,7 +456,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 13,
                             CarId = 3,
                             MechanicId = 1,
-                            Price = 32.527737556367803m,
+                            Price = 47.300177608197333m,
                             RepairServiceId = 1
                         },
                         new
@@ -461,7 +464,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 14,
                             CarId = 3,
                             MechanicId = 1,
-                            Price = 139.670491168542545m,
+                            Price = 221.693847453098608m,
                             RepairServiceId = 2
                         },
                         new
@@ -469,7 +472,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 15,
                             CarId = 3,
                             MechanicId = 1,
-                            Price = 21.42417702883927m,
+                            Price = 22.517942901351891m,
                             RepairServiceId = 3
                         },
                         new
@@ -477,7 +480,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 16,
                             CarId = 3,
                             MechanicId = 1,
-                            Price = 124.631607916592902m,
+                            Price = 141.239631841805552m,
                             RepairServiceId = 4
                         },
                         new
@@ -485,7 +488,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 17,
                             CarId = 3,
                             MechanicId = 1,
-                            Price = 75.240618328968261m,
+                            Price = 67.0425591562122543m,
                             RepairServiceId = 5
                         },
                         new
@@ -493,7 +496,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 18,
                             CarId = 3,
                             MechanicId = 1,
-                            Price = 225.0270555349478503m,
+                            Price = 201.329030867595497m,
                             RepairServiceId = 6
                         },
                         new
@@ -501,7 +504,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 19,
                             CarId = 4,
                             MechanicId = 1,
-                            Price = 31.639630104849174m,
+                            Price = 38.379244379994079m,
                             RepairServiceId = 1
                         },
                         new
@@ -509,7 +512,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 20,
                             CarId = 4,
                             MechanicId = 1,
-                            Price = 244.792073717963826m,
+                            Price = 218.834650964373058m,
                             RepairServiceId = 2
                         },
                         new
@@ -517,7 +520,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 21,
                             CarId = 4,
                             MechanicId = 1,
-                            Price = 46.499353220418916m,
+                            Price = 20.271804040219893m,
                             RepairServiceId = 3
                         },
                         new
@@ -525,7 +528,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 22,
                             CarId = 4,
                             MechanicId = 1,
-                            Price = 133.589325359633421m,
+                            Price = 139.775276550244331m,
                             RepairServiceId = 4
                         },
                         new
@@ -533,7 +536,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 23,
                             CarId = 4,
                             MechanicId = 1,
-                            Price = 78.55110076460996m,
+                            Price = 52.898287504909777m,
                             RepairServiceId = 5
                         },
                         new
@@ -541,7 +544,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 24,
                             CarId = 4,
                             MechanicId = 1,
-                            Price = 219.822797579416466m,
+                            Price = 233.738187629531762m,
                             RepairServiceId = 6
                         },
                         new
@@ -549,7 +552,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 25,
                             CarId = 5,
                             MechanicId = 1,
-                            Price = 32.537782935745032m,
+                            Price = 48.0581083268548536m,
                             RepairServiceId = 1
                         },
                         new
@@ -557,7 +560,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 26,
                             CarId = 5,
                             MechanicId = 1,
-                            Price = 258.494747858783542m,
+                            Price = 216.799323109543249m,
                             RepairServiceId = 2
                         },
                         new
@@ -565,7 +568,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 27,
                             CarId = 5,
                             MechanicId = 1,
-                            Price = 39.773180367923907m,
+                            Price = 47.57549913779744m,
                             RepairServiceId = 3
                         },
                         new
@@ -573,7 +576,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 28,
                             CarId = 5,
                             MechanicId = 1,
-                            Price = 142.193772962899811m,
+                            Price = 135.744204695398043m,
                             RepairServiceId = 4
                         },
                         new
@@ -581,7 +584,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 29,
                             CarId = 5,
                             MechanicId = 1,
-                            Price = 51.308190003540716m,
+                            Price = 53.925907007840102m,
                             RepairServiceId = 5
                         },
                         new
@@ -589,7 +592,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 30,
                             CarId = 5,
                             MechanicId = 1,
-                            Price = 213.718775615565874m,
+                            Price = 223.937305614641835m,
                             RepairServiceId = 6
                         },
                         new
@@ -597,7 +600,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 31,
                             CarId = 6,
                             MechanicId = 1,
-                            Price = 43.962776420174477m,
+                            Price = 35.216807598526473m,
                             RepairServiceId = 1
                         },
                         new
@@ -605,7 +608,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 32,
                             CarId = 6,
                             MechanicId = 1,
-                            Price = 205.926518505651605m,
+                            Price = 215.0363692954289796m,
                             RepairServiceId = 2
                         },
                         new
@@ -613,7 +616,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 33,
                             CarId = 6,
                             MechanicId = 1,
-                            Price = 42.78763408167784m,
+                            Price = 39.890588917431776m,
                             RepairServiceId = 3
                         },
                         new
@@ -621,7 +624,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 34,
                             CarId = 6,
                             MechanicId = 1,
-                            Price = 132.010579770437405m,
+                            Price = 106.730544434883428m,
                             RepairServiceId = 4
                         },
                         new
@@ -629,7 +632,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 35,
                             CarId = 6,
                             MechanicId = 1,
-                            Price = 62.183604817063346m,
+                            Price = 70.55578867162842m,
                             RepairServiceId = 5
                         },
                         new
@@ -637,7 +640,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 36,
                             CarId = 6,
                             MechanicId = 1,
-                            Price = 249.888950873863947m,
+                            Price = 217.630431825183837m,
                             RepairServiceId = 6
                         },
                         new
@@ -645,7 +648,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 37,
                             CarId = 7,
                             MechanicId = 1,
-                            Price = 39.0703941828758952m,
+                            Price = 43.168970444824215m,
                             RepairServiceId = 1
                         },
                         new
@@ -653,7 +656,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 38,
                             CarId = 7,
                             MechanicId = 1,
-                            Price = 190.97894211278373m,
+                            Price = 180.686210896520596m,
                             RepairServiceId = 2
                         },
                         new
@@ -661,7 +664,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 39,
                             CarId = 7,
                             MechanicId = 1,
-                            Price = 35.0655505348819174m,
+                            Price = 32.149347082904349m,
                             RepairServiceId = 3
                         },
                         new
@@ -669,7 +672,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 40,
                             CarId = 7,
                             MechanicId = 1,
-                            Price = 149.947464548719258m,
+                            Price = 130.940316426195264m,
                             RepairServiceId = 4
                         },
                         new
@@ -677,7 +680,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 41,
                             CarId = 7,
                             MechanicId = 1,
-                            Price = 70.553603743442717m,
+                            Price = 56.352271561500141m,
                             RepairServiceId = 5
                         },
                         new
@@ -685,7 +688,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 42,
                             CarId = 7,
                             MechanicId = 1,
-                            Price = 206.170611027891815m,
+                            Price = 247.047874321659869m,
                             RepairServiceId = 6
                         },
                         new
@@ -693,7 +696,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 43,
                             CarId = 8,
                             MechanicId = 1,
-                            Price = 37.465050496825737m,
+                            Price = 42.00720355425229668m,
                             RepairServiceId = 1
                         },
                         new
@@ -701,7 +704,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 44,
                             CarId = 8,
                             MechanicId = 1,
-                            Price = 245.118849651944594m,
+                            Price = 243.383744378059158m,
                             RepairServiceId = 2
                         },
                         new
@@ -709,7 +712,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 45,
                             CarId = 8,
                             MechanicId = 1,
-                            Price = 48.385589266192485m,
+                            Price = 36.239036465134924m,
                             RepairServiceId = 3
                         },
                         new
@@ -717,7 +720,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 46,
                             CarId = 8,
                             MechanicId = 1,
-                            Price = 142.833909486574737m,
+                            Price = 100.708260181699112m,
                             RepairServiceId = 4
                         },
                         new
@@ -725,7 +728,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 47,
                             CarId = 8,
                             MechanicId = 1,
-                            Price = 76.365841449876207m,
+                            Price = 51.346273035944842m,
                             RepairServiceId = 5
                         },
                         new
@@ -733,7 +736,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 48,
                             CarId = 8,
                             MechanicId = 1,
-                            Price = 234.861919885048856m,
+                            Price = 246.827464512219591m,
                             RepairServiceId = 6
                         },
                         new
@@ -741,7 +744,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 49,
                             CarId = 9,
                             MechanicId = 1,
-                            Price = 38.471886074007367m,
+                            Price = 48.398029127898824m,
                             RepairServiceId = 1
                         },
                         new
@@ -749,7 +752,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 50,
                             CarId = 9,
                             MechanicId = 1,
-                            Price = 237.384447401835513m,
+                            Price = 173.163889272636716m,
                             RepairServiceId = 2
                         },
                         new
@@ -757,7 +760,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 51,
                             CarId = 9,
                             MechanicId = 1,
-                            Price = 27.988698055044884m,
+                            Price = 27.511737590053737m,
                             RepairServiceId = 3
                         },
                         new
@@ -765,7 +768,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 52,
                             CarId = 9,
                             MechanicId = 1,
-                            Price = 148.440771705017207m,
+                            Price = 141.65121857555347m,
                             RepairServiceId = 4
                         },
                         new
@@ -773,7 +776,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 53,
                             CarId = 9,
                             MechanicId = 1,
-                            Price = 46.326910977990248m,
+                            Price = 60.942566563730157m,
                             RepairServiceId = 5
                         },
                         new
@@ -781,7 +784,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 54,
                             CarId = 9,
                             MechanicId = 1,
-                            Price = 224.319692736587405m,
+                            Price = 222.358290528657968m,
                             RepairServiceId = 6
                         },
                         new
@@ -789,7 +792,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 55,
                             CarId = 10,
                             MechanicId = 1,
-                            Price = 35.788303428725816m,
+                            Price = 45.581692047234909m,
                             RepairServiceId = 1
                         },
                         new
@@ -797,7 +800,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 56,
                             CarId = 10,
                             MechanicId = 1,
-                            Price = 259.65379320165656m,
+                            Price = 231.320295434432816m,
                             RepairServiceId = 2
                         },
                         new
@@ -805,7 +808,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 57,
                             CarId = 10,
                             MechanicId = 1,
-                            Price = 44.147845548433609m,
+                            Price = 29.455336531781798m,
                             RepairServiceId = 3
                         },
                         new
@@ -813,7 +816,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 58,
                             CarId = 10,
                             MechanicId = 1,
-                            Price = 114.454104724087195m,
+                            Price = 107.449138422568247m,
                             RepairServiceId = 4
                         },
                         new
@@ -821,7 +824,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 59,
                             CarId = 10,
                             MechanicId = 1,
-                            Price = 64.280745703341061m,
+                            Price = 51.672976825858211m,
                             RepairServiceId = 5
                         },
                         new
@@ -829,7 +832,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 60,
                             CarId = 10,
                             MechanicId = 1,
-                            Price = 201.348854975292706m,
+                            Price = 222.760964493615421m,
                             RepairServiceId = 6
                         },
                         new
@@ -837,7 +840,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 61,
                             CarId = 1,
                             MechanicId = 2,
-                            Price = 33.039908603209697m,
+                            Price = 35.452441524953747m,
                             RepairServiceId = 1
                         },
                         new
@@ -845,7 +848,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 62,
                             CarId = 1,
                             MechanicId = 2,
-                            Price = 181.180208755094804m,
+                            Price = 238.604779598875855m,
                             RepairServiceId = 2
                         },
                         new
@@ -853,7 +856,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 63,
                             CarId = 1,
                             MechanicId = 2,
-                            Price = 42.407570439650714m,
+                            Price = 26.239520774549831m,
                             RepairServiceId = 3
                         },
                         new
@@ -861,7 +864,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 64,
                             CarId = 1,
                             MechanicId = 2,
-                            Price = 116.345780623665526m,
+                            Price = 121.939470605556801m,
                             RepairServiceId = 4
                         },
                         new
@@ -869,7 +872,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 65,
                             CarId = 1,
                             MechanicId = 2,
-                            Price = 76.889107190378702m,
+                            Price = 82.101425792673251m,
                             RepairServiceId = 5
                         },
                         new
@@ -877,7 +880,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 66,
                             CarId = 1,
                             MechanicId = 2,
-                            Price = 230.359407734627424m,
+                            Price = 211.00479476949796043m,
                             RepairServiceId = 6
                         },
                         new
@@ -885,7 +888,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 67,
                             CarId = 2,
                             MechanicId = 2,
-                            Price = 38.626255416579562m,
+                            Price = 33.200285367564105m,
                             RepairServiceId = 1
                         },
                         new
@@ -893,7 +896,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 68,
                             CarId = 2,
                             MechanicId = 2,
-                            Price = 199.241238794519191m,
+                            Price = 258.79952611835248m,
                             RepairServiceId = 2
                         },
                         new
@@ -901,7 +904,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 69,
                             CarId = 2,
                             MechanicId = 2,
-                            Price = 26.844765398246559m,
+                            Price = 46.230089676210644m,
                             RepairServiceId = 3
                         },
                         new
@@ -909,7 +912,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 70,
                             CarId = 2,
                             MechanicId = 2,
-                            Price = 100.0613345553305778m,
+                            Price = 139.348438721368637m,
                             RepairServiceId = 4
                         },
                         new
@@ -917,7 +920,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 71,
                             CarId = 2,
                             MechanicId = 2,
-                            Price = 52.831364711414531m,
+                            Price = 79.671393156328473m,
                             RepairServiceId = 5
                         },
                         new
@@ -925,7 +928,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 72,
                             CarId = 2,
                             MechanicId = 2,
-                            Price = 246.302357734618607m,
+                            Price = 206.0400476196276946m,
                             RepairServiceId = 6
                         },
                         new
@@ -933,7 +936,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 73,
                             CarId = 3,
                             MechanicId = 2,
-                            Price = 31.400831588873038m,
+                            Price = 31.723985679556357m,
                             RepairServiceId = 1
                         },
                         new
@@ -941,7 +944,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 74,
                             CarId = 3,
                             MechanicId = 2,
-                            Price = 239.0897821656751618m,
+                            Price = 252.876030492711944m,
                             RepairServiceId = 2
                         },
                         new
@@ -949,7 +952,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 75,
                             CarId = 3,
                             MechanicId = 2,
-                            Price = 40.233825433855456m,
+                            Price = 33.27930290874493m,
                             RepairServiceId = 3
                         },
                         new
@@ -957,7 +960,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 76,
                             CarId = 3,
                             MechanicId = 2,
-                            Price = 121.916311725126255m,
+                            Price = 136.881426910299284m,
                             RepairServiceId = 4
                         },
                         new
@@ -965,7 +968,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 77,
                             CarId = 3,
                             MechanicId = 2,
-                            Price = 59.168345407341773m,
+                            Price = 59.749322416167304m,
                             RepairServiceId = 5
                         },
                         new
@@ -973,7 +976,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 78,
                             CarId = 3,
                             MechanicId = 2,
-                            Price = 247.510686360494842m,
+                            Price = 216.892189908686213m,
                             RepairServiceId = 6
                         },
                         new
@@ -981,7 +984,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 79,
                             CarId = 4,
                             MechanicId = 2,
-                            Price = 42.894744764334798m,
+                            Price = 49.918887990502118m,
                             RepairServiceId = 1
                         },
                         new
@@ -989,7 +992,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 80,
                             CarId = 4,
                             MechanicId = 2,
-                            Price = 220.00147512327859634m,
+                            Price = 178.645396689046043m,
                             RepairServiceId = 2
                         },
                         new
@@ -997,7 +1000,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 81,
                             CarId = 4,
                             MechanicId = 2,
-                            Price = 23.359095414983659m,
+                            Price = 42.472362718472046m,
                             RepairServiceId = 3
                         },
                         new
@@ -1005,7 +1008,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 82,
                             CarId = 4,
                             MechanicId = 2,
-                            Price = 107.0619796531782806m,
+                            Price = 127.617739471667535m,
                             RepairServiceId = 4
                         },
                         new
@@ -1013,7 +1016,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 83,
                             CarId = 4,
                             MechanicId = 2,
-                            Price = 50.253580652173872m,
+                            Price = 55.672056091223254m,
                             RepairServiceId = 5
                         },
                         new
@@ -1021,7 +1024,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 84,
                             CarId = 4,
                             MechanicId = 2,
-                            Price = 223.977726090838831m,
+                            Price = 224.581435702959407m,
                             RepairServiceId = 6
                         },
                         new
@@ -1029,7 +1032,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 85,
                             CarId = 5,
                             MechanicId = 2,
-                            Price = 35.143616047624957m,
+                            Price = 38.40424746068333m,
                             RepairServiceId = 1
                         },
                         new
@@ -1037,7 +1040,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 86,
                             CarId = 5,
                             MechanicId = 2,
-                            Price = 185.14073272465481m,
+                            Price = 223.0463085542760757m,
                             RepairServiceId = 2
                         },
                         new
@@ -1045,7 +1048,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 87,
                             CarId = 5,
                             MechanicId = 2,
-                            Price = 29.365056001668743m,
+                            Price = 40.367973831650155m,
                             RepairServiceId = 3
                         },
                         new
@@ -1053,7 +1056,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 88,
                             CarId = 5,
                             MechanicId = 2,
-                            Price = 146.824895750567153m,
+                            Price = 147.226150488565558m,
                             RepairServiceId = 4
                         },
                         new
@@ -1061,7 +1064,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 89,
                             CarId = 5,
                             MechanicId = 2,
-                            Price = 80.510954426315238m,
+                            Price = 75.603446634138369m,
                             RepairServiceId = 5
                         },
                         new
@@ -1069,7 +1072,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 90,
                             CarId = 5,
                             MechanicId = 2,
-                            Price = 229.372436113311347m,
+                            Price = 225.712929878401101m,
                             RepairServiceId = 6
                         },
                         new
@@ -1077,7 +1080,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 91,
                             CarId = 6,
                             MechanicId = 2,
-                            Price = 47.471101961276734m,
+                            Price = 45.924913950866541m,
                             RepairServiceId = 1
                         },
                         new
@@ -1085,7 +1088,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 92,
                             CarId = 6,
                             MechanicId = 2,
-                            Price = 148.724170649866179m,
+                            Price = 151.173845687524107m,
                             RepairServiceId = 2
                         },
                         new
@@ -1093,7 +1096,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 93,
                             CarId = 6,
                             MechanicId = 2,
-                            Price = 33.623313597789215m,
+                            Price = 26.220425772821158m,
                             RepairServiceId = 3
                         },
                         new
@@ -1101,7 +1104,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 94,
                             CarId = 6,
                             MechanicId = 2,
-                            Price = 138.347839677783668m,
+                            Price = 136.332306985426421m,
                             RepairServiceId = 4
                         },
                         new
@@ -1109,7 +1112,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 95,
                             CarId = 6,
                             MechanicId = 2,
-                            Price = 66.444260594781121m,
+                            Price = 52.291788983395762m,
                             RepairServiceId = 5
                         },
                         new
@@ -1117,7 +1120,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 96,
                             CarId = 6,
                             MechanicId = 2,
-                            Price = 203.387557485346422m,
+                            Price = 222.0608678807722649m,
                             RepairServiceId = 6
                         },
                         new
@@ -1125,7 +1128,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 97,
                             CarId = 7,
                             MechanicId = 2,
-                            Price = 43.681296166002075m,
+                            Price = 38.273842180908053m,
                             RepairServiceId = 1
                         },
                         new
@@ -1133,7 +1136,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 98,
                             CarId = 7,
                             MechanicId = 2,
-                            Price = 184.846444864817846m,
+                            Price = 252.115817346745131m,
                             RepairServiceId = 2
                         },
                         new
@@ -1141,7 +1144,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 99,
                             CarId = 7,
                             MechanicId = 2,
-                            Price = 39.890525490916636m,
+                            Price = 20.775113420593288m,
                             RepairServiceId = 3
                         },
                         new
@@ -1149,7 +1152,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 100,
                             CarId = 7,
                             MechanicId = 2,
-                            Price = 116.0103218623133782m,
+                            Price = 138.261450201609583m,
                             RepairServiceId = 4
                         },
                         new
@@ -1157,7 +1160,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 101,
                             CarId = 7,
                             MechanicId = 2,
-                            Price = 86.834947311769884m,
+                            Price = 63.551331305704126m,
                             RepairServiceId = 5
                         },
                         new
@@ -1165,7 +1168,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 102,
                             CarId = 7,
                             MechanicId = 2,
-                            Price = 246.874209911675001m,
+                            Price = 237.533140588395579m,
                             RepairServiceId = 6
                         },
                         new
@@ -1173,7 +1176,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 103,
                             CarId = 8,
                             MechanicId = 2,
-                            Price = 41.452989095378737m,
+                            Price = 39.159411402736157m,
                             RepairServiceId = 1
                         },
                         new
@@ -1181,7 +1184,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 104,
                             CarId = 8,
                             MechanicId = 2,
-                            Price = 254.206814187700906m,
+                            Price = 253.391337618226808m,
                             RepairServiceId = 2
                         },
                         new
@@ -1189,7 +1192,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 105,
                             CarId = 8,
                             MechanicId = 2,
-                            Price = 27.566410106551693m,
+                            Price = 36.129125285080329m,
                             RepairServiceId = 3
                         },
                         new
@@ -1197,7 +1200,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 106,
                             CarId = 8,
                             MechanicId = 2,
-                            Price = 119.784838455029665m,
+                            Price = 117.729123624752566m,
                             RepairServiceId = 4
                         },
                         new
@@ -1205,7 +1208,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 107,
                             CarId = 8,
                             MechanicId = 2,
-                            Price = 65.0865383790282261m,
+                            Price = 51.726816048400115m,
                             RepairServiceId = 5
                         },
                         new
@@ -1213,7 +1216,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 108,
                             CarId = 8,
                             MechanicId = 2,
-                            Price = 206.936369511696982m,
+                            Price = 241.0950503040379469m,
                             RepairServiceId = 6
                         },
                         new
@@ -1221,7 +1224,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 109,
                             CarId = 9,
                             MechanicId = 2,
-                            Price = 49.488471370883301m,
+                            Price = 30.0458127933345766m,
                             RepairServiceId = 1
                         },
                         new
@@ -1229,7 +1232,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 110,
                             CarId = 9,
                             MechanicId = 2,
-                            Price = 247.919473464406784m,
+                            Price = 178.21602119414782m,
                             RepairServiceId = 2
                         },
                         new
@@ -1237,7 +1240,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 111,
                             CarId = 9,
                             MechanicId = 2,
-                            Price = 24.740085745730995m,
+                            Price = 46.686023189906853m,
                             RepairServiceId = 3
                         },
                         new
@@ -1245,7 +1248,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 112,
                             CarId = 9,
                             MechanicId = 2,
-                            Price = 124.340599576421737m,
+                            Price = 129.186682795307693m,
                             RepairServiceId = 4
                         },
                         new
@@ -1253,7 +1256,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 113,
                             CarId = 9,
                             MechanicId = 2,
-                            Price = 58.579138168638844m,
+                            Price = 49.996071359780354m,
                             RepairServiceId = 5
                         },
                         new
@@ -1261,7 +1264,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 114,
                             CarId = 9,
                             MechanicId = 2,
-                            Price = 212.790105543270624m,
+                            Price = 205.598156148391398m,
                             RepairServiceId = 6
                         },
                         new
@@ -1269,7 +1272,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 115,
                             CarId = 10,
                             MechanicId = 2,
-                            Price = 48.233969799915956m,
+                            Price = 47.986457261702356m,
                             RepairServiceId = 1
                         },
                         new
@@ -1277,7 +1280,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 116,
                             CarId = 10,
                             MechanicId = 2,
-                            Price = 213.538685769792592m,
+                            Price = 153.507487788908444m,
                             RepairServiceId = 2
                         },
                         new
@@ -1285,7 +1288,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 117,
                             CarId = 10,
                             MechanicId = 2,
-                            Price = 42.295203286711124m,
+                            Price = 39.459842912190818m,
                             RepairServiceId = 3
                         },
                         new
@@ -1293,7 +1296,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 118,
                             CarId = 10,
                             MechanicId = 2,
-                            Price = 129.0378823904677134m,
+                            Price = 141.600394045136385m,
                             RepairServiceId = 4
                         },
                         new
@@ -1301,7 +1304,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 119,
                             CarId = 10,
                             MechanicId = 2,
-                            Price = 47.2820425352694m,
+                            Price = 80.429939508277224m,
                             RepairServiceId = 5
                         },
                         new
@@ -1309,7 +1312,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 120,
                             CarId = 10,
                             MechanicId = 2,
-                            Price = 243.373335897423783m,
+                            Price = 202.653282867009249m,
                             RepairServiceId = 6
                         },
                         new
@@ -1317,7 +1320,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 121,
                             CarId = 1,
                             MechanicId = 3,
-                            Price = 31.481019009447553m,
+                            Price = 47.48592402884829m,
                             RepairServiceId = 1
                         },
                         new
@@ -1325,7 +1328,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 122,
                             CarId = 1,
                             MechanicId = 3,
-                            Price = 220.186316719328407m,
+                            Price = 188.416322661515414m,
                             RepairServiceId = 2
                         },
                         new
@@ -1333,7 +1336,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 123,
                             CarId = 1,
                             MechanicId = 3,
-                            Price = 41.651201021346617m,
+                            Price = 44.386100941566902m,
                             RepairServiceId = 3
                         },
                         new
@@ -1341,7 +1344,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 124,
                             CarId = 1,
                             MechanicId = 3,
-                            Price = 109.0840255495203445m,
+                            Price = 142.378279911532235m,
                             RepairServiceId = 4
                         },
                         new
@@ -1349,7 +1352,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 125,
                             CarId = 1,
                             MechanicId = 3,
-                            Price = 64.607355264016428m,
+                            Price = 67.491508568747318m,
                             RepairServiceId = 5
                         },
                         new
@@ -1357,7 +1360,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 126,
                             CarId = 1,
                             MechanicId = 3,
-                            Price = 229.0832977198949608m,
+                            Price = 241.576280492288014m,
                             RepairServiceId = 6
                         },
                         new
@@ -1365,7 +1368,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 127,
                             CarId = 2,
                             MechanicId = 3,
-                            Price = 39.678842689372725m,
+                            Price = 42.0975722580251598m,
                             RepairServiceId = 1
                         },
                         new
@@ -1373,7 +1376,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 128,
                             CarId = 2,
                             MechanicId = 3,
-                            Price = 199.882973335685849m,
+                            Price = 241.223952952185067m,
                             RepairServiceId = 2
                         },
                         new
@@ -1381,7 +1384,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 129,
                             CarId = 2,
                             MechanicId = 3,
-                            Price = 28.0388786240371288m,
+                            Price = 37.796351782308176m,
                             RepairServiceId = 3
                         },
                         new
@@ -1389,7 +1392,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 130,
                             CarId = 2,
                             MechanicId = 3,
-                            Price = 144.750895524116655m,
+                            Price = 121.286328211903058m,
                             RepairServiceId = 4
                         },
                         new
@@ -1397,7 +1400,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 131,
                             CarId = 2,
                             MechanicId = 3,
-                            Price = 70.901988205487272m,
+                            Price = 45.0738670428143239m,
                             RepairServiceId = 5
                         },
                         new
@@ -1405,7 +1408,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 132,
                             CarId = 2,
                             MechanicId = 3,
-                            Price = 223.264441990267174m,
+                            Price = 224.956194236837793m,
                             RepairServiceId = 6
                         },
                         new
@@ -1413,7 +1416,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 133,
                             CarId = 3,
                             MechanicId = 3,
-                            Price = 39.61747138821007m,
+                            Price = 36.492620727785478m,
                             RepairServiceId = 1
                         },
                         new
@@ -1421,7 +1424,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 134,
                             CarId = 3,
                             MechanicId = 3,
-                            Price = 214.626082708603588m,
+                            Price = 216.0656476762969168m,
                             RepairServiceId = 2
                         },
                         new
@@ -1429,7 +1432,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 135,
                             CarId = 3,
                             MechanicId = 3,
-                            Price = 48.427355258958556m,
+                            Price = 20.989364126882714m,
                             RepairServiceId = 3
                         },
                         new
@@ -1437,7 +1440,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 136,
                             CarId = 3,
                             MechanicId = 3,
-                            Price = 107.837935385335404m,
+                            Price = 109.31685171127787m,
                             RepairServiceId = 4
                         },
                         new
@@ -1445,7 +1448,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 137,
                             CarId = 3,
                             MechanicId = 3,
-                            Price = 57.856428810964546m,
+                            Price = 80.399069135979398m,
                             RepairServiceId = 5
                         },
                         new
@@ -1453,7 +1456,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 138,
                             CarId = 3,
                             MechanicId = 3,
-                            Price = 227.0562370063492913m,
+                            Price = 241.59472359459734m,
                             RepairServiceId = 6
                         },
                         new
@@ -1461,7 +1464,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 139,
                             CarId = 4,
                             MechanicId = 3,
-                            Price = 42.309323181860331m,
+                            Price = 49.375636484103183m,
                             RepairServiceId = 1
                         },
                         new
@@ -1469,7 +1472,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 140,
                             CarId = 4,
                             MechanicId = 3,
-                            Price = 238.286304511888438m,
+                            Price = 153.555384848403695m,
                             RepairServiceId = 2
                         },
                         new
@@ -1477,7 +1480,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 141,
                             CarId = 4,
                             MechanicId = 3,
-                            Price = 39.148919986169414m,
+                            Price = 26.548975143046855m,
                             RepairServiceId = 3
                         },
                         new
@@ -1485,7 +1488,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 142,
                             CarId = 4,
                             MechanicId = 3,
-                            Price = 106.403151226997738m,
+                            Price = 116.114637018853096m,
                             RepairServiceId = 4
                         },
                         new
@@ -1493,7 +1496,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 143,
                             CarId = 4,
                             MechanicId = 3,
-                            Price = 63.418407675769822m,
+                            Price = 57.503884324026686m,
                             RepairServiceId = 5
                         },
                         new
@@ -1501,7 +1504,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 144,
                             CarId = 4,
                             MechanicId = 3,
-                            Price = 246.0917442189979126m,
+                            Price = 228.0994814555809404m,
                             RepairServiceId = 6
                         },
                         new
@@ -1509,7 +1512,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 145,
                             CarId = 5,
                             MechanicId = 3,
-                            Price = 30.994209450184584m,
+                            Price = 37.350987442793067m,
                             RepairServiceId = 1
                         },
                         new
@@ -1517,7 +1520,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 146,
                             CarId = 5,
                             MechanicId = 3,
-                            Price = 146.456634570812188m,
+                            Price = 219.0664905695719566m,
                             RepairServiceId = 2
                         },
                         new
@@ -1525,7 +1528,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 147,
                             CarId = 5,
                             MechanicId = 3,
-                            Price = 48.504298320862618m,
+                            Price = 46.869680012882974m,
                             RepairServiceId = 3
                         },
                         new
@@ -1533,7 +1536,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 148,
                             CarId = 5,
                             MechanicId = 3,
-                            Price = 131.190528433293271m,
+                            Price = 101.258970036220788m,
                             RepairServiceId = 4
                         },
                         new
@@ -1541,7 +1544,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 149,
                             CarId = 5,
                             MechanicId = 3,
-                            Price = 65.565524463424555m,
+                            Price = 60.467819540049108m,
                             RepairServiceId = 5
                         },
                         new
@@ -1549,7 +1552,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 150,
                             CarId = 5,
                             MechanicId = 3,
-                            Price = 247.948348528266999m,
+                            Price = 229.773757732949443m,
                             RepairServiceId = 6
                         },
                         new
@@ -1557,7 +1560,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 151,
                             CarId = 6,
                             MechanicId = 3,
-                            Price = 41.336473173853865m,
+                            Price = 48.396251365877848m,
                             RepairServiceId = 1
                         },
                         new
@@ -1565,7 +1568,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 152,
                             CarId = 6,
                             MechanicId = 3,
-                            Price = 224.579630428170368m,
+                            Price = 202.745034385752412m,
                             RepairServiceId = 2
                         },
                         new
@@ -1573,7 +1576,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 153,
                             CarId = 6,
                             MechanicId = 3,
-                            Price = 20.0529577145622597m,
+                            Price = 42.207865431686789m,
                             RepairServiceId = 3
                         },
                         new
@@ -1581,7 +1584,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 154,
                             CarId = 6,
                             MechanicId = 3,
-                            Price = 105.277081954808833m,
+                            Price = 148.416923146328929m,
                             RepairServiceId = 4
                         },
                         new
@@ -1589,7 +1592,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 155,
                             CarId = 6,
                             MechanicId = 3,
-                            Price = 68.634061610836809m,
+                            Price = 50.963406996177254m,
                             RepairServiceId = 5
                         },
                         new
@@ -1597,7 +1600,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 156,
                             CarId = 6,
                             MechanicId = 3,
-                            Price = 241.281441880987129m,
+                            Price = 200.96222963477404m,
                             RepairServiceId = 6
                         },
                         new
@@ -1605,7 +1608,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 157,
                             CarId = 7,
                             MechanicId = 3,
-                            Price = 31.795610050177554m,
+                            Price = 48.239586974067498m,
                             RepairServiceId = 1
                         },
                         new
@@ -1613,7 +1616,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 158,
                             CarId = 7,
                             MechanicId = 3,
-                            Price = 248.106637477406655m,
+                            Price = 249.91603329766634m,
                             RepairServiceId = 2
                         },
                         new
@@ -1621,7 +1624,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 159,
                             CarId = 7,
                             MechanicId = 3,
-                            Price = 28.121033992332839m,
+                            Price = 25.932398992276828m,
                             RepairServiceId = 3
                         },
                         new
@@ -1629,7 +1632,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 160,
                             CarId = 7,
                             MechanicId = 3,
-                            Price = 118.25453978056637m,
+                            Price = 109.392747688688968m,
                             RepairServiceId = 4
                         },
                         new
@@ -1637,7 +1640,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 161,
                             CarId = 7,
                             MechanicId = 3,
-                            Price = 67.35314391323783m,
+                            Price = 58.0969297307871488m,
                             RepairServiceId = 5
                         },
                         new
@@ -1645,7 +1648,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 162,
                             CarId = 7,
                             MechanicId = 3,
-                            Price = 227.467288086359961m,
+                            Price = 245.923225241794294m,
                             RepairServiceId = 6
                         },
                         new
@@ -1653,7 +1656,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 163,
                             CarId = 8,
                             MechanicId = 3,
-                            Price = 31.395119720861188m,
+                            Price = 45.720576447401003m,
                             RepairServiceId = 1
                         },
                         new
@@ -1661,7 +1664,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 164,
                             CarId = 8,
                             MechanicId = 3,
-                            Price = 173.554712025057388m,
+                            Price = 197.824650504951659m,
                             RepairServiceId = 2
                         },
                         new
@@ -1669,7 +1672,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 165,
                             CarId = 8,
                             MechanicId = 3,
-                            Price = 31.025504189927534m,
+                            Price = 29.599617124694926m,
                             RepairServiceId = 3
                         },
                         new
@@ -1677,7 +1680,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 166,
                             CarId = 8,
                             MechanicId = 3,
-                            Price = 123.168469170775226m,
+                            Price = 107.886018206489282m,
                             RepairServiceId = 4
                         },
                         new
@@ -1685,7 +1688,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 167,
                             CarId = 8,
                             MechanicId = 3,
-                            Price = 85.828697297716835m,
+                            Price = 47.635586621967219m,
                             RepairServiceId = 5
                         },
                         new
@@ -1693,7 +1696,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 168,
                             CarId = 8,
                             MechanicId = 3,
-                            Price = 221.834959163808652m,
+                            Price = 229.452920433374382m,
                             RepairServiceId = 6
                         },
                         new
@@ -1701,7 +1704,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 169,
                             CarId = 9,
                             MechanicId = 3,
-                            Price = 40.963992340474642m,
+                            Price = 34.95217504206835m,
                             RepairServiceId = 1
                         },
                         new
@@ -1709,7 +1712,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 170,
                             CarId = 9,
                             MechanicId = 3,
-                            Price = 226.743294050613702m,
+                            Price = 136.30541081980588m,
                             RepairServiceId = 2
                         },
                         new
@@ -1717,7 +1720,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 171,
                             CarId = 9,
                             MechanicId = 3,
-                            Price = 32.780136151321568m,
+                            Price = 30.480620738804783m,
                             RepairServiceId = 3
                         },
                         new
@@ -1725,7 +1728,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 172,
                             CarId = 9,
                             MechanicId = 3,
-                            Price = 133.407808074637837m,
+                            Price = 104.436449016990972m,
                             RepairServiceId = 4
                         },
                         new
@@ -1733,7 +1736,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 173,
                             CarId = 9,
                             MechanicId = 3,
-                            Price = 85.0115219468256303m,
+                            Price = 45.521415497161643m,
                             RepairServiceId = 5
                         },
                         new
@@ -1741,7 +1744,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 174,
                             CarId = 9,
                             MechanicId = 3,
-                            Price = 240.421431461384582m,
+                            Price = 201.194917025745435m,
                             RepairServiceId = 6
                         },
                         new
@@ -1749,7 +1752,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 175,
                             CarId = 10,
                             MechanicId = 3,
-                            Price = 31.616242180032072m,
+                            Price = 30.935855831972602m,
                             RepairServiceId = 1
                         },
                         new
@@ -1757,7 +1760,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 176,
                             CarId = 10,
                             MechanicId = 3,
-                            Price = 197.400021867339431m,
+                            Price = 255.607414652539235m,
                             RepairServiceId = 2
                         },
                         new
@@ -1765,7 +1768,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 177,
                             CarId = 10,
                             MechanicId = 3,
-                            Price = 31.131891757308777m,
+                            Price = 43.604402494200219m,
                             RepairServiceId = 3
                         },
                         new
@@ -1773,7 +1776,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 178,
                             CarId = 10,
                             MechanicId = 3,
-                            Price = 146.580655844723235m,
+                            Price = 140.0294867091936686m,
                             RepairServiceId = 4
                         },
                         new
@@ -1781,7 +1784,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 179,
                             CarId = 10,
                             MechanicId = 3,
-                            Price = 69.921682899283084m,
+                            Price = 48.442847865599889m,
                             RepairServiceId = 5
                         },
                         new
@@ -1789,7 +1792,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 180,
                             CarId = 10,
                             MechanicId = 3,
-                            Price = 225.871085001957768m,
+                            Price = 213.190740150117942m,
                             RepairServiceId = 6
                         },
                         new
@@ -1797,7 +1800,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 181,
                             CarId = 1,
                             MechanicId = 4,
-                            Price = 40.0830511104092675m,
+                            Price = 49.435332212307563m,
                             RepairServiceId = 1
                         },
                         new
@@ -1805,7 +1808,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 182,
                             CarId = 1,
                             MechanicId = 4,
-                            Price = 230.797123115925836m,
+                            Price = 169.313126404552041m,
                             RepairServiceId = 2
                         },
                         new
@@ -1813,7 +1816,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 183,
                             CarId = 1,
                             MechanicId = 4,
-                            Price = 27.478363392499556m,
+                            Price = 25.611286032094847m,
                             RepairServiceId = 3
                         },
                         new
@@ -1821,7 +1824,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 184,
                             CarId = 1,
                             MechanicId = 4,
-                            Price = 136.0635602711488611m,
+                            Price = 113.668344469826397m,
                             RepairServiceId = 4
                         },
                         new
@@ -1829,7 +1832,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 185,
                             CarId = 1,
                             MechanicId = 4,
-                            Price = 72.88616125959263m,
+                            Price = 46.505885346488097m,
                             RepairServiceId = 5
                         },
                         new
@@ -1837,7 +1840,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 186,
                             CarId = 1,
                             MechanicId = 4,
-                            Price = 238.986211641725834m,
+                            Price = 227.132286251869124m,
                             RepairServiceId = 6
                         },
                         new
@@ -1845,7 +1848,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 187,
                             CarId = 2,
                             MechanicId = 4,
-                            Price = 45.177682659288283m,
+                            Price = 35.899477885829038m,
                             RepairServiceId = 1
                         },
                         new
@@ -1853,7 +1856,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 188,
                             CarId = 2,
                             MechanicId = 4,
-                            Price = 205.777344078190867m,
+                            Price = 238.986657089503318m,
                             RepairServiceId = 2
                         },
                         new
@@ -1861,7 +1864,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 189,
                             CarId = 2,
                             MechanicId = 4,
-                            Price = 42.594461374264817m,
+                            Price = 24.0625934495898951m,
                             RepairServiceId = 3
                         },
                         new
@@ -1869,7 +1872,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 190,
                             CarId = 2,
                             MechanicId = 4,
-                            Price = 130.865619141968735m,
+                            Price = 139.727494056760661m,
                             RepairServiceId = 4
                         },
                         new
@@ -1877,7 +1880,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 191,
                             CarId = 2,
                             MechanicId = 4,
-                            Price = 68.386137542250592m,
+                            Price = 67.41957757954287m,
                             RepairServiceId = 5
                         },
                         new
@@ -1885,7 +1888,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 192,
                             CarId = 2,
                             MechanicId = 4,
-                            Price = 208.366188501518221m,
+                            Price = 226.815572387458993m,
                             RepairServiceId = 6
                         },
                         new
@@ -1893,7 +1896,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 193,
                             CarId = 3,
                             MechanicId = 4,
-                            Price = 43.315308078584265m,
+                            Price = 39.706005155546814m,
                             RepairServiceId = 1
                         },
                         new
@@ -1901,7 +1904,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 194,
                             CarId = 3,
                             MechanicId = 4,
-                            Price = 250.503843272911242m,
+                            Price = 253.199409806083627m,
                             RepairServiceId = 2
                         },
                         new
@@ -1909,7 +1912,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 195,
                             CarId = 3,
                             MechanicId = 4,
-                            Price = 25.77538819234656m,
+                            Price = 32.436186601259768m,
                             RepairServiceId = 3
                         },
                         new
@@ -1917,7 +1920,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 196,
                             CarId = 3,
                             MechanicId = 4,
-                            Price = 123.633275115945503m,
+                            Price = 114.113363468416866m,
                             RepairServiceId = 4
                         },
                         new
@@ -1925,7 +1928,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 197,
                             CarId = 3,
                             MechanicId = 4,
-                            Price = 49.345899077905061m,
+                            Price = 52.747432323346815m,
                             RepairServiceId = 5
                         },
                         new
@@ -1933,7 +1936,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 198,
                             CarId = 3,
                             MechanicId = 4,
-                            Price = 204.965912768078222m,
+                            Price = 214.808107533893363m,
                             RepairServiceId = 6
                         },
                         new
@@ -1941,7 +1944,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 199,
                             CarId = 4,
                             MechanicId = 4,
-                            Price = 42.526908032119976m,
+                            Price = 39.386252060376002m,
                             RepairServiceId = 1
                         },
                         new
@@ -1949,7 +1952,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 200,
                             CarId = 4,
                             MechanicId = 4,
-                            Price = 152.150603217818219m,
+                            Price = 140.0393438201737045m,
                             RepairServiceId = 2
                         },
                         new
@@ -1957,7 +1960,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 201,
                             CarId = 4,
                             MechanicId = 4,
-                            Price = 33.281286893358414m,
+                            Price = 30.538501553749943m,
                             RepairServiceId = 3
                         },
                         new
@@ -1965,7 +1968,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 202,
                             CarId = 4,
                             MechanicId = 4,
-                            Price = 141.161785771336809m,
+                            Price = 134.172935798390643m,
                             RepairServiceId = 4
                         },
                         new
@@ -1973,7 +1976,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 203,
                             CarId = 4,
                             MechanicId = 4,
-                            Price = 82.621979260525468m,
+                            Price = 75.156796326385153m,
                             RepairServiceId = 5
                         },
                         new
@@ -1981,7 +1984,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 204,
                             CarId = 4,
                             MechanicId = 4,
-                            Price = 202.924384960381654m,
+                            Price = 244.14142247789961m,
                             RepairServiceId = 6
                         },
                         new
@@ -1989,7 +1992,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 205,
                             CarId = 5,
                             MechanicId = 4,
-                            Price = 37.729311868486855m,
+                            Price = 41.49854255691669m,
                             RepairServiceId = 1
                         },
                         new
@@ -1997,7 +2000,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 206,
                             CarId = 5,
                             MechanicId = 4,
-                            Price = 153.5331205431517m,
+                            Price = 203.959002337487739m,
                             RepairServiceId = 2
                         },
                         new
@@ -2005,7 +2008,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 207,
                             CarId = 5,
                             MechanicId = 4,
-                            Price = 25.688823939922312m,
+                            Price = 26.647928559804746m,
                             RepairServiceId = 3
                         },
                         new
@@ -2013,7 +2016,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 208,
                             CarId = 5,
                             MechanicId = 4,
-                            Price = 131.962626590581277m,
+                            Price = 124.225970124022313m,
                             RepairServiceId = 4
                         },
                         new
@@ -2021,7 +2024,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 209,
                             CarId = 5,
                             MechanicId = 4,
-                            Price = 46.747750500192932m,
+                            Price = 73.722811549818661m,
                             RepairServiceId = 5
                         },
                         new
@@ -2029,7 +2032,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 210,
                             CarId = 5,
                             MechanicId = 4,
-                            Price = 237.873122596582702m,
+                            Price = 217.324616032377505m,
                             RepairServiceId = 6
                         },
                         new
@@ -2037,7 +2040,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 211,
                             CarId = 6,
                             MechanicId = 4,
-                            Price = 34.94632211481968m,
+                            Price = 37.937585404562815m,
                             RepairServiceId = 1
                         },
                         new
@@ -2045,7 +2048,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 212,
                             CarId = 6,
                             MechanicId = 4,
-                            Price = 161.136754187528247m,
+                            Price = 234.924743615923036m,
                             RepairServiceId = 2
                         },
                         new
@@ -2053,7 +2056,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 213,
                             CarId = 6,
                             MechanicId = 4,
-                            Price = 21.765276988051679m,
+                            Price = 25.670196730949571m,
                             RepairServiceId = 3
                         },
                         new
@@ -2061,7 +2064,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 214,
                             CarId = 6,
                             MechanicId = 4,
-                            Price = 101.72504924513484m,
+                            Price = 132.232019442777425m,
                             RepairServiceId = 4
                         },
                         new
@@ -2069,7 +2072,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 215,
                             CarId = 6,
                             MechanicId = 4,
-                            Price = 53.163951511394608m,
+                            Price = 80.444194160751197m,
                             RepairServiceId = 5
                         },
                         new
@@ -2077,7 +2080,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 216,
                             CarId = 6,
                             MechanicId = 4,
-                            Price = 240.398268343820574m,
+                            Price = 224.691151932871634m,
                             RepairServiceId = 6
                         },
                         new
@@ -2085,7 +2088,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 217,
                             CarId = 7,
                             MechanicId = 4,
-                            Price = 38.0322347954176473m,
+                            Price = 36.704259384665295m,
                             RepairServiceId = 1
                         },
                         new
@@ -2093,7 +2096,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 218,
                             CarId = 7,
                             MechanicId = 4,
-                            Price = 228.75540483757063m,
+                            Price = 194.0938661628172128m,
                             RepairServiceId = 2
                         },
                         new
@@ -2101,7 +2104,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 219,
                             CarId = 7,
                             MechanicId = 4,
-                            Price = 24.47276547341202m,
+                            Price = 35.131155242655974m,
                             RepairServiceId = 3
                         },
                         new
@@ -2109,7 +2112,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 220,
                             CarId = 7,
                             MechanicId = 4,
-                            Price = 119.958022970487919m,
+                            Price = 123.818540061340551m,
                             RepairServiceId = 4
                         },
                         new
@@ -2117,7 +2120,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 221,
                             CarId = 7,
                             MechanicId = 4,
-                            Price = 68.997872047251895m,
+                            Price = 80.361256610343646m,
                             RepairServiceId = 5
                         },
                         new
@@ -2125,7 +2128,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 222,
                             CarId = 7,
                             MechanicId = 4,
-                            Price = 217.960613575682675m,
+                            Price = 207.336538450097307m,
                             RepairServiceId = 6
                         },
                         new
@@ -2133,7 +2136,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 223,
                             CarId = 8,
                             MechanicId = 4,
-                            Price = 40.569724638788769m,
+                            Price = 40.973090630146111m,
                             RepairServiceId = 1
                         },
                         new
@@ -2141,7 +2144,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 224,
                             CarId = 8,
                             MechanicId = 4,
-                            Price = 187.863292250327516m,
+                            Price = 222.681813321389556m,
                             RepairServiceId = 2
                         },
                         new
@@ -2149,7 +2152,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 225,
                             CarId = 8,
                             MechanicId = 4,
-                            Price = 21.659572444918816m,
+                            Price = 31.865611754197453m,
                             RepairServiceId = 3
                         },
                         new
@@ -2157,7 +2160,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 226,
                             CarId = 8,
                             MechanicId = 4,
-                            Price = 115.247703800207187m,
+                            Price = 108.447409218901367m,
                             RepairServiceId = 4
                         },
                         new
@@ -2165,7 +2168,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 227,
                             CarId = 8,
                             MechanicId = 4,
-                            Price = 78.163609193403746m,
+                            Price = 52.74998575952943m,
                             RepairServiceId = 5
                         },
                         new
@@ -2173,7 +2176,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 228,
                             CarId = 8,
                             MechanicId = 4,
-                            Price = 219.834920399146731m,
+                            Price = 228.515264324873878m,
                             RepairServiceId = 6
                         },
                         new
@@ -2181,7 +2184,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 229,
                             CarId = 9,
                             MechanicId = 4,
-                            Price = 42.302043553818014m,
+                            Price = 42.344928543165538m,
                             RepairServiceId = 1
                         },
                         new
@@ -2189,7 +2192,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 230,
                             CarId = 9,
                             MechanicId = 4,
-                            Price = 220.606248796068266m,
+                            Price = 145.900338662989125m,
                             RepairServiceId = 2
                         },
                         new
@@ -2197,7 +2200,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 231,
                             CarId = 9,
                             MechanicId = 4,
-                            Price = 29.421988490330969m,
+                            Price = 48.114564530796207m,
                             RepairServiceId = 3
                         },
                         new
@@ -2205,7 +2208,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 232,
                             CarId = 9,
                             MechanicId = 4,
-                            Price = 105.885367852707886m,
+                            Price = 122.447243959420804m,
                             RepairServiceId = 4
                         },
                         new
@@ -2213,7 +2216,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 233,
                             CarId = 9,
                             MechanicId = 4,
-                            Price = 85.748242751842156m,
+                            Price = 62.254166591331697m,
                             RepairServiceId = 5
                         },
                         new
@@ -2221,7 +2224,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 234,
                             CarId = 9,
                             MechanicId = 4,
-                            Price = 215.365170516981737m,
+                            Price = 220.971497524019145m,
                             RepairServiceId = 6
                         },
                         new
@@ -2229,7 +2232,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 235,
                             CarId = 10,
                             MechanicId = 4,
-                            Price = 37.565317922633528m,
+                            Price = 31.637912962151616m,
                             RepairServiceId = 1
                         },
                         new
@@ -2237,7 +2240,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 236,
                             CarId = 10,
                             MechanicId = 4,
-                            Price = 213.0316445985857736m,
+                            Price = 153.928645091440984m,
                             RepairServiceId = 2
                         },
                         new
@@ -2245,7 +2248,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 237,
                             CarId = 10,
                             MechanicId = 4,
-                            Price = 31.423112647005177m,
+                            Price = 40.223474598326059m,
                             RepairServiceId = 3
                         },
                         new
@@ -2253,7 +2256,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 238,
                             CarId = 10,
                             MechanicId = 4,
-                            Price = 129.985135972709722m,
+                            Price = 135.146733731104087m,
                             RepairServiceId = 4
                         },
                         new
@@ -2261,7 +2264,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 239,
                             CarId = 10,
                             MechanicId = 4,
-                            Price = 71.205038732873474m,
+                            Price = 75.7526202448608m,
                             RepairServiceId = 5
                         },
                         new
@@ -2269,7 +2272,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 240,
                             CarId = 10,
                             MechanicId = 4,
-                            Price = 208.471145696352155m,
+                            Price = 230.262598386074875m,
                             RepairServiceId = 6
                         },
                         new
@@ -2277,7 +2280,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 241,
                             CarId = 1,
                             MechanicId = 5,
-                            Price = 31.00742458035353666m,
+                            Price = 39.0890418190295578m,
                             RepairServiceId = 1
                         },
                         new
@@ -2285,7 +2288,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 242,
                             CarId = 1,
                             MechanicId = 5,
-                            Price = 225.0765858760042213m,
+                            Price = 211.387956484132697m,
                             RepairServiceId = 2
                         },
                         new
@@ -2293,7 +2296,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 243,
                             CarId = 1,
                             MechanicId = 5,
-                            Price = 33.173798279584364m,
+                            Price = 48.390006900814853m,
                             RepairServiceId = 3
                         },
                         new
@@ -2301,7 +2304,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 244,
                             CarId = 1,
                             MechanicId = 5,
-                            Price = 125.790555145197649m,
+                            Price = 110.894106118619311m,
                             RepairServiceId = 4
                         },
                         new
@@ -2309,7 +2312,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 245,
                             CarId = 1,
                             MechanicId = 5,
-                            Price = 49.0616303318472837m,
+                            Price = 83.850192144669471m,
                             RepairServiceId = 5
                         },
                         new
@@ -2317,7 +2320,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 246,
                             CarId = 1,
                             MechanicId = 5,
-                            Price = 225.743053370907564m,
+                            Price = 246.167097645729189m,
                             RepairServiceId = 6
                         },
                         new
@@ -2325,7 +2328,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 247,
                             CarId = 2,
                             MechanicId = 5,
-                            Price = 33.969106405470301m,
+                            Price = 39.590911982479423m,
                             RepairServiceId = 1
                         },
                         new
@@ -2333,7 +2336,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 248,
                             CarId = 2,
                             MechanicId = 5,
-                            Price = 171.297127751169155m,
+                            Price = 226.207124114532496m,
                             RepairServiceId = 2
                         },
                         new
@@ -2341,7 +2344,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 249,
                             CarId = 2,
                             MechanicId = 5,
-                            Price = 34.57174064676675m,
+                            Price = 38.966573175440185m,
                             RepairServiceId = 3
                         },
                         new
@@ -2349,7 +2352,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 250,
                             CarId = 2,
                             MechanicId = 5,
-                            Price = 124.206032784869362m,
+                            Price = 122.0357469694980866m,
                             RepairServiceId = 4
                         },
                         new
@@ -2357,7 +2360,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 251,
                             CarId = 2,
                             MechanicId = 5,
-                            Price = 75.53378542690094m,
+                            Price = 75.635580731811453m,
                             RepairServiceId = 5
                         },
                         new
@@ -2365,7 +2368,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 252,
                             CarId = 2,
                             MechanicId = 5,
-                            Price = 238.413712306448594m,
+                            Price = 202.0631210442240914m,
                             RepairServiceId = 6
                         },
                         new
@@ -2373,7 +2376,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 253,
                             CarId = 3,
                             MechanicId = 5,
-                            Price = 40.141936067594623m,
+                            Price = 37.475651311293032m,
                             RepairServiceId = 1
                         },
                         new
@@ -2381,7 +2384,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 254,
                             CarId = 3,
                             MechanicId = 5,
-                            Price = 236.604287578003748m,
+                            Price = 240.929945231367956m,
                             RepairServiceId = 2
                         },
                         new
@@ -2389,7 +2392,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 255,
                             CarId = 3,
                             MechanicId = 5,
-                            Price = 44.00381338108904927m,
+                            Price = 26.767191709039829m,
                             RepairServiceId = 3
                         },
                         new
@@ -2397,7 +2400,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 256,
                             CarId = 3,
                             MechanicId = 5,
-                            Price = 147.948124902541706m,
+                            Price = 111.794713945992362m,
                             RepairServiceId = 4
                         },
                         new
@@ -2405,7 +2408,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 257,
                             CarId = 3,
                             MechanicId = 5,
-                            Price = 48.877942371801648m,
+                            Price = 61.216403658819383m,
                             RepairServiceId = 5
                         },
                         new
@@ -2413,7 +2416,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 258,
                             CarId = 3,
                             MechanicId = 5,
-                            Price = 204.0609378456366494m,
+                            Price = 232.60088874068124m,
                             RepairServiceId = 6
                         },
                         new
@@ -2421,7 +2424,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 259,
                             CarId = 4,
                             MechanicId = 5,
-                            Price = 30.139489629472244m,
+                            Price = 34.14522975446714m,
                             RepairServiceId = 1
                         },
                         new
@@ -2429,7 +2432,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 260,
                             CarId = 4,
                             MechanicId = 5,
-                            Price = 159.081020044035565m,
+                            Price = 177.590726514963782m,
                             RepairServiceId = 2
                         },
                         new
@@ -2437,7 +2440,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 261,
                             CarId = 4,
                             MechanicId = 5,
-                            Price = 38.679918402174633m,
+                            Price = 28.365944002367229m,
                             RepairServiceId = 3
                         },
                         new
@@ -2445,7 +2448,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 262,
                             CarId = 4,
                             MechanicId = 5,
-                            Price = 120.525238976254012m,
+                            Price = 118.273165900952893m,
                             RepairServiceId = 4
                         },
                         new
@@ -2453,7 +2456,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 263,
                             CarId = 4,
                             MechanicId = 5,
-                            Price = 45.812498315860181m,
+                            Price = 82.238768779890175m,
                             RepairServiceId = 5
                         },
                         new
@@ -2461,7 +2464,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 264,
                             CarId = 4,
                             MechanicId = 5,
-                            Price = 236.608300571115792m,
+                            Price = 222.956198405177524m,
                             RepairServiceId = 6
                         },
                         new
@@ -2469,7 +2472,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 265,
                             CarId = 5,
                             MechanicId = 5,
-                            Price = 47.962329265294457m,
+                            Price = 45.909179599188516m,
                             RepairServiceId = 1
                         },
                         new
@@ -2477,7 +2480,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 266,
                             CarId = 5,
                             MechanicId = 5,
-                            Price = 204.326775422349205m,
+                            Price = 189.472824401537395m,
                             RepairServiceId = 2
                         },
                         new
@@ -2485,7 +2488,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 267,
                             CarId = 5,
                             MechanicId = 5,
-                            Price = 44.411982074314462m,
+                            Price = 46.117937798517691m,
                             RepairServiceId = 3
                         },
                         new
@@ -2493,7 +2496,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 268,
                             CarId = 5,
                             MechanicId = 5,
-                            Price = 116.59440526277177m,
+                            Price = 149.953589630589617m,
                             RepairServiceId = 4
                         },
                         new
@@ -2501,7 +2504,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 269,
                             CarId = 5,
                             MechanicId = 5,
-                            Price = 46.138482017206029m,
+                            Price = 84.917749937074708m,
                             RepairServiceId = 5
                         },
                         new
@@ -2509,7 +2512,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 270,
                             CarId = 5,
                             MechanicId = 5,
-                            Price = 201.481020501453496m,
+                            Price = 220.327345535622964m,
                             RepairServiceId = 6
                         },
                         new
@@ -2517,7 +2520,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 271,
                             CarId = 6,
                             MechanicId = 5,
-                            Price = 45.991996177487131m,
+                            Price = 40.323097740167137m,
                             RepairServiceId = 1
                         },
                         new
@@ -2525,7 +2528,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 272,
                             CarId = 6,
                             MechanicId = 5,
-                            Price = 245.0179961256018757m,
+                            Price = 210.167679968151146m,
                             RepairServiceId = 2
                         },
                         new
@@ -2533,7 +2536,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 273,
                             CarId = 6,
                             MechanicId = 5,
-                            Price = 32.390906861051325m,
+                            Price = 24.88105607374148m,
                             RepairServiceId = 3
                         },
                         new
@@ -2541,7 +2544,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 274,
                             CarId = 6,
                             MechanicId = 5,
-                            Price = 130.36772205431847m,
+                            Price = 117.637300602116126m,
                             RepairServiceId = 4
                         },
                         new
@@ -2549,7 +2552,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 275,
                             CarId = 6,
                             MechanicId = 5,
-                            Price = 83.294690541759782m,
+                            Price = 72.427920610901002m,
                             RepairServiceId = 5
                         },
                         new
@@ -2557,7 +2560,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 276,
                             CarId = 6,
                             MechanicId = 5,
-                            Price = 246.633330755480839m,
+                            Price = 203.624839938563931m,
                             RepairServiceId = 6
                         },
                         new
@@ -2565,7 +2568,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 277,
                             CarId = 7,
                             MechanicId = 5,
-                            Price = 36.439187927236371m,
+                            Price = 48.668656402887127m,
                             RepairServiceId = 1
                         },
                         new
@@ -2573,7 +2576,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 278,
                             CarId = 7,
                             MechanicId = 5,
-                            Price = 170.977042108432447m,
+                            Price = 164.417602465500098m,
                             RepairServiceId = 2
                         },
                         new
@@ -2581,7 +2584,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 279,
                             CarId = 7,
                             MechanicId = 5,
-                            Price = 41.54373574681314m,
+                            Price = 29.794787434445861m,
                             RepairServiceId = 3
                         },
                         new
@@ -2589,7 +2592,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 280,
                             CarId = 7,
                             MechanicId = 5,
-                            Price = 149.62315366496926m,
+                            Price = 105.27434906453957m,
                             RepairServiceId = 4
                         },
                         new
@@ -2597,7 +2600,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 281,
                             CarId = 7,
                             MechanicId = 5,
-                            Price = 77.0109049209981606m,
+                            Price = 57.0867439686760961m,
                             RepairServiceId = 5
                         },
                         new
@@ -2605,7 +2608,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 282,
                             CarId = 7,
                             MechanicId = 5,
-                            Price = 236.0595352479582589m,
+                            Price = 203.732211935399358m,
                             RepairServiceId = 6
                         },
                         new
@@ -2613,7 +2616,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 283,
                             CarId = 8,
                             MechanicId = 5,
-                            Price = 30.232567947932706m,
+                            Price = 41.0721302939005536m,
                             RepairServiceId = 1
                         },
                         new
@@ -2621,7 +2624,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 284,
                             CarId = 8,
                             MechanicId = 5,
-                            Price = 161.300633801036507m,
+                            Price = 196.342910652848216m,
                             RepairServiceId = 2
                         },
                         new
@@ -2629,7 +2632,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 285,
                             CarId = 8,
                             MechanicId = 5,
-                            Price = 47.609407224320959m,
+                            Price = 37.452474197917524m,
                             RepairServiceId = 3
                         },
                         new
@@ -2637,7 +2640,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 286,
                             CarId = 8,
                             MechanicId = 5,
-                            Price = 103.0641698161992322m,
+                            Price = 139.780189607952004m,
                             RepairServiceId = 4
                         },
                         new
@@ -2645,7 +2648,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 287,
                             CarId = 8,
                             MechanicId = 5,
-                            Price = 60.758747506118322m,
+                            Price = 54.407387397305966m,
                             RepairServiceId = 5
                         },
                         new
@@ -2653,7 +2656,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 288,
                             CarId = 8,
                             MechanicId = 5,
-                            Price = 224.422011585432867m,
+                            Price = 203.542675948471014m,
                             RepairServiceId = 6
                         },
                         new
@@ -2661,7 +2664,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 289,
                             CarId = 9,
                             MechanicId = 5,
-                            Price = 32.213416651048767m,
+                            Price = 45.176056848167777m,
                             RepairServiceId = 1
                         },
                         new
@@ -2669,7 +2672,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 290,
                             CarId = 9,
                             MechanicId = 5,
-                            Price = 222.515823862866362m,
+                            Price = 209.329542652595717m,
                             RepairServiceId = 2
                         },
                         new
@@ -2677,7 +2680,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 291,
                             CarId = 9,
                             MechanicId = 5,
-                            Price = 36.955234798617928m,
+                            Price = 36.296856867030545m,
                             RepairServiceId = 3
                         },
                         new
@@ -2685,7 +2688,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 292,
                             CarId = 9,
                             MechanicId = 5,
-                            Price = 128.615185539102233m,
+                            Price = 127.192985993914555m,
                             RepairServiceId = 4
                         },
                         new
@@ -2693,7 +2696,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 293,
                             CarId = 9,
                             MechanicId = 5,
-                            Price = 74.825490895923692m,
+                            Price = 86.483641150852294m,
                             RepairServiceId = 5
                         },
                         new
@@ -2701,7 +2704,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 294,
                             CarId = 9,
                             MechanicId = 5,
-                            Price = 218.919379100968322m,
+                            Price = 237.497683696960982m,
                             RepairServiceId = 6
                         },
                         new
@@ -2709,7 +2712,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 295,
                             CarId = 10,
                             MechanicId = 5,
-                            Price = 43.906707954932411m,
+                            Price = 30.425586224329487m,
                             RepairServiceId = 1
                         },
                         new
@@ -2717,7 +2720,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 296,
                             CarId = 10,
                             MechanicId = 5,
-                            Price = 222.923592536194604m,
+                            Price = 210.416904647306649m,
                             RepairServiceId = 2
                         },
                         new
@@ -2725,7 +2728,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 297,
                             CarId = 10,
                             MechanicId = 5,
-                            Price = 41.00850780055797307m,
+                            Price = 43.276083200853143m,
                             RepairServiceId = 3
                         },
                         new
@@ -2733,7 +2736,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 298,
                             CarId = 10,
                             MechanicId = 5,
-                            Price = 146.394158665178726m,
+                            Price = 148.651681662749486m,
                             RepairServiceId = 4
                         },
                         new
@@ -2741,7 +2744,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 299,
                             CarId = 10,
                             MechanicId = 5,
-                            Price = 83.139795454125327m,
+                            Price = 55.606714424507216m,
                             RepairServiceId = 5
                         },
                         new
@@ -2749,7 +2752,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 300,
                             CarId = 10,
                             MechanicId = 5,
-                            Price = 249.181841775109291m,
+                            Price = 205.613411067723445m,
                             RepairServiceId = 6
                         },
                         new
@@ -2757,7 +2760,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 301,
                             CarId = 1,
                             MechanicId = 6,
-                            Price = 46.277402468026199m,
+                            Price = 48.186551961458063m,
                             RepairServiceId = 1
                         },
                         new
@@ -2765,7 +2768,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 302,
                             CarId = 1,
                             MechanicId = 6,
-                            Price = 165.442120392404744m,
+                            Price = 166.451830642600516m,
                             RepairServiceId = 2
                         },
                         new
@@ -2773,7 +2776,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 303,
                             CarId = 1,
                             MechanicId = 6,
-                            Price = 48.84699665043816m,
+                            Price = 28.501539180998122m,
                             RepairServiceId = 3
                         },
                         new
@@ -2781,7 +2784,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 304,
                             CarId = 1,
                             MechanicId = 6,
-                            Price = 119.00197185756054263m,
+                            Price = 110.71831453702392m,
                             RepairServiceId = 4
                         },
                         new
@@ -2789,7 +2792,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 305,
                             CarId = 1,
                             MechanicId = 6,
-                            Price = 46.934886242884831m,
+                            Price = 64.428867408525465m,
                             RepairServiceId = 5
                         },
                         new
@@ -2797,7 +2800,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 306,
                             CarId = 1,
                             MechanicId = 6,
-                            Price = 237.46426969208084m,
+                            Price = 227.401571765455586m,
                             RepairServiceId = 6
                         },
                         new
@@ -2805,7 +2808,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 307,
                             CarId = 2,
                             MechanicId = 6,
-                            Price = 38.631006626283392m,
+                            Price = 30.904107826866038m,
                             RepairServiceId = 1
                         },
                         new
@@ -2813,7 +2816,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 308,
                             CarId = 2,
                             MechanicId = 6,
-                            Price = 150.545657964479544m,
+                            Price = 172.691212189428787m,
                             RepairServiceId = 2
                         },
                         new
@@ -2821,7 +2824,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 309,
                             CarId = 2,
                             MechanicId = 6,
-                            Price = 26.825568785139714m,
+                            Price = 41.795240755999042m,
                             RepairServiceId = 3
                         },
                         new
@@ -2829,7 +2832,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 310,
                             CarId = 2,
                             MechanicId = 6,
-                            Price = 131.652787306195831m,
+                            Price = 129.733515384905016m,
                             RepairServiceId = 4
                         },
                         new
@@ -2837,7 +2840,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 311,
                             CarId = 2,
                             MechanicId = 6,
-                            Price = 57.384497036356292m,
+                            Price = 53.311506517018994m,
                             RepairServiceId = 5
                         },
                         new
@@ -2845,7 +2848,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 312,
                             CarId = 2,
                             MechanicId = 6,
-                            Price = 213.241911952600851m,
+                            Price = 246.307927034715928m,
                             RepairServiceId = 6
                         },
                         new
@@ -2853,7 +2856,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 313,
                             CarId = 3,
                             MechanicId = 6,
-                            Price = 41.923794830146762m,
+                            Price = 37.369338410172474m,
                             RepairServiceId = 1
                         },
                         new
@@ -2861,7 +2864,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 314,
                             CarId = 3,
                             MechanicId = 6,
-                            Price = 188.308910084210954m,
+                            Price = 180.162955067400738m,
                             RepairServiceId = 2
                         },
                         new
@@ -2869,7 +2872,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 315,
                             CarId = 3,
                             MechanicId = 6,
-                            Price = 32.1516236586253m,
+                            Price = 27.839159424953653m,
                             RepairServiceId = 3
                         },
                         new
@@ -2877,7 +2880,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 316,
                             CarId = 3,
                             MechanicId = 6,
-                            Price = 102.244047171601844m,
+                            Price = 149.333834064149465m,
                             RepairServiceId = 4
                         },
                         new
@@ -2885,7 +2888,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 317,
                             CarId = 3,
                             MechanicId = 6,
-                            Price = 46.541090486631941m,
+                            Price = 57.317617453339889m,
                             RepairServiceId = 5
                         },
                         new
@@ -2893,7 +2896,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 318,
                             CarId = 3,
                             MechanicId = 6,
-                            Price = 243.456097332347086m,
+                            Price = 246.271631245730518m,
                             RepairServiceId = 6
                         },
                         new
@@ -2901,7 +2904,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 319,
                             CarId = 4,
                             MechanicId = 6,
-                            Price = 38.600652181051136m,
+                            Price = 45.792984568764062m,
                             RepairServiceId = 1
                         },
                         new
@@ -2909,7 +2912,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 320,
                             CarId = 4,
                             MechanicId = 6,
-                            Price = 174.792823630156138m,
+                            Price = 139.377212722593428m,
                             RepairServiceId = 2
                         },
                         new
@@ -2917,7 +2920,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 321,
                             CarId = 4,
                             MechanicId = 6,
-                            Price = 28.0376851266853326m,
+                            Price = 20.017907491218857m,
                             RepairServiceId = 3
                         },
                         new
@@ -2925,7 +2928,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 322,
                             CarId = 4,
                             MechanicId = 6,
-                            Price = 102.0977015145022934m,
+                            Price = 123.538802972374326m,
                             RepairServiceId = 4
                         },
                         new
@@ -2933,7 +2936,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 323,
                             CarId = 4,
                             MechanicId = 6,
-                            Price = 52.685133126508233m,
+                            Price = 46.590018825317151m,
                             RepairServiceId = 5
                         },
                         new
@@ -2941,7 +2944,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 324,
                             CarId = 4,
                             MechanicId = 6,
-                            Price = 243.699974141201496m,
+                            Price = 234.337988788735643m,
                             RepairServiceId = 6
                         },
                         new
@@ -2949,7 +2952,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 325,
                             CarId = 5,
                             MechanicId = 6,
-                            Price = 42.3338008705029m,
+                            Price = 38.33521114243551m,
                             RepairServiceId = 1
                         },
                         new
@@ -2957,7 +2960,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 326,
                             CarId = 5,
                             MechanicId = 6,
-                            Price = 244.967431217102472m,
+                            Price = 164.828342414629371m,
                             RepairServiceId = 2
                         },
                         new
@@ -2965,7 +2968,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 327,
                             CarId = 5,
                             MechanicId = 6,
-                            Price = 40.55154967609821m,
+                            Price = 26.130616565396805m,
                             RepairServiceId = 3
                         },
                         new
@@ -2973,7 +2976,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 328,
                             CarId = 5,
                             MechanicId = 6,
-                            Price = 112.774998030802356m,
+                            Price = 146.924646196938054m,
                             RepairServiceId = 4
                         },
                         new
@@ -2981,7 +2984,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 329,
                             CarId = 5,
                             MechanicId = 6,
-                            Price = 56.788654991233661m,
+                            Price = 67.568244565557926m,
                             RepairServiceId = 5
                         },
                         new
@@ -2989,7 +2992,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 330,
                             CarId = 5,
                             MechanicId = 6,
-                            Price = 207.811397885630865m,
+                            Price = 241.516120648555212m,
                             RepairServiceId = 6
                         },
                         new
@@ -2997,7 +3000,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 331,
                             CarId = 6,
                             MechanicId = 6,
-                            Price = 42.505008281835289m,
+                            Price = 41.248578766367384m,
                             RepairServiceId = 1
                         },
                         new
@@ -3005,7 +3008,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 332,
                             CarId = 6,
                             MechanicId = 6,
-                            Price = 232.49218031402662m,
+                            Price = 197.143247621437529m,
                             RepairServiceId = 2
                         },
                         new
@@ -3013,7 +3016,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 333,
                             CarId = 6,
                             MechanicId = 6,
-                            Price = 20.483134620534184m,
+                            Price = 26.65026383468999m,
                             RepairServiceId = 3
                         },
                         new
@@ -3021,7 +3024,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 334,
                             CarId = 6,
                             MechanicId = 6,
-                            Price = 107.953979894028822m,
+                            Price = 122.75410380884612m,
                             RepairServiceId = 4
                         },
                         new
@@ -3029,7 +3032,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 335,
                             CarId = 6,
                             MechanicId = 6,
-                            Price = 48.754017502999881m,
+                            Price = 49.457860671625785m,
                             RepairServiceId = 5
                         },
                         new
@@ -3037,7 +3040,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 336,
                             CarId = 6,
                             MechanicId = 6,
-                            Price = 226.64941721015434m,
+                            Price = 222.786006644030454m,
                             RepairServiceId = 6
                         },
                         new
@@ -3045,7 +3048,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 337,
                             CarId = 7,
                             MechanicId = 6,
-                            Price = 44.288859897789578m,
+                            Price = 31.192973912442622m,
                             RepairServiceId = 1
                         },
                         new
@@ -3053,7 +3056,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 338,
                             CarId = 7,
                             MechanicId = 6,
-                            Price = 154.523203261034673m,
+                            Price = 259.34561824534538m,
                             RepairServiceId = 2
                         },
                         new
@@ -3061,7 +3064,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 339,
                             CarId = 7,
                             MechanicId = 6,
-                            Price = 38.122411629535725m,
+                            Price = 27.495398890749175m,
                             RepairServiceId = 3
                         },
                         new
@@ -3069,7 +3072,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 340,
                             CarId = 7,
                             MechanicId = 6,
-                            Price = 126.739386275516264m,
+                            Price = 104.0249071335165321m,
                             RepairServiceId = 4
                         },
                         new
@@ -3077,7 +3080,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 341,
                             CarId = 7,
                             MechanicId = 6,
-                            Price = 47.691665268400012m,
+                            Price = 75.348163549940213m,
                             RepairServiceId = 5
                         },
                         new
@@ -3085,7 +3088,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 342,
                             CarId = 7,
                             MechanicId = 6,
-                            Price = 215.598223371743788m,
+                            Price = 206.385894740597076m,
                             RepairServiceId = 6
                         },
                         new
@@ -3093,7 +3096,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 343,
                             CarId = 8,
                             MechanicId = 6,
-                            Price = 43.776494875164228m,
+                            Price = 46.2624038626944m,
                             RepairServiceId = 1
                         },
                         new
@@ -3101,7 +3104,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 344,
                             CarId = 8,
                             MechanicId = 6,
-                            Price = 224.357607629129547m,
+                            Price = 179.182973492632373m,
                             RepairServiceId = 2
                         },
                         new
@@ -3109,7 +3112,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 345,
                             CarId = 8,
                             MechanicId = 6,
-                            Price = 31.164972351891138m,
+                            Price = 22.931160920313772m,
                             RepairServiceId = 3
                         },
                         new
@@ -3117,7 +3120,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 346,
                             CarId = 8,
                             MechanicId = 6,
-                            Price = 136.735519276679134m,
+                            Price = 123.353472524713674m,
                             RepairServiceId = 4
                         },
                         new
@@ -3125,7 +3128,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 347,
                             CarId = 8,
                             MechanicId = 6,
-                            Price = 54.880946441955964m,
+                            Price = 79.925335603655039m,
                             RepairServiceId = 5
                         },
                         new
@@ -3133,7 +3136,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 348,
                             CarId = 8,
                             MechanicId = 6,
-                            Price = 209.262806357497656m,
+                            Price = 235.599972706517068m,
                             RepairServiceId = 6
                         },
                         new
@@ -3141,7 +3144,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 349,
                             CarId = 9,
                             MechanicId = 6,
-                            Price = 38.949034697894892m,
+                            Price = 49.345379949378647m,
                             RepairServiceId = 1
                         },
                         new
@@ -3149,7 +3152,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 350,
                             CarId = 9,
                             MechanicId = 6,
-                            Price = 251.194602096752242m,
+                            Price = 142.85485342186158m,
                             RepairServiceId = 2
                         },
                         new
@@ -3157,7 +3160,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 351,
                             CarId = 9,
                             MechanicId = 6,
-                            Price = 34.993019655579501m,
+                            Price = 46.0498489466068811m,
                             RepairServiceId = 3
                         },
                         new
@@ -3165,7 +3168,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 352,
                             CarId = 9,
                             MechanicId = 6,
-                            Price = 136.771521360785736m,
+                            Price = 112.369681532519117m,
                             RepairServiceId = 4
                         },
                         new
@@ -3173,7 +3176,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 353,
                             CarId = 9,
                             MechanicId = 6,
-                            Price = 62.492122447774743m,
+                            Price = 62.653090817467074m,
                             RepairServiceId = 5
                         },
                         new
@@ -3181,7 +3184,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 354,
                             CarId = 9,
                             MechanicId = 6,
-                            Price = 244.729329180296424m,
+                            Price = 237.71413123535137m,
                             RepairServiceId = 6
                         },
                         new
@@ -3189,7 +3192,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 355,
                             CarId = 10,
                             MechanicId = 6,
-                            Price = 37.00290794130882444m,
+                            Price = 45.972882175012522m,
                             RepairServiceId = 1
                         },
                         new
@@ -3197,7 +3200,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 356,
                             CarId = 10,
                             MechanicId = 6,
-                            Price = 162.533999116975888m,
+                            Price = 191.979324361644688m,
                             RepairServiceId = 2
                         },
                         new
@@ -3205,7 +3208,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 357,
                             CarId = 10,
                             MechanicId = 6,
-                            Price = 21.204923641792634m,
+                            Price = 28.330091099125522m,
                             RepairServiceId = 3
                         },
                         new
@@ -3213,7 +3216,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 358,
                             CarId = 10,
                             MechanicId = 6,
-                            Price = 137.0520529642956599m,
+                            Price = 146.560556795619328m,
                             RepairServiceId = 4
                         },
                         new
@@ -3221,7 +3224,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 359,
                             CarId = 10,
                             MechanicId = 6,
-                            Price = 48.659290272598669m,
+                            Price = 66.127631354566013m,
                             RepairServiceId = 5
                         },
                         new
@@ -3229,7 +3232,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 360,
                             CarId = 10,
                             MechanicId = 6,
-                            Price = 222.282554143957986m,
+                            Price = 242.546750194671449m,
                             RepairServiceId = 6
                         },
                         new
@@ -3237,7 +3240,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 361,
                             CarId = 1,
                             MechanicId = 7,
-                            Price = 48.103328616558416m,
+                            Price = 38.193697362495583m,
                             RepairServiceId = 1
                         },
                         new
@@ -3245,7 +3248,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 362,
                             CarId = 1,
                             MechanicId = 7,
-                            Price = 170.688429515759292m,
+                            Price = 173.942308206815939m,
                             RepairServiceId = 2
                         },
                         new
@@ -3253,7 +3256,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 363,
                             CarId = 1,
                             MechanicId = 7,
-                            Price = 47.641339300717311m,
+                            Price = 35.90344386934738m,
                             RepairServiceId = 3
                         },
                         new
@@ -3261,7 +3264,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 364,
                             CarId = 1,
                             MechanicId = 7,
-                            Price = 116.0237756751592928m,
+                            Price = 107.77654570976722m,
                             RepairServiceId = 4
                         },
                         new
@@ -3269,7 +3272,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 365,
                             CarId = 1,
                             MechanicId = 7,
-                            Price = 60.115172071519109m,
+                            Price = 66.425386072216925m,
                             RepairServiceId = 5
                         },
                         new
@@ -3277,7 +3280,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 366,
                             CarId = 1,
                             MechanicId = 7,
-                            Price = 242.743253909854384m,
+                            Price = 228.73511188918678m,
                             RepairServiceId = 6
                         },
                         new
@@ -3285,7 +3288,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 367,
                             CarId = 2,
                             MechanicId = 7,
-                            Price = 39.279086277732236m,
+                            Price = 35.0153736392073515m,
                             RepairServiceId = 1
                         },
                         new
@@ -3293,7 +3296,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 368,
                             CarId = 2,
                             MechanicId = 7,
-                            Price = 144.207985281143637m,
+                            Price = 161.708556606386718m,
                             RepairServiceId = 2
                         },
                         new
@@ -3301,7 +3304,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 369,
                             CarId = 2,
                             MechanicId = 7,
-                            Price = 48.114594540219606m,
+                            Price = 34.34177811072544m,
                             RepairServiceId = 3
                         },
                         new
@@ -3309,7 +3312,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 370,
                             CarId = 2,
                             MechanicId = 7,
-                            Price = 112.284429750027874m,
+                            Price = 116.11385388237692m,
                             RepairServiceId = 4
                         },
                         new
@@ -3317,7 +3320,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 371,
                             CarId = 2,
                             MechanicId = 7,
-                            Price = 66.0334859496562493m,
+                            Price = 86.36360814122577m,
                             RepairServiceId = 5
                         },
                         new
@@ -3325,7 +3328,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 372,
                             CarId = 2,
                             MechanicId = 7,
-                            Price = 207.00781679362975996m,
+                            Price = 214.0616192839372723m,
                             RepairServiceId = 6
                         },
                         new
@@ -3333,7 +3336,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 373,
                             CarId = 3,
                             MechanicId = 7,
-                            Price = 35.00490660144335064m,
+                            Price = 42.323989491647058m,
                             RepairServiceId = 1
                         },
                         new
@@ -3341,7 +3344,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 374,
                             CarId = 3,
                             MechanicId = 7,
-                            Price = 176.559038225817269m,
+                            Price = 218.37509990444189m,
                             RepairServiceId = 2
                         },
                         new
@@ -3349,7 +3352,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 375,
                             CarId = 3,
                             MechanicId = 7,
-                            Price = 47.715189978518934m,
+                            Price = 36.881225916652766m,
                             RepairServiceId = 3
                         },
                         new
@@ -3357,7 +3360,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 376,
                             CarId = 3,
                             MechanicId = 7,
-                            Price = 107.547957998676029m,
+                            Price = 127.434533867512098m,
                             RepairServiceId = 4
                         },
                         new
@@ -3365,7 +3368,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 377,
                             CarId = 3,
                             MechanicId = 7,
-                            Price = 48.98669344741099m,
+                            Price = 62.351772738075892m,
                             RepairServiceId = 5
                         },
                         new
@@ -3373,7 +3376,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 378,
                             CarId = 3,
                             MechanicId = 7,
-                            Price = 227.146346132601385m,
+                            Price = 243.780811498104491m,
                             RepairServiceId = 6
                         },
                         new
@@ -3381,7 +3384,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 379,
                             CarId = 4,
                             MechanicId = 7,
-                            Price = 34.270388000804712m,
+                            Price = 45.985115542053807m,
                             RepairServiceId = 1
                         },
                         new
@@ -3389,7 +3392,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 380,
                             CarId = 4,
                             MechanicId = 7,
-                            Price = 150.897667926368872m,
+                            Price = 255.502582080800603m,
                             RepairServiceId = 2
                         },
                         new
@@ -3397,7 +3400,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 381,
                             CarId = 4,
                             MechanicId = 7,
-                            Price = 29.0736599069335698m,
+                            Price = 38.274448788852314m,
                             RepairServiceId = 3
                         },
                         new
@@ -3405,7 +3408,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 382,
                             CarId = 4,
                             MechanicId = 7,
-                            Price = 139.382055584103331m,
+                            Price = 141.91041479918467m,
                             RepairServiceId = 4
                         },
                         new
@@ -3413,7 +3416,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 383,
                             CarId = 4,
                             MechanicId = 7,
-                            Price = 78.255828962104184m,
+                            Price = 67.872908480936426m,
                             RepairServiceId = 5
                         },
                         new
@@ -3421,7 +3424,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 384,
                             CarId = 4,
                             MechanicId = 7,
-                            Price = 211.313347855685709m,
+                            Price = 207.22686821331184m,
                             RepairServiceId = 6
                         },
                         new
@@ -3429,7 +3432,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 385,
                             CarId = 5,
                             MechanicId = 7,
-                            Price = 40.062424829367965m,
+                            Price = 34.0658705126388829m,
                             RepairServiceId = 1
                         },
                         new
@@ -3437,7 +3440,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 386,
                             CarId = 5,
                             MechanicId = 7,
-                            Price = 249.0943159740403576m,
+                            Price = 142.945561151670862m,
                             RepairServiceId = 2
                         },
                         new
@@ -3445,7 +3448,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 387,
                             CarId = 5,
                             MechanicId = 7,
-                            Price = 41.726475635206044m,
+                            Price = 46.00491342321470578m,
                             RepairServiceId = 3
                         },
                         new
@@ -3453,7 +3456,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 388,
                             CarId = 5,
                             MechanicId = 7,
-                            Price = 118.475204293235241m,
+                            Price = 127.191904040325061m,
                             RepairServiceId = 4
                         },
                         new
@@ -3461,7 +3464,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 389,
                             CarId = 5,
                             MechanicId = 7,
-                            Price = 86.927339147349636m,
+                            Price = 72.0950683669047714m,
                             RepairServiceId = 5
                         },
                         new
@@ -3469,7 +3472,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 390,
                             CarId = 5,
                             MechanicId = 7,
-                            Price = 228.60614910303488m,
+                            Price = 237.306494859415483m,
                             RepairServiceId = 6
                         },
                         new
@@ -3477,7 +3480,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 391,
                             CarId = 6,
                             MechanicId = 7,
-                            Price = 32.418974067654562m,
+                            Price = 40.0818644816486925m,
                             RepairServiceId = 1
                         },
                         new
@@ -3485,7 +3488,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 392,
                             CarId = 6,
                             MechanicId = 7,
-                            Price = 175.168834239295031m,
+                            Price = 182.954393062624044m,
                             RepairServiceId = 2
                         },
                         new
@@ -3493,7 +3496,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 393,
                             CarId = 6,
                             MechanicId = 7,
-                            Price = 48.411466272902702m,
+                            Price = 29.374873539678602m,
                             RepairServiceId = 3
                         },
                         new
@@ -3501,7 +3504,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 394,
                             CarId = 6,
                             MechanicId = 7,
-                            Price = 143.975561760322222m,
+                            Price = 149.483084724495066m,
                             RepairServiceId = 4
                         },
                         new
@@ -3509,7 +3512,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 395,
                             CarId = 6,
                             MechanicId = 7,
-                            Price = 52.594323730268929m,
+                            Price = 49.478205919638794m,
                             RepairServiceId = 5
                         },
                         new
@@ -3517,7 +3520,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 396,
                             CarId = 6,
                             MechanicId = 7,
-                            Price = 235.691188161509962m,
+                            Price = 208.0240180426713636m,
                             RepairServiceId = 6
                         },
                         new
@@ -3525,7 +3528,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 397,
                             CarId = 7,
                             MechanicId = 7,
-                            Price = 40.921538531151111m,
+                            Price = 49.984404217780643m,
                             RepairServiceId = 1
                         },
                         new
@@ -3533,7 +3536,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 398,
                             CarId = 7,
                             MechanicId = 7,
-                            Price = 190.563800763548247m,
+                            Price = 168.52148855780392m,
                             RepairServiceId = 2
                         },
                         new
@@ -3541,7 +3544,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 399,
                             CarId = 7,
                             MechanicId = 7,
-                            Price = 31.533053302557606m,
+                            Price = 42.374827135804039m,
                             RepairServiceId = 3
                         },
                         new
@@ -3549,7 +3552,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 400,
                             CarId = 7,
                             MechanicId = 7,
-                            Price = 144.691347119600836m,
+                            Price = 103.272486961287067m,
                             RepairServiceId = 4
                         },
                         new
@@ -3557,7 +3560,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 401,
                             CarId = 7,
                             MechanicId = 7,
-                            Price = 75.431251785603274m,
+                            Price = 46.345804241003171m,
                             RepairServiceId = 5
                         },
                         new
@@ -3565,7 +3568,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 402,
                             CarId = 7,
                             MechanicId = 7,
-                            Price = 206.342144280559765m,
+                            Price = 248.170728095108175m,
                             RepairServiceId = 6
                         },
                         new
@@ -3573,7 +3576,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 403,
                             CarId = 8,
                             MechanicId = 7,
-                            Price = 46.671027050070035m,
+                            Price = 45.824696284264503m,
                             RepairServiceId = 1
                         },
                         new
@@ -3581,7 +3584,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 404,
                             CarId = 8,
                             MechanicId = 7,
-                            Price = 173.635378597062091m,
+                            Price = 237.0790141355833778m,
                             RepairServiceId = 2
                         },
                         new
@@ -3589,7 +3592,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 405,
                             CarId = 8,
                             MechanicId = 7,
-                            Price = 32.399807260339316m,
+                            Price = 45.54912700629083m,
                             RepairServiceId = 3
                         },
                         new
@@ -3597,7 +3600,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 406,
                             CarId = 8,
                             MechanicId = 7,
-                            Price = 105.389229121432382m,
+                            Price = 115.185781535760306m,
                             RepairServiceId = 4
                         },
                         new
@@ -3605,7 +3608,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 407,
                             CarId = 8,
                             MechanicId = 7,
-                            Price = 77.235152121271583m,
+                            Price = 59.918475675342396m,
                             RepairServiceId = 5
                         },
                         new
@@ -3613,7 +3616,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 408,
                             CarId = 8,
                             MechanicId = 7,
-                            Price = 221.471842021366945m,
+                            Price = 244.308765122074868m,
                             RepairServiceId = 6
                         },
                         new
@@ -3621,7 +3624,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 409,
                             CarId = 9,
                             MechanicId = 7,
-                            Price = 43.0509040008157111m,
+                            Price = 48.454023210904148m,
                             RepairServiceId = 1
                         },
                         new
@@ -3629,7 +3632,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 410,
                             CarId = 9,
                             MechanicId = 7,
-                            Price = 238.813137940591763m,
+                            Price = 255.711776622587688m,
                             RepairServiceId = 2
                         },
                         new
@@ -3637,7 +3640,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 411,
                             CarId = 9,
                             MechanicId = 7,
-                            Price = 21.470180421149369m,
+                            Price = 48.159242907982558m,
                             RepairServiceId = 3
                         },
                         new
@@ -3645,7 +3648,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 412,
                             CarId = 9,
                             MechanicId = 7,
-                            Price = 133.758691900195156m,
+                            Price = 100.679731857827905m,
                             RepairServiceId = 4
                         },
                         new
@@ -3653,7 +3656,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 413,
                             CarId = 9,
                             MechanicId = 7,
-                            Price = 51.881369466386843m,
+                            Price = 51.468477600706892m,
                             RepairServiceId = 5
                         },
                         new
@@ -3661,7 +3664,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 414,
                             CarId = 9,
                             MechanicId = 7,
-                            Price = 200.755676657077946m,
+                            Price = 240.76765227937507m,
                             RepairServiceId = 6
                         },
                         new
@@ -3669,7 +3672,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 415,
                             CarId = 10,
                             MechanicId = 7,
-                            Price = 35.482671577498028m,
+                            Price = 35.0142264354965921m,
                             RepairServiceId = 1
                         },
                         new
@@ -3677,7 +3680,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 416,
                             CarId = 10,
                             MechanicId = 7,
-                            Price = 255.371405327169719m,
+                            Price = 213.77026006719938m,
                             RepairServiceId = 2
                         },
                         new
@@ -3685,7 +3688,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 417,
                             CarId = 10,
                             MechanicId = 7,
-                            Price = 35.0989569989377384m,
+                            Price = 32.289434239729752m,
                             RepairServiceId = 3
                         },
                         new
@@ -3693,7 +3696,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 418,
                             CarId = 10,
                             MechanicId = 7,
-                            Price = 134.0962156244124624m,
+                            Price = 127.0278405314420089m,
                             RepairServiceId = 4
                         },
                         new
@@ -3701,7 +3704,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 419,
                             CarId = 10,
                             MechanicId = 7,
-                            Price = 50.597014998620029m,
+                            Price = 52.492619742551834m,
                             RepairServiceId = 5
                         },
                         new
@@ -3709,7 +3712,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 420,
                             CarId = 10,
                             MechanicId = 7,
-                            Price = 225.18772331077181m,
+                            Price = 248.265292345651955m,
                             RepairServiceId = 6
                         },
                         new
@@ -3717,7 +3720,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 421,
                             CarId = 1,
                             MechanicId = 8,
-                            Price = 34.0279432880921198m,
+                            Price = 47.174952106425066m,
                             RepairServiceId = 1
                         },
                         new
@@ -3725,7 +3728,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 422,
                             CarId = 1,
                             MechanicId = 8,
-                            Price = 222.755298806258779m,
+                            Price = 228.168384308621536m,
                             RepairServiceId = 2
                         },
                         new
@@ -3733,7 +3736,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 423,
                             CarId = 1,
                             MechanicId = 8,
-                            Price = 41.8772987708194m,
+                            Price = 31.43208502233547m,
                             RepairServiceId = 3
                         },
                         new
@@ -3741,7 +3744,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 424,
                             CarId = 1,
                             MechanicId = 8,
-                            Price = 128.208066239804267m,
+                            Price = 108.794066841152358m,
                             RepairServiceId = 4
                         },
                         new
@@ -3749,7 +3752,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 425,
                             CarId = 1,
                             MechanicId = 8,
-                            Price = 67.09164731191199m,
+                            Price = 55.513630372115466m,
                             RepairServiceId = 5
                         },
                         new
@@ -3757,7 +3760,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 426,
                             CarId = 1,
                             MechanicId = 8,
-                            Price = 228.124997294792932m,
+                            Price = 219.279679285649144m,
                             RepairServiceId = 6
                         },
                         new
@@ -3765,7 +3768,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 427,
                             CarId = 2,
                             MechanicId = 8,
-                            Price = 31.771364756452044m,
+                            Price = 47.746133985476762m,
                             RepairServiceId = 1
                         },
                         new
@@ -3773,7 +3776,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 428,
                             CarId = 2,
                             MechanicId = 8,
-                            Price = 163.269544997648764m,
+                            Price = 257.856795563877593m,
                             RepairServiceId = 2
                         },
                         new
@@ -3781,7 +3784,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 429,
                             CarId = 2,
                             MechanicId = 8,
-                            Price = 31.137455277007974m,
+                            Price = 47.732606647259851m,
                             RepairServiceId = 3
                         },
                         new
@@ -3789,7 +3792,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 430,
                             CarId = 2,
                             MechanicId = 8,
-                            Price = 101.779309207517126m,
+                            Price = 119.412788306188662m,
                             RepairServiceId = 4
                         },
                         new
@@ -3797,7 +3800,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 431,
                             CarId = 2,
                             MechanicId = 8,
-                            Price = 65.729106507677032m,
+                            Price = 73.918069855602306m,
                             RepairServiceId = 5
                         },
                         new
@@ -3805,7 +3808,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 432,
                             CarId = 2,
                             MechanicId = 8,
-                            Price = 220.861006499736908m,
+                            Price = 222.177856095782508m,
                             RepairServiceId = 6
                         },
                         new
@@ -3813,7 +3816,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 433,
                             CarId = 3,
                             MechanicId = 8,
-                            Price = 44.167897485503436m,
+                            Price = 45.703198022060746m,
                             RepairServiceId = 1
                         },
                         new
@@ -3821,7 +3824,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 434,
                             CarId = 3,
                             MechanicId = 8,
-                            Price = 202.126137477033141m,
+                            Price = 184.989658093289828m,
                             RepairServiceId = 2
                         },
                         new
@@ -3829,7 +3832,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 435,
                             CarId = 3,
                             MechanicId = 8,
-                            Price = 22.429418388245222m,
+                            Price = 25.224335538913624m,
                             RepairServiceId = 3
                         },
                         new
@@ -3837,7 +3840,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 436,
                             CarId = 3,
                             MechanicId = 8,
-                            Price = 132.6301861245866m,
+                            Price = 111.869780644958663m,
                             RepairServiceId = 4
                         },
                         new
@@ -3845,7 +3848,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 437,
                             CarId = 3,
                             MechanicId = 8,
-                            Price = 85.763453298265366m,
+                            Price = 76.513801884864776m,
                             RepairServiceId = 5
                         },
                         new
@@ -3853,7 +3856,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 438,
                             CarId = 3,
                             MechanicId = 8,
-                            Price = 211.285001114700721m,
+                            Price = 238.72221820981881m,
                             RepairServiceId = 6
                         },
                         new
@@ -3861,7 +3864,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 439,
                             CarId = 4,
                             MechanicId = 8,
-                            Price = 38.925003106718998m,
+                            Price = 41.740126568999927m,
                             RepairServiceId = 1
                         },
                         new
@@ -3869,7 +3872,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 440,
                             CarId = 4,
                             MechanicId = 8,
-                            Price = 191.837389809582247m,
+                            Price = 184.34720978632158m,
                             RepairServiceId = 2
                         },
                         new
@@ -3877,7 +3880,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 441,
                             CarId = 4,
                             MechanicId = 8,
-                            Price = 27.917332616068236m,
+                            Price = 26.787420476400148m,
                             RepairServiceId = 3
                         },
                         new
@@ -3885,7 +3888,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 442,
                             CarId = 4,
                             MechanicId = 8,
-                            Price = 140.295436943483277m,
+                            Price = 105.244026830602589m,
                             RepairServiceId = 4
                         },
                         new
@@ -3893,7 +3896,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 443,
                             CarId = 4,
                             MechanicId = 8,
-                            Price = 70.105061602857488m,
+                            Price = 70.303008187596644m,
                             RepairServiceId = 5
                         },
                         new
@@ -3901,7 +3904,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 444,
                             CarId = 4,
                             MechanicId = 8,
-                            Price = 239.0913368597685282m,
+                            Price = 234.929988600751368m,
                             RepairServiceId = 6
                         },
                         new
@@ -3909,7 +3912,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 445,
                             CarId = 5,
                             MechanicId = 8,
-                            Price = 33.372352594903233m,
+                            Price = 44.547131753900723m,
                             RepairServiceId = 1
                         },
                         new
@@ -3917,7 +3920,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 446,
                             CarId = 5,
                             MechanicId = 8,
-                            Price = 209.572584196229008m,
+                            Price = 171.267017413615874m,
                             RepairServiceId = 2
                         },
                         new
@@ -3925,7 +3928,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 447,
                             CarId = 5,
                             MechanicId = 8,
-                            Price = 22.975946975838204m,
+                            Price = 35.694346415731915m,
                             RepairServiceId = 3
                         },
                         new
@@ -3933,7 +3936,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 448,
                             CarId = 5,
                             MechanicId = 8,
-                            Price = 118.643410895383208m,
+                            Price = 148.419989071195804m,
                             RepairServiceId = 4
                         },
                         new
@@ -3941,7 +3944,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 449,
                             CarId = 5,
                             MechanicId = 8,
-                            Price = 64.180758161146269m,
+                            Price = 62.59466281576631m,
                             RepairServiceId = 5
                         },
                         new
@@ -3949,7 +3952,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 450,
                             CarId = 5,
                             MechanicId = 8,
-                            Price = 214.951792843484631m,
+                            Price = 200.0923694113769618m,
                             RepairServiceId = 6
                         },
                         new
@@ -3957,7 +3960,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 451,
                             CarId = 6,
                             MechanicId = 8,
-                            Price = 33.929633655560596m,
+                            Price = 31.656475614579434m,
                             RepairServiceId = 1
                         },
                         new
@@ -3965,7 +3968,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 452,
                             CarId = 6,
                             MechanicId = 8,
-                            Price = 164.691895831665825m,
+                            Price = 252.131920243824076m,
                             RepairServiceId = 2
                         },
                         new
@@ -3973,7 +3976,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 453,
                             CarId = 6,
                             MechanicId = 8,
-                            Price = 43.440575782824279m,
+                            Price = 31.919492289212337m,
                             RepairServiceId = 3
                         },
                         new
@@ -3981,7 +3984,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 454,
                             CarId = 6,
                             MechanicId = 8,
-                            Price = 113.0497551019726453m,
+                            Price = 114.94663095285594m,
                             RepairServiceId = 4
                         },
                         new
@@ -3989,7 +3992,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 455,
                             CarId = 6,
                             MechanicId = 8,
-                            Price = 56.936431771780511m,
+                            Price = 63.904579276707388m,
                             RepairServiceId = 5
                         },
                         new
@@ -3997,7 +4000,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 456,
                             CarId = 6,
                             MechanicId = 8,
-                            Price = 227.421735370010515m,
+                            Price = 218.0421860896729708m,
                             RepairServiceId = 6
                         },
                         new
@@ -4005,7 +4008,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 457,
                             CarId = 7,
                             MechanicId = 8,
-                            Price = 35.476259175101087m,
+                            Price = 39.906854705630413m,
                             RepairServiceId = 1
                         },
                         new
@@ -4013,7 +4016,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 458,
                             CarId = 7,
                             MechanicId = 8,
-                            Price = 176.652228529336966m,
+                            Price = 250.1405199997596m,
                             RepairServiceId = 2
                         },
                         new
@@ -4021,7 +4024,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 459,
                             CarId = 7,
                             MechanicId = 8,
-                            Price = 38.592492258073015m,
+                            Price = 41.212063454429293m,
                             RepairServiceId = 3
                         },
                         new
@@ -4029,7 +4032,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 460,
                             CarId = 7,
                             MechanicId = 8,
-                            Price = 121.396712471832323m,
+                            Price = 107.559591333818055m,
                             RepairServiceId = 4
                         },
                         new
@@ -4037,7 +4040,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 461,
                             CarId = 7,
                             MechanicId = 8,
-                            Price = 48.821822155555361m,
+                            Price = 65.397007550268868m,
                             RepairServiceId = 5
                         },
                         new
@@ -4045,7 +4048,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 462,
                             CarId = 7,
                             MechanicId = 8,
-                            Price = 220.036381852518504m,
+                            Price = 223.743291411974594m,
                             RepairServiceId = 6
                         },
                         new
@@ -4053,7 +4056,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 463,
                             CarId = 8,
                             MechanicId = 8,
-                            Price = 37.477794130382243m,
+                            Price = 41.657045659362543m,
                             RepairServiceId = 1
                         },
                         new
@@ -4061,7 +4064,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 464,
                             CarId = 8,
                             MechanicId = 8,
-                            Price = 219.406096973041131m,
+                            Price = 209.789333999135055m,
                             RepairServiceId = 2
                         },
                         new
@@ -4069,7 +4072,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 465,
                             CarId = 8,
                             MechanicId = 8,
-                            Price = 36.993409250388044m,
+                            Price = 45.976057804906889m,
                             RepairServiceId = 3
                         },
                         new
@@ -4077,7 +4080,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 466,
                             CarId = 8,
                             MechanicId = 8,
-                            Price = 143.573022721750199m,
+                            Price = 116.306191139880355m,
                             RepairServiceId = 4
                         },
                         new
@@ -4085,7 +4088,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 467,
                             CarId = 8,
                             MechanicId = 8,
-                            Price = 52.391456596272353m,
+                            Price = 59.957905152789532m,
                             RepairServiceId = 5
                         },
                         new
@@ -4093,7 +4096,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 468,
                             CarId = 8,
                             MechanicId = 8,
-                            Price = 248.701718282497417m,
+                            Price = 221.494386320607849m,
                             RepairServiceId = 6
                         },
                         new
@@ -4101,7 +4104,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 469,
                             CarId = 9,
                             MechanicId = 8,
-                            Price = 39.496972995168842m,
+                            Price = 34.208896259723188m,
                             RepairServiceId = 1
                         },
                         new
@@ -4109,7 +4112,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 470,
                             CarId = 9,
                             MechanicId = 8,
-                            Price = 193.670231001063162m,
+                            Price = 161.531267383877678m,
                             RepairServiceId = 2
                         },
                         new
@@ -4117,7 +4120,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 471,
                             CarId = 9,
                             MechanicId = 8,
-                            Price = 36.504307251662941m,
+                            Price = 43.0936690148565494m,
                             RepairServiceId = 3
                         },
                         new
@@ -4125,7 +4128,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 472,
                             CarId = 9,
                             MechanicId = 8,
-                            Price = 146.714047713748505m,
+                            Price = 120.794108617410204m,
                             RepairServiceId = 4
                         },
                         new
@@ -4133,7 +4136,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 473,
                             CarId = 9,
                             MechanicId = 8,
-                            Price = 51.943209041231598m,
+                            Price = 59.218863900292379m,
                             RepairServiceId = 5
                         },
                         new
@@ -4141,7 +4144,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 474,
                             CarId = 9,
                             MechanicId = 8,
-                            Price = 245.43912138609373m,
+                            Price = 224.266877677546468m,
                             RepairServiceId = 6
                         },
                         new
@@ -4149,7 +4152,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 475,
                             CarId = 10,
                             MechanicId = 8,
-                            Price = 33.426285485290784m,
+                            Price = 41.189872605540351m,
                             RepairServiceId = 1
                         },
                         new
@@ -4157,7 +4160,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 476,
                             CarId = 10,
                             MechanicId = 8,
-                            Price = 259.516452885481664m,
+                            Price = 144.855031606576571m,
                             RepairServiceId = 2
                         },
                         new
@@ -4165,7 +4168,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 477,
                             CarId = 10,
                             MechanicId = 8,
-                            Price = 48.0413540874258033m,
+                            Price = 41.782037337805137m,
                             RepairServiceId = 3
                         },
                         new
@@ -4173,7 +4176,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 478,
                             CarId = 10,
                             MechanicId = 8,
-                            Price = 138.97993107787m,
+                            Price = 146.128489654418724m,
                             RepairServiceId = 4
                         },
                         new
@@ -4181,7 +4184,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 479,
                             CarId = 10,
                             MechanicId = 8,
-                            Price = 74.0950001424304626m,
+                            Price = 85.672518648083752m,
                             RepairServiceId = 5
                         },
                         new
@@ -4189,7 +4192,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 480,
                             CarId = 10,
                             MechanicId = 8,
-                            Price = 206.419599539092178m,
+                            Price = 244.549942029696266m,
                             RepairServiceId = 6
                         },
                         new
@@ -4197,7 +4200,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 481,
                             CarId = 1,
                             MechanicId = 9,
-                            Price = 44.686967007505795m,
+                            Price = 47.0175205295725532m,
                             RepairServiceId = 1
                         },
                         new
@@ -4205,7 +4208,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 482,
                             CarId = 1,
                             MechanicId = 9,
-                            Price = 166.787062793577858m,
+                            Price = 217.775556229764057m,
                             RepairServiceId = 2
                         },
                         new
@@ -4213,7 +4216,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 483,
                             CarId = 1,
                             MechanicId = 9,
-                            Price = 21.751160519330607m,
+                            Price = 35.685357567081856m,
                             RepairServiceId = 3
                         },
                         new
@@ -4221,7 +4224,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 484,
                             CarId = 1,
                             MechanicId = 9,
-                            Price = 105.800676168219192m,
+                            Price = 102.708825762249247m,
                             RepairServiceId = 4
                         },
                         new
@@ -4229,7 +4232,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 485,
                             CarId = 1,
                             MechanicId = 9,
-                            Price = 45.827598026380837m,
+                            Price = 53.446423885972865m,
                             RepairServiceId = 5
                         },
                         new
@@ -4237,7 +4240,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 486,
                             CarId = 1,
                             MechanicId = 9,
-                            Price = 201.664749663728606m,
+                            Price = 227.87711564859984m,
                             RepairServiceId = 6
                         },
                         new
@@ -4245,7 +4248,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 487,
                             CarId = 2,
                             MechanicId = 9,
-                            Price = 47.650209141166032m,
+                            Price = 36.911207510416437m,
                             RepairServiceId = 1
                         },
                         new
@@ -4253,7 +4256,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 488,
                             CarId = 2,
                             MechanicId = 9,
-                            Price = 210.0469857832125483m,
+                            Price = 193.22832160991457m,
                             RepairServiceId = 2
                         },
                         new
@@ -4261,7 +4264,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 489,
                             CarId = 2,
                             MechanicId = 9,
-                            Price = 20.240307155020705m,
+                            Price = 42.894344679806384m,
                             RepairServiceId = 3
                         },
                         new
@@ -4269,7 +4272,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 490,
                             CarId = 2,
                             MechanicId = 9,
-                            Price = 126.904289853596459m,
+                            Price = 104.0293077796880813m,
                             RepairServiceId = 4
                         },
                         new
@@ -4277,7 +4280,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 491,
                             CarId = 2,
                             MechanicId = 9,
-                            Price = 83.890779386010433m,
+                            Price = 66.584592997932318m,
                             RepairServiceId = 5
                         },
                         new
@@ -4285,7 +4288,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 492,
                             CarId = 2,
                             MechanicId = 9,
-                            Price = 233.440818227507573m,
+                            Price = 206.864995529314119m,
                             RepairServiceId = 6
                         },
                         new
@@ -4293,7 +4296,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 493,
                             CarId = 3,
                             MechanicId = 9,
-                            Price = 47.445286558126451m,
+                            Price = 47.127066703571395m,
                             RepairServiceId = 1
                         },
                         new
@@ -4301,7 +4304,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 494,
                             CarId = 3,
                             MechanicId = 9,
-                            Price = 159.586995690845934m,
+                            Price = 237.301185919119277m,
                             RepairServiceId = 2
                         },
                         new
@@ -4309,7 +4312,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 495,
                             CarId = 3,
                             MechanicId = 9,
-                            Price = 34.353705989517106m,
+                            Price = 30.530930749248804m,
                             RepairServiceId = 3
                         },
                         new
@@ -4317,7 +4320,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 496,
                             CarId = 3,
                             MechanicId = 9,
-                            Price = 120.139571785258657m,
+                            Price = 123.876839765813426m,
                             RepairServiceId = 4
                         },
                         new
@@ -4325,7 +4328,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 497,
                             CarId = 3,
                             MechanicId = 9,
-                            Price = 79.0244207988946777m,
+                            Price = 82.112357778852141m,
                             RepairServiceId = 5
                         },
                         new
@@ -4333,7 +4336,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 498,
                             CarId = 3,
                             MechanicId = 9,
-                            Price = 222.373767017948049m,
+                            Price = 236.746155881911488m,
                             RepairServiceId = 6
                         },
                         new
@@ -4341,7 +4344,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 499,
                             CarId = 4,
                             MechanicId = 9,
-                            Price = 39.086177421846428m,
+                            Price = 37.237570022772064m,
                             RepairServiceId = 1
                         },
                         new
@@ -4349,7 +4352,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 500,
                             CarId = 4,
                             MechanicId = 9,
-                            Price = 206.25289037998308m,
+                            Price = 174.487640603100409m,
                             RepairServiceId = 2
                         },
                         new
@@ -4357,7 +4360,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 501,
                             CarId = 4,
                             MechanicId = 9,
-                            Price = 21.0952504435049632m,
+                            Price = 46.114371984514323m,
                             RepairServiceId = 3
                         },
                         new
@@ -4365,7 +4368,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 502,
                             CarId = 4,
                             MechanicId = 9,
-                            Price = 148.392843497716706m,
+                            Price = 108.0866864542926164m,
                             RepairServiceId = 4
                         },
                         new
@@ -4373,7 +4376,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 503,
                             CarId = 4,
                             MechanicId = 9,
-                            Price = 54.54248773838955m,
+                            Price = 55.265259308515297m,
                             RepairServiceId = 5
                         },
                         new
@@ -4381,7 +4384,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 504,
                             CarId = 4,
                             MechanicId = 9,
-                            Price = 206.242368581916607m,
+                            Price = 241.677252818069144m,
                             RepairServiceId = 6
                         },
                         new
@@ -4389,7 +4392,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 505,
                             CarId = 5,
                             MechanicId = 9,
-                            Price = 42.780501263563378m,
+                            Price = 38.0209945884565992m,
                             RepairServiceId = 1
                         },
                         new
@@ -4397,7 +4400,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 506,
                             CarId = 5,
                             MechanicId = 9,
-                            Price = 196.759383411145995m,
+                            Price = 196.65765291158773m,
                             RepairServiceId = 2
                         },
                         new
@@ -4405,7 +4408,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 507,
                             CarId = 5,
                             MechanicId = 9,
-                            Price = 39.548026238559745m,
+                            Price = 40.845961652224076m,
                             RepairServiceId = 3
                         },
                         new
@@ -4413,7 +4416,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 508,
                             CarId = 5,
                             MechanicId = 9,
-                            Price = 104.534038477372323m,
+                            Price = 142.712501769192667m,
                             RepairServiceId = 4
                         },
                         new
@@ -4421,7 +4424,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 509,
                             CarId = 5,
                             MechanicId = 9,
-                            Price = 82.4812014158788m,
+                            Price = 48.0453571313153299m,
                             RepairServiceId = 5
                         },
                         new
@@ -4429,7 +4432,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 510,
                             CarId = 5,
                             MechanicId = 9,
-                            Price = 247.0311024127259701m,
+                            Price = 249.183336455427934m,
                             RepairServiceId = 6
                         },
                         new
@@ -4437,7 +4440,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 511,
                             CarId = 6,
                             MechanicId = 9,
-                            Price = 49.634788973289612m,
+                            Price = 41.982660945815517m,
                             RepairServiceId = 1
                         },
                         new
@@ -4445,7 +4448,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 512,
                             CarId = 6,
                             MechanicId = 9,
-                            Price = 235.587344969645967m,
+                            Price = 214.601078779812049m,
                             RepairServiceId = 2
                         },
                         new
@@ -4453,7 +4456,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 513,
                             CarId = 6,
                             MechanicId = 9,
-                            Price = 26.720409074214748m,
+                            Price = 32.425674899712032m,
                             RepairServiceId = 3
                         },
                         new
@@ -4461,7 +4464,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 514,
                             CarId = 6,
                             MechanicId = 9,
-                            Price = 136.130469644067854m,
+                            Price = 108.803085448367358m,
                             RepairServiceId = 4
                         },
                         new
@@ -4469,7 +4472,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 515,
                             CarId = 6,
                             MechanicId = 9,
-                            Price = 60.347959939209122m,
+                            Price = 48.066059514746877m,
                             RepairServiceId = 5
                         },
                         new
@@ -4477,7 +4480,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 516,
                             CarId = 6,
                             MechanicId = 9,
-                            Price = 212.957966279095042m,
+                            Price = 235.826813419503241m,
                             RepairServiceId = 6
                         },
                         new
@@ -4485,7 +4488,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 517,
                             CarId = 7,
                             MechanicId = 9,
-                            Price = 46.5244868391739m,
+                            Price = 30.706192802189024m,
                             RepairServiceId = 1
                         },
                         new
@@ -4493,7 +4496,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 518,
                             CarId = 7,
                             MechanicId = 9,
-                            Price = 226.153215791056554m,
+                            Price = 232.314430518658509m,
                             RepairServiceId = 2
                         },
                         new
@@ -4501,7 +4504,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 519,
                             CarId = 7,
                             MechanicId = 9,
-                            Price = 30.943864066218021m,
+                            Price = 43.11063191896678m,
                             RepairServiceId = 3
                         },
                         new
@@ -4509,7 +4512,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 520,
                             CarId = 7,
                             MechanicId = 9,
-                            Price = 143.633607551617779m,
+                            Price = 103.193330894594267m,
                             RepairServiceId = 4
                         },
                         new
@@ -4517,7 +4520,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 521,
                             CarId = 7,
                             MechanicId = 9,
-                            Price = 77.756652156823463m,
+                            Price = 51.909050583867917m,
                             RepairServiceId = 5
                         },
                         new
@@ -4525,7 +4528,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 522,
                             CarId = 7,
                             MechanicId = 9,
-                            Price = 215.817061899141954m,
+                            Price = 238.0141722795160838m,
                             RepairServiceId = 6
                         },
                         new
@@ -4533,7 +4536,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 523,
                             CarId = 8,
                             MechanicId = 9,
-                            Price = 35.589191820599491m,
+                            Price = 37.0424191415273429m,
                             RepairServiceId = 1
                         },
                         new
@@ -4541,7 +4544,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 524,
                             CarId = 8,
                             MechanicId = 9,
-                            Price = 207.395630206670677m,
+                            Price = 142.153237500640933m,
                             RepairServiceId = 2
                         },
                         new
@@ -4549,7 +4552,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 525,
                             CarId = 8,
                             MechanicId = 9,
-                            Price = 34.976754268602958m,
+                            Price = 28.650211884108095m,
                             RepairServiceId = 3
                         },
                         new
@@ -4557,7 +4560,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 526,
                             CarId = 8,
                             MechanicId = 9,
-                            Price = 134.683050742556892m,
+                            Price = 147.0379069579136617m,
                             RepairServiceId = 4
                         },
                         new
@@ -4565,7 +4568,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 527,
                             CarId = 8,
                             MechanicId = 9,
-                            Price = 45.292228202088642m,
+                            Price = 83.472752422416978m,
                             RepairServiceId = 5
                         },
                         new
@@ -4573,7 +4576,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 528,
                             CarId = 8,
                             MechanicId = 9,
-                            Price = 230.253684197658197m,
+                            Price = 244.370458395942756m,
                             RepairServiceId = 6
                         },
                         new
@@ -4581,7 +4584,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 529,
                             CarId = 9,
                             MechanicId = 9,
-                            Price = 43.529809386519922m,
+                            Price = 31.389680893289215m,
                             RepairServiceId = 1
                         },
                         new
@@ -4589,7 +4592,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 530,
                             CarId = 9,
                             MechanicId = 9,
-                            Price = 193.136923024233747m,
+                            Price = 183.289798922619065m,
                             RepairServiceId = 2
                         },
                         new
@@ -4597,7 +4600,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 531,
                             CarId = 9,
                             MechanicId = 9,
-                            Price = 27.0813626777039377m,
+                            Price = 25.463702953363565m,
                             RepairServiceId = 3
                         },
                         new
@@ -4605,7 +4608,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 532,
                             CarId = 9,
                             MechanicId = 9,
-                            Price = 107.860463566801468m,
+                            Price = 132.906050365035998m,
                             RepairServiceId = 4
                         },
                         new
@@ -4613,7 +4616,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 533,
                             CarId = 9,
                             MechanicId = 9,
-                            Price = 74.639182774666088m,
+                            Price = 59.704973789233984m,
                             RepairServiceId = 5
                         },
                         new
@@ -4621,7 +4624,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 534,
                             CarId = 9,
                             MechanicId = 9,
-                            Price = 204.418026240774987m,
+                            Price = 229.132148628055465m,
                             RepairServiceId = 6
                         },
                         new
@@ -4629,7 +4632,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 535,
                             CarId = 10,
                             MechanicId = 9,
-                            Price = 42.239999798738274m,
+                            Price = 43.866016099643203m,
                             RepairServiceId = 1
                         },
                         new
@@ -4637,7 +4640,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 536,
                             CarId = 10,
                             MechanicId = 9,
-                            Price = 189.828183265982606m,
+                            Price = 158.37468082135909m,
                             RepairServiceId = 2
                         },
                         new
@@ -4645,7 +4648,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 537,
                             CarId = 10,
                             MechanicId = 9,
-                            Price = 23.77389033695495m,
+                            Price = 47.677444755641149m,
                             RepairServiceId = 3
                         },
                         new
@@ -4653,7 +4656,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 538,
                             CarId = 10,
                             MechanicId = 9,
-                            Price = 125.138237026982492m,
+                            Price = 124.667547195758326m,
                             RepairServiceId = 4
                         },
                         new
@@ -4661,7 +4664,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 539,
                             CarId = 10,
                             MechanicId = 9,
-                            Price = 85.491120005704726m,
+                            Price = 79.0290439640100723m,
                             RepairServiceId = 5
                         },
                         new
@@ -4669,7 +4672,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 540,
                             CarId = 10,
                             MechanicId = 9,
-                            Price = 209.351363624994705m,
+                            Price = 244.164350596559275m,
                             RepairServiceId = 6
                         },
                         new
@@ -4677,7 +4680,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 541,
                             CarId = 1,
                             MechanicId = 10,
-                            Price = 33.100708786573014m,
+                            Price = 35.625330965034912m,
                             RepairServiceId = 1
                         },
                         new
@@ -4685,7 +4688,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 542,
                             CarId = 1,
                             MechanicId = 10,
-                            Price = 173.171009304860771m,
+                            Price = 251.593177246949225m,
                             RepairServiceId = 2
                         },
                         new
@@ -4693,7 +4696,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 543,
                             CarId = 1,
                             MechanicId = 10,
-                            Price = 26.232436813087762m,
+                            Price = 20.202014119939771m,
                             RepairServiceId = 3
                         },
                         new
@@ -4701,7 +4704,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 544,
                             CarId = 1,
                             MechanicId = 10,
-                            Price = 142.897343431905175m,
+                            Price = 107.874209271725552m,
                             RepairServiceId = 4
                         },
                         new
@@ -4709,7 +4712,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 545,
                             CarId = 1,
                             MechanicId = 10,
-                            Price = 63.723817648902754m,
+                            Price = 68.895041062396108m,
                             RepairServiceId = 5
                         },
                         new
@@ -4717,7 +4720,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 546,
                             CarId = 1,
                             MechanicId = 10,
-                            Price = 218.033868076745042m,
+                            Price = 213.344118773790411m,
                             RepairServiceId = 6
                         },
                         new
@@ -4725,7 +4728,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 547,
                             CarId = 2,
                             MechanicId = 10,
-                            Price = 43.0293601656161692m,
+                            Price = 49.582767575877316m,
                             RepairServiceId = 1
                         },
                         new
@@ -4733,7 +4736,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 548,
                             CarId = 2,
                             MechanicId = 10,
-                            Price = 140.567463869604546m,
+                            Price = 189.589257049031188m,
                             RepairServiceId = 2
                         },
                         new
@@ -4741,7 +4744,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 549,
                             CarId = 2,
                             MechanicId = 10,
-                            Price = 35.664734215513969m,
+                            Price = 37.279081831566484m,
                             RepairServiceId = 3
                         },
                         new
@@ -4749,7 +4752,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 550,
                             CarId = 2,
                             MechanicId = 10,
-                            Price = 109.8815810974357m,
+                            Price = 105.188041027538823m,
                             RepairServiceId = 4
                         },
                         new
@@ -4757,7 +4760,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 551,
                             CarId = 2,
                             MechanicId = 10,
-                            Price = 82.212028820529275m,
+                            Price = 54.986767587022404m,
                             RepairServiceId = 5
                         },
                         new
@@ -4765,7 +4768,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 552,
                             CarId = 2,
                             MechanicId = 10,
-                            Price = 222.689867340529711m,
+                            Price = 219.848225226098812m,
                             RepairServiceId = 6
                         },
                         new
@@ -4773,7 +4776,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 553,
                             CarId = 3,
                             MechanicId = 10,
-                            Price = 44.236168795818253m,
+                            Price = 46.457824159864413m,
                             RepairServiceId = 1
                         },
                         new
@@ -4781,7 +4784,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 554,
                             CarId = 3,
                             MechanicId = 10,
-                            Price = 167.618306616291548m,
+                            Price = 225.519727444786678m,
                             RepairServiceId = 2
                         },
                         new
@@ -4789,7 +4792,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 555,
                             CarId = 3,
                             MechanicId = 10,
-                            Price = 35.968260731582601m,
+                            Price = 47.0035749137561556m,
                             RepairServiceId = 3
                         },
                         new
@@ -4797,7 +4800,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 556,
                             CarId = 3,
                             MechanicId = 10,
-                            Price = 104.090359492704297m,
+                            Price = 101.253277227857128m,
                             RepairServiceId = 4
                         },
                         new
@@ -4805,7 +4808,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 557,
                             CarId = 3,
                             MechanicId = 10,
-                            Price = 68.792131749177724m,
+                            Price = 48.984429229494122m,
                             RepairServiceId = 5
                         },
                         new
@@ -4813,7 +4816,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 558,
                             CarId = 3,
                             MechanicId = 10,
-                            Price = 200.878182342463823m,
+                            Price = 216.19789892813848m,
                             RepairServiceId = 6
                         },
                         new
@@ -4821,7 +4824,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 559,
                             CarId = 4,
                             MechanicId = 10,
-                            Price = 33.0736245520668289m,
+                            Price = 47.351874731702923m,
                             RepairServiceId = 1
                         },
                         new
@@ -4829,7 +4832,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 560,
                             CarId = 4,
                             MechanicId = 10,
-                            Price = 190.665472539922709m,
+                            Price = 236.247977674741793m,
                             RepairServiceId = 2
                         },
                         new
@@ -4837,7 +4840,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 561,
                             CarId = 4,
                             MechanicId = 10,
-                            Price = 29.334481583425379m,
+                            Price = 34.0183043804610186m,
                             RepairServiceId = 3
                         },
                         new
@@ -4845,7 +4848,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 562,
                             CarId = 4,
                             MechanicId = 10,
-                            Price = 144.564291936227805m,
+                            Price = 137.307215243507732m,
                             RepairServiceId = 4
                         },
                         new
@@ -4853,7 +4856,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 563,
                             CarId = 4,
                             MechanicId = 10,
-                            Price = 65.80186839856142m,
+                            Price = 72.794949635140322m,
                             RepairServiceId = 5
                         },
                         new
@@ -4861,7 +4864,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 564,
                             CarId = 4,
                             MechanicId = 10,
-                            Price = 240.649508607227601m,
+                            Price = 249.390407546383743m,
                             RepairServiceId = 6
                         },
                         new
@@ -4869,7 +4872,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 565,
                             CarId = 5,
                             MechanicId = 10,
-                            Price = 47.256811635773274m,
+                            Price = 46.122691800285688m,
                             RepairServiceId = 1
                         },
                         new
@@ -4877,7 +4880,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 566,
                             CarId = 5,
                             MechanicId = 10,
-                            Price = 226.509200803972381m,
+                            Price = 163.685620002725867m,
                             RepairServiceId = 2
                         },
                         new
@@ -4885,7 +4888,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 567,
                             CarId = 5,
                             MechanicId = 10,
-                            Price = 41.971030334076019m,
+                            Price = 45.995351997859089m,
                             RepairServiceId = 3
                         },
                         new
@@ -4893,7 +4896,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 568,
                             CarId = 5,
                             MechanicId = 10,
-                            Price = 146.375842842043624m,
+                            Price = 125.457524098645551m,
                             RepairServiceId = 4
                         },
                         new
@@ -4901,7 +4904,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 569,
                             CarId = 5,
                             MechanicId = 10,
-                            Price = 60.58312858944063m,
+                            Price = 76.964039239401336m,
                             RepairServiceId = 5
                         },
                         new
@@ -4909,7 +4912,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 570,
                             CarId = 5,
                             MechanicId = 10,
-                            Price = 220.31041519497284m,
+                            Price = 218.644412640415198m,
                             RepairServiceId = 6
                         },
                         new
@@ -4917,7 +4920,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 571,
                             CarId = 6,
                             MechanicId = 10,
-                            Price = 49.234542620764092m,
+                            Price = 46.356937192329335m,
                             RepairServiceId = 1
                         },
                         new
@@ -4925,7 +4928,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 572,
                             CarId = 6,
                             MechanicId = 10,
-                            Price = 206.539246729350267m,
+                            Price = 212.0637736780615348m,
                             RepairServiceId = 2
                         },
                         new
@@ -4933,7 +4936,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 573,
                             CarId = 6,
                             MechanicId = 10,
-                            Price = 46.745311582088514m,
+                            Price = 26.232164857226845m,
                             RepairServiceId = 3
                         },
                         new
@@ -4941,7 +4944,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 574,
                             CarId = 6,
                             MechanicId = 10,
-                            Price = 122.00787990119853843m,
+                            Price = 130.113976201085953m,
                             RepairServiceId = 4
                         },
                         new
@@ -4949,7 +4952,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 575,
                             CarId = 6,
                             MechanicId = 10,
-                            Price = 56.967487867518667m,
+                            Price = 48.921596028905949m,
                             RepairServiceId = 5
                         },
                         new
@@ -4957,7 +4960,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 576,
                             CarId = 6,
                             MechanicId = 10,
-                            Price = 236.678187900861716m,
+                            Price = 241.586539717386552m,
                             RepairServiceId = 6
                         },
                         new
@@ -4965,7 +4968,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 577,
                             CarId = 7,
                             MechanicId = 10,
-                            Price = 33.363378568732239m,
+                            Price = 48.6787317235408m,
                             RepairServiceId = 1
                         },
                         new
@@ -4973,7 +4976,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 578,
                             CarId = 7,
                             MechanicId = 10,
-                            Price = 227.309539722680962m,
+                            Price = 200.832957759993085m,
                             RepairServiceId = 2
                         },
                         new
@@ -4981,7 +4984,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 579,
                             CarId = 7,
                             MechanicId = 10,
-                            Price = 27.468778990713737m,
+                            Price = 29.477985983443143m,
                             RepairServiceId = 3
                         },
                         new
@@ -4989,7 +4992,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 580,
                             CarId = 7,
                             MechanicId = 10,
-                            Price = 126.906606923636689m,
+                            Price = 134.0697016471379056m,
                             RepairServiceId = 4
                         },
                         new
@@ -4997,7 +5000,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 581,
                             CarId = 7,
                             MechanicId = 10,
-                            Price = 82.58866003777555m,
+                            Price = 81.164234004704181m,
                             RepairServiceId = 5
                         },
                         new
@@ -5005,7 +5008,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 582,
                             CarId = 7,
                             MechanicId = 10,
-                            Price = 223.638218866222086m,
+                            Price = 225.0747223631072362m,
                             RepairServiceId = 6
                         },
                         new
@@ -5013,7 +5016,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 583,
                             CarId = 8,
                             MechanicId = 10,
-                            Price = 45.334179200741141m,
+                            Price = 46.515174577017995m,
                             RepairServiceId = 1
                         },
                         new
@@ -5021,7 +5024,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 584,
                             CarId = 8,
                             MechanicId = 10,
-                            Price = 192.553772986412288m,
+                            Price = 142.784594385167824m,
                             RepairServiceId = 2
                         },
                         new
@@ -5029,7 +5032,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 585,
                             CarId = 8,
                             MechanicId = 10,
-                            Price = 45.509320211706727m,
+                            Price = 20.107082503805412m,
                             RepairServiceId = 3
                         },
                         new
@@ -5037,7 +5040,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 586,
                             CarId = 8,
                             MechanicId = 10,
-                            Price = 149.177108602230242m,
+                            Price = 146.911476126597532m,
                             RepairServiceId = 4
                         },
                         new
@@ -5045,7 +5048,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 587,
                             CarId = 8,
                             MechanicId = 10,
-                            Price = 75.83849635867405m,
+                            Price = 70.104054339277838m,
                             RepairServiceId = 5
                         },
                         new
@@ -5053,7 +5056,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 588,
                             CarId = 8,
                             MechanicId = 10,
-                            Price = 216.708059276466806m,
+                            Price = 243.245934325529149m,
                             RepairServiceId = 6
                         },
                         new
@@ -5061,7 +5064,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 589,
                             CarId = 9,
                             MechanicId = 10,
-                            Price = 34.644082001074883m,
+                            Price = 49.69703392090551m,
                             RepairServiceId = 1
                         },
                         new
@@ -5069,7 +5072,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 590,
                             CarId = 9,
                             MechanicId = 10,
-                            Price = 179.305376119637967m,
+                            Price = 197.00235508439342269m,
                             RepairServiceId = 2
                         },
                         new
@@ -5077,7 +5080,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 591,
                             CarId = 9,
                             MechanicId = 10,
-                            Price = 38.332593001881234m,
+                            Price = 37.769216091853221m,
                             RepairServiceId = 3
                         },
                         new
@@ -5085,7 +5088,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 592,
                             CarId = 9,
                             MechanicId = 10,
-                            Price = 104.721376513942586m,
+                            Price = 142.42316377696752m,
                             RepairServiceId = 4
                         },
                         new
@@ -5093,7 +5096,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 593,
                             CarId = 9,
                             MechanicId = 10,
-                            Price = 50.634385841327283m,
+                            Price = 59.321340322355928m,
                             RepairServiceId = 5
                         },
                         new
@@ -5101,7 +5104,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 594,
                             CarId = 9,
                             MechanicId = 10,
-                            Price = 247.343863048441161m,
+                            Price = 216.936159610377915m,
                             RepairServiceId = 6
                         },
                         new
@@ -5109,7 +5112,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 595,
                             CarId = 10,
                             MechanicId = 10,
-                            Price = 30.685768420710825m,
+                            Price = 36.339223376750037m,
                             RepairServiceId = 1
                         },
                         new
@@ -5117,7 +5120,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 596,
                             CarId = 10,
                             MechanicId = 10,
-                            Price = 173.886205449132562m,
+                            Price = 180.466655835237247m,
                             RepairServiceId = 2
                         },
                         new
@@ -5125,7 +5128,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 597,
                             CarId = 10,
                             MechanicId = 10,
-                            Price = 38.135896942448281m,
+                            Price = 28.425934860518355m,
                             RepairServiceId = 3
                         },
                         new
@@ -5133,7 +5136,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 598,
                             CarId = 10,
                             MechanicId = 10,
-                            Price = 147.396827393951173m,
+                            Price = 133.260217842567336m,
                             RepairServiceId = 4
                         },
                         new
@@ -5141,7 +5144,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 599,
                             CarId = 10,
                             MechanicId = 10,
-                            Price = 81.768283323162327m,
+                            Price = 47.61775409542068m,
                             RepairServiceId = 5
                         },
                         new
@@ -5149,7 +5152,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 600,
                             CarId = 10,
                             MechanicId = 10,
-                            Price = 236.562510862705601m,
+                            Price = 222.58979486129535m,
                             RepairServiceId = 6
                         },
                         new
@@ -5157,7 +5160,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 601,
                             CarId = 1,
                             MechanicId = 11,
-                            Price = 33.201846920223935m,
+                            Price = 34.671690285915587m,
                             RepairServiceId = 1
                         },
                         new
@@ -5165,7 +5168,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 602,
                             CarId = 1,
                             MechanicId = 11,
-                            Price = 230.120656842515207m,
+                            Price = 198.933949099154944m,
                             RepairServiceId = 2
                         },
                         new
@@ -5173,7 +5176,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 603,
                             CarId = 1,
                             MechanicId = 11,
-                            Price = 22.807106040620159m,
+                            Price = 23.717147890855004m,
                             RepairServiceId = 3
                         },
                         new
@@ -5181,7 +5184,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 604,
                             CarId = 1,
                             MechanicId = 11,
-                            Price = 142.148047120941837m,
+                            Price = 132.334226526963187m,
                             RepairServiceId = 4
                         },
                         new
@@ -5189,7 +5192,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 605,
                             CarId = 1,
                             MechanicId = 11,
-                            Price = 81.0813466525534039m,
+                            Price = 52.523471664451092m,
                             RepairServiceId = 5
                         },
                         new
@@ -5197,7 +5200,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 606,
                             CarId = 1,
                             MechanicId = 11,
-                            Price = 209.202812399660576m,
+                            Price = 229.572545333792282m,
                             RepairServiceId = 6
                         },
                         new
@@ -5205,7 +5208,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 607,
                             CarId = 2,
                             MechanicId = 11,
-                            Price = 48.606608529606782m,
+                            Price = 36.55824952633477m,
                             RepairServiceId = 1
                         },
                         new
@@ -5213,7 +5216,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 608,
                             CarId = 2,
                             MechanicId = 11,
-                            Price = 203.709993558429028m,
+                            Price = 209.228170522432m,
                             RepairServiceId = 2
                         },
                         new
@@ -5221,7 +5224,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 609,
                             CarId = 2,
                             MechanicId = 11,
-                            Price = 42.271815450632247m,
+                            Price = 46.60347494883926m,
                             RepairServiceId = 3
                         },
                         new
@@ -5229,7 +5232,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 610,
                             CarId = 2,
                             MechanicId = 11,
-                            Price = 121.763389959944707m,
+                            Price = 110.718276181661011m,
                             RepairServiceId = 4
                         },
                         new
@@ -5237,7 +5240,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 611,
                             CarId = 2,
                             MechanicId = 11,
-                            Price = 67.789161089769577m,
+                            Price = 51.0146108894770952m,
                             RepairServiceId = 5
                         },
                         new
@@ -5245,7 +5248,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 612,
                             CarId = 2,
                             MechanicId = 11,
-                            Price = 203.250629791808662m,
+                            Price = 208.245346541876415m,
                             RepairServiceId = 6
                         },
                         new
@@ -5253,7 +5256,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 613,
                             CarId = 3,
                             MechanicId = 11,
-                            Price = 47.629092160888355m,
+                            Price = 36.049633877924079m,
                             RepairServiceId = 1
                         },
                         new
@@ -5261,7 +5264,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 614,
                             CarId = 3,
                             MechanicId = 11,
-                            Price = 165.944072617150835m,
+                            Price = 198.774871910931026m,
                             RepairServiceId = 2
                         },
                         new
@@ -5269,7 +5272,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 615,
                             CarId = 3,
                             MechanicId = 11,
-                            Price = 45.738941342991651m,
+                            Price = 48.40134123354141m,
                             RepairServiceId = 3
                         },
                         new
@@ -5277,7 +5280,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 616,
                             CarId = 3,
                             MechanicId = 11,
-                            Price = 111.783105504236512m,
+                            Price = 135.132305457178853m,
                             RepairServiceId = 4
                         },
                         new
@@ -5285,7 +5288,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 617,
                             CarId = 3,
                             MechanicId = 11,
-                            Price = 49.364268488260558m,
+                            Price = 86.185958174983031m,
                             RepairServiceId = 5
                         },
                         new
@@ -5293,7 +5296,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 618,
                             CarId = 3,
                             MechanicId = 11,
-                            Price = 237.328450353015508m,
+                            Price = 245.455921818633589m,
                             RepairServiceId = 6
                         },
                         new
@@ -5301,7 +5304,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 619,
                             CarId = 4,
                             MechanicId = 11,
-                            Price = 32.926036158006075m,
+                            Price = 42.0661924692636637m,
                             RepairServiceId = 1
                         },
                         new
@@ -5309,7 +5312,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 620,
                             CarId = 4,
                             MechanicId = 11,
-                            Price = 238.691336095061987m,
+                            Price = 238.792993912534268m,
                             RepairServiceId = 2
                         },
                         new
@@ -5317,7 +5320,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 621,
                             CarId = 4,
                             MechanicId = 11,
-                            Price = 42.659929035917062m,
+                            Price = 26.0577973087506066m,
                             RepairServiceId = 3
                         },
                         new
@@ -5325,7 +5328,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 622,
                             CarId = 4,
                             MechanicId = 11,
-                            Price = 128.237407841623901m,
+                            Price = 111.199834969078812m,
                             RepairServiceId = 4
                         },
                         new
@@ -5333,7 +5336,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 623,
                             CarId = 4,
                             MechanicId = 11,
-                            Price = 78.168679219286397m,
+                            Price = 84.961882221320507m,
                             RepairServiceId = 5
                         },
                         new
@@ -5341,7 +5344,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 624,
                             CarId = 4,
                             MechanicId = 11,
-                            Price = 224.381982204950261m,
+                            Price = 235.171422718208467m,
                             RepairServiceId = 6
                         },
                         new
@@ -5349,7 +5352,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 625,
                             CarId = 5,
                             MechanicId = 11,
-                            Price = 40.224347781843465m,
+                            Price = 37.313480055255474m,
                             RepairServiceId = 1
                         },
                         new
@@ -5357,7 +5360,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 626,
                             CarId = 5,
                             MechanicId = 11,
-                            Price = 155.418073690078107m,
+                            Price = 223.980360070635304m,
                             RepairServiceId = 2
                         },
                         new
@@ -5365,7 +5368,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 627,
                             CarId = 5,
                             MechanicId = 11,
-                            Price = 48.117371030697495m,
+                            Price = 32.58657406514836m,
                             RepairServiceId = 3
                         },
                         new
@@ -5373,7 +5376,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 628,
                             CarId = 5,
                             MechanicId = 11,
-                            Price = 148.745716098932373m,
+                            Price = 131.965392591323707m,
                             RepairServiceId = 4
                         },
                         new
@@ -5381,7 +5384,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 629,
                             CarId = 5,
                             MechanicId = 11,
-                            Price = 82.132124567851087m,
+                            Price = 53.251741235359231m,
                             RepairServiceId = 5
                         },
                         new
@@ -5389,7 +5392,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 630,
                             CarId = 5,
                             MechanicId = 11,
-                            Price = 207.426104566584106m,
+                            Price = 230.0295172724991775m,
                             RepairServiceId = 6
                         },
                         new
@@ -5397,7 +5400,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 631,
                             CarId = 6,
                             MechanicId = 11,
-                            Price = 44.158451306239367m,
+                            Price = 47.826284799493819m,
                             RepairServiceId = 1
                         },
                         new
@@ -5405,7 +5408,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 632,
                             CarId = 6,
                             MechanicId = 11,
-                            Price = 205.757930648413936m,
+                            Price = 230.504430763905471m,
                             RepairServiceId = 2
                         },
                         new
@@ -5413,7 +5416,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 633,
                             CarId = 6,
                             MechanicId = 11,
-                            Price = 45.0611962460430873m,
+                            Price = 45.765240584327981m,
                             RepairServiceId = 3
                         },
                         new
@@ -5421,7 +5424,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 634,
                             CarId = 6,
                             MechanicId = 11,
-                            Price = 124.798789883148555m,
+                            Price = 118.480753186781084m,
                             RepairServiceId = 4
                         },
                         new
@@ -5429,7 +5432,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 635,
                             CarId = 6,
                             MechanicId = 11,
-                            Price = 85.274169450556958m,
+                            Price = 59.399500050155357m,
                             RepairServiceId = 5
                         },
                         new
@@ -5437,7 +5440,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 636,
                             CarId = 6,
                             MechanicId = 11,
-                            Price = 231.245304863063863m,
+                            Price = 239.194255920938697m,
                             RepairServiceId = 6
                         },
                         new
@@ -5445,7 +5448,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 637,
                             CarId = 7,
                             MechanicId = 11,
-                            Price = 35.7663543993758m,
+                            Price = 40.0779513516350615m,
                             RepairServiceId = 1
                         },
                         new
@@ -5453,7 +5456,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 638,
                             CarId = 7,
                             MechanicId = 11,
-                            Price = 151.191410425497769m,
+                            Price = 216.409936754329699m,
                             RepairServiceId = 2
                         },
                         new
@@ -5461,7 +5464,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 639,
                             CarId = 7,
                             MechanicId = 11,
-                            Price = 41.744726648404711m,
+                            Price = 36.673578367328208m,
                             RepairServiceId = 3
                         },
                         new
@@ -5469,7 +5472,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 640,
                             CarId = 7,
                             MechanicId = 11,
-                            Price = 123.918723654924032m,
+                            Price = 130.590731570609668m,
                             RepairServiceId = 4
                         },
                         new
@@ -5477,7 +5480,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 641,
                             CarId = 7,
                             MechanicId = 11,
-                            Price = 45.628352897465718m,
+                            Price = 72.281280551356482m,
                             RepairServiceId = 5
                         },
                         new
@@ -5485,7 +5488,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 642,
                             CarId = 7,
                             MechanicId = 11,
-                            Price = 233.778360791773139m,
+                            Price = 221.974461018924686m,
                             RepairServiceId = 6
                         },
                         new
@@ -5493,7 +5496,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 643,
                             CarId = 8,
                             MechanicId = 11,
-                            Price = 39.932639231053024m,
+                            Price = 33.091201873183263m,
                             RepairServiceId = 1
                         },
                         new
@@ -5501,7 +5504,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 644,
                             CarId = 8,
                             MechanicId = 11,
-                            Price = 185.896032810350016m,
+                            Price = 154.544863219277435m,
                             RepairServiceId = 2
                         },
                         new
@@ -5509,7 +5512,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 645,
                             CarId = 8,
                             MechanicId = 11,
-                            Price = 45.365940953191149m,
+                            Price = 35.6802183960724m,
                             RepairServiceId = 3
                         },
                         new
@@ -5517,7 +5520,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 646,
                             CarId = 8,
                             MechanicId = 11,
-                            Price = 101.170064921766289m,
+                            Price = 126.345817219835012m,
                             RepairServiceId = 4
                         },
                         new
@@ -5525,7 +5528,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 647,
                             CarId = 8,
                             MechanicId = 11,
-                            Price = 86.374983432446857m,
+                            Price = 68.72225474677256m,
                             RepairServiceId = 5
                         },
                         new
@@ -5533,7 +5536,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 648,
                             CarId = 8,
                             MechanicId = 11,
-                            Price = 236.374539240936301m,
+                            Price = 233.777310392875506m,
                             RepairServiceId = 6
                         },
                         new
@@ -5541,7 +5544,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 649,
                             CarId = 9,
                             MechanicId = 11,
-                            Price = 31.536403858221126m,
+                            Price = 30.0330389027381798m,
                             RepairServiceId = 1
                         },
                         new
@@ -5549,7 +5552,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 650,
                             CarId = 9,
                             MechanicId = 11,
-                            Price = 218.573822517432798m,
+                            Price = 202.0281032639937182m,
                             RepairServiceId = 2
                         },
                         new
@@ -5557,7 +5560,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 651,
                             CarId = 9,
                             MechanicId = 11,
-                            Price = 34.405073891677677m,
+                            Price = 39.945338318374085m,
                             RepairServiceId = 3
                         },
                         new
@@ -5565,7 +5568,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 652,
                             CarId = 9,
                             MechanicId = 11,
-                            Price = 114.425467924469528m,
+                            Price = 118.00984875755246428m,
                             RepairServiceId = 4
                         },
                         new
@@ -5573,7 +5576,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 653,
                             CarId = 9,
                             MechanicId = 11,
-                            Price = 56.714711632827157m,
+                            Price = 48.559628453426702m,
                             RepairServiceId = 5
                         },
                         new
@@ -5581,7 +5584,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 654,
                             CarId = 9,
                             MechanicId = 11,
-                            Price = 211.774885836007562m,
+                            Price = 203.690197230815456m,
                             RepairServiceId = 6
                         },
                         new
@@ -5589,7 +5592,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 655,
                             CarId = 10,
                             MechanicId = 11,
-                            Price = 46.943381641927646m,
+                            Price = 34.798618014324245m,
                             RepairServiceId = 1
                         },
                         new
@@ -5597,7 +5600,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 656,
                             CarId = 10,
                             MechanicId = 11,
-                            Price = 154.868137872596798m,
+                            Price = 240.505738199918995m,
                             RepairServiceId = 2
                         },
                         new
@@ -5605,7 +5608,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 657,
                             CarId = 10,
                             MechanicId = 11,
-                            Price = 47.541719730707657m,
+                            Price = 37.0483295903935215m,
                             RepairServiceId = 3
                         },
                         new
@@ -5613,7 +5616,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 658,
                             CarId = 10,
                             MechanicId = 11,
-                            Price = 137.824511273374909m,
+                            Price = 142.246743169664924m,
                             RepairServiceId = 4
                         },
                         new
@@ -5621,7 +5624,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 659,
                             CarId = 10,
                             MechanicId = 11,
-                            Price = 52.576931928980722m,
+                            Price = 75.310850480897546m,
                             RepairServiceId = 5
                         },
                         new
@@ -5629,7 +5632,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 660,
                             CarId = 10,
                             MechanicId = 11,
-                            Price = 208.0531504192798929m,
+                            Price = 221.954944555906271m,
                             RepairServiceId = 6
                         },
                         new
@@ -5637,7 +5640,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 661,
                             CarId = 1,
                             MechanicId = 12,
-                            Price = 32.139229962894811m,
+                            Price = 40.908476456808904m,
                             RepairServiceId = 1
                         },
                         new
@@ -5645,7 +5648,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 662,
                             CarId = 1,
                             MechanicId = 12,
-                            Price = 211.7451789046396m,
+                            Price = 226.904283783473579m,
                             RepairServiceId = 2
                         },
                         new
@@ -5653,7 +5656,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 663,
                             CarId = 1,
                             MechanicId = 12,
-                            Price = 32.20357916306072m,
+                            Price = 25.0945359265416656m,
                             RepairServiceId = 3
                         },
                         new
@@ -5661,7 +5664,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 664,
                             CarId = 1,
                             MechanicId = 12,
-                            Price = 145.76902920916265m,
+                            Price = 141.74184365654496m,
                             RepairServiceId = 4
                         },
                         new
@@ -5669,7 +5672,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 665,
                             CarId = 1,
                             MechanicId = 12,
-                            Price = 61.601695823533314m,
+                            Price = 45.637765232980374m,
                             RepairServiceId = 5
                         },
                         new
@@ -5677,7 +5680,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 666,
                             CarId = 1,
                             MechanicId = 12,
-                            Price = 219.482083365929147m,
+                            Price = 222.78587273015475m,
                             RepairServiceId = 6
                         },
                         new
@@ -5685,7 +5688,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 667,
                             CarId = 2,
                             MechanicId = 12,
-                            Price = 35.504913602470968m,
+                            Price = 42.596328135865232m,
                             RepairServiceId = 1
                         },
                         new
@@ -5693,7 +5696,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 668,
                             CarId = 2,
                             MechanicId = 12,
-                            Price = 217.720239991035916m,
+                            Price = 253.781171996854409m,
                             RepairServiceId = 2
                         },
                         new
@@ -5701,7 +5704,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 669,
                             CarId = 2,
                             MechanicId = 12,
-                            Price = 45.37832578552382m,
+                            Price = 46.0613899365619224m,
                             RepairServiceId = 3
                         },
                         new
@@ -5709,7 +5712,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 670,
                             CarId = 2,
                             MechanicId = 12,
-                            Price = 123.043734994254565m,
+                            Price = 122.110892299376879m,
                             RepairServiceId = 4
                         },
                         new
@@ -5717,7 +5720,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 671,
                             CarId = 2,
                             MechanicId = 12,
-                            Price = 66.409540477984537m,
+                            Price = 77.186382338801483m,
                             RepairServiceId = 5
                         },
                         new
@@ -5725,7 +5728,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 672,
                             CarId = 2,
                             MechanicId = 12,
-                            Price = 230.0954827379526133m,
+                            Price = 233.895426058857052m,
                             RepairServiceId = 6
                         },
                         new
@@ -5733,7 +5736,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 673,
                             CarId = 3,
                             MechanicId = 12,
-                            Price = 31.964831303418675m,
+                            Price = 31.265066722956369m,
                             RepairServiceId = 1
                         },
                         new
@@ -5741,7 +5744,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 674,
                             CarId = 3,
                             MechanicId = 12,
-                            Price = 212.377460626778024m,
+                            Price = 252.488887421421399m,
                             RepairServiceId = 2
                         },
                         new
@@ -5749,7 +5752,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 675,
                             CarId = 3,
                             MechanicId = 12,
-                            Price = 25.710203768855904m,
+                            Price = 47.68031086057191m,
                             RepairServiceId = 3
                         },
                         new
@@ -5757,7 +5760,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 676,
                             CarId = 3,
                             MechanicId = 12,
-                            Price = 123.0300536107198691m,
+                            Price = 110.883797468743211m,
                             RepairServiceId = 4
                         },
                         new
@@ -5765,7 +5768,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 677,
                             CarId = 3,
                             MechanicId = 12,
-                            Price = 72.930043804337384m,
+                            Price = 58.651965504097625m,
                             RepairServiceId = 5
                         },
                         new
@@ -5773,7 +5776,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 678,
                             CarId = 3,
                             MechanicId = 12,
-                            Price = 235.741932011772632m,
+                            Price = 233.281751878077784m,
                             RepairServiceId = 6
                         },
                         new
@@ -5781,7 +5784,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 679,
                             CarId = 4,
                             MechanicId = 12,
-                            Price = 48.558841187457375m,
+                            Price = 33.480360897748913m,
                             RepairServiceId = 1
                         },
                         new
@@ -5789,7 +5792,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 680,
                             CarId = 4,
                             MechanicId = 12,
-                            Price = 233.922191870554256m,
+                            Price = 259.170913382055706m,
                             RepairServiceId = 2
                         },
                         new
@@ -5797,7 +5800,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 681,
                             CarId = 4,
                             MechanicId = 12,
-                            Price = 30.26849491587302m,
+                            Price = 33.919994477373579m,
                             RepairServiceId = 3
                         },
                         new
@@ -5805,7 +5808,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 682,
                             CarId = 4,
                             MechanicId = 12,
-                            Price = 140.967081413823925m,
+                            Price = 104.450762391321485m,
                             RepairServiceId = 4
                         },
                         new
@@ -5813,7 +5816,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 683,
                             CarId = 4,
                             MechanicId = 12,
-                            Price = 60.799121170147651m,
+                            Price = 83.510889151536986m,
                             RepairServiceId = 5
                         },
                         new
@@ -5821,7 +5824,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 684,
                             CarId = 4,
                             MechanicId = 12,
-                            Price = 228.789055667046124m,
+                            Price = 216.868198601532372m,
                             RepairServiceId = 6
                         },
                         new
@@ -5829,7 +5832,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 685,
                             CarId = 5,
                             MechanicId = 12,
-                            Price = 40.420859404576155m,
+                            Price = 43.242816107549094m,
                             RepairServiceId = 1
                         },
                         new
@@ -5837,7 +5840,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 686,
                             CarId = 5,
                             MechanicId = 12,
-                            Price = 246.196599404127828m,
+                            Price = 174.368869448852449m,
                             RepairServiceId = 2
                         },
                         new
@@ -5845,7 +5848,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 687,
                             CarId = 5,
                             MechanicId = 12,
-                            Price = 43.899193304296625m,
+                            Price = 26.717542103594473m,
                             RepairServiceId = 3
                         },
                         new
@@ -5853,7 +5856,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 688,
                             CarId = 5,
                             MechanicId = 12,
-                            Price = 147.903793446585483m,
+                            Price = 134.0702961036867458m,
                             RepairServiceId = 4
                         },
                         new
@@ -5861,7 +5864,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 689,
                             CarId = 5,
                             MechanicId = 12,
-                            Price = 72.894463935489322m,
+                            Price = 45.644603226898946m,
                             RepairServiceId = 5
                         },
                         new
@@ -5869,7 +5872,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 690,
                             CarId = 5,
                             MechanicId = 12,
-                            Price = 203.274662550556629m,
+                            Price = 204.863931498544118m,
                             RepairServiceId = 6
                         },
                         new
@@ -5877,7 +5880,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 691,
                             CarId = 6,
                             MechanicId = 12,
-                            Price = 31.984116376989961m,
+                            Price = 33.616298179529874m,
                             RepairServiceId = 1
                         },
                         new
@@ -5885,7 +5888,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 692,
                             CarId = 6,
                             MechanicId = 12,
-                            Price = 230.87631622193714m,
+                            Price = 148.025643499177084m,
                             RepairServiceId = 2
                         },
                         new
@@ -5893,7 +5896,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 693,
                             CarId = 6,
                             MechanicId = 12,
-                            Price = 46.3268172989073m,
+                            Price = 29.127888694361383m,
                             RepairServiceId = 3
                         },
                         new
@@ -5901,7 +5904,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 694,
                             CarId = 6,
                             MechanicId = 12,
-                            Price = 112.191479986735438m,
+                            Price = 102.87681832057583m,
                             RepairServiceId = 4
                         },
                         new
@@ -5909,7 +5912,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 695,
                             CarId = 6,
                             MechanicId = 12,
-                            Price = 71.333097085055502m,
+                            Price = 60.827594499239501m,
                             RepairServiceId = 5
                         },
                         new
@@ -5917,7 +5920,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 696,
                             CarId = 6,
                             MechanicId = 12,
-                            Price = 214.438323296684407m,
+                            Price = 235.198867913210949m,
                             RepairServiceId = 6
                         },
                         new
@@ -5925,7 +5928,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 697,
                             CarId = 7,
                             MechanicId = 12,
-                            Price = 36.235014845302482m,
+                            Price = 43.541255814381543m,
                             RepairServiceId = 1
                         },
                         new
@@ -5933,7 +5936,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 698,
                             CarId = 7,
                             MechanicId = 12,
-                            Price = 176.133999047073073m,
+                            Price = 171.950908246216559m,
                             RepairServiceId = 2
                         },
                         new
@@ -5941,7 +5944,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 699,
                             CarId = 7,
                             MechanicId = 12,
-                            Price = 22.632404544369717m,
+                            Price = 21.514397860402853m,
                             RepairServiceId = 3
                         },
                         new
@@ -5949,7 +5952,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 700,
                             CarId = 7,
                             MechanicId = 12,
-                            Price = 122.250935615929891m,
+                            Price = 113.149079316934121m,
                             RepairServiceId = 4
                         },
                         new
@@ -5957,7 +5960,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 701,
                             CarId = 7,
                             MechanicId = 12,
-                            Price = 45.57251438813498m,
+                            Price = 81.938865525902789m,
                             RepairServiceId = 5
                         },
                         new
@@ -5965,7 +5968,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 702,
                             CarId = 7,
                             MechanicId = 12,
-                            Price = 233.896022399927279m,
+                            Price = 245.111132764662179m,
                             RepairServiceId = 6
                         },
                         new
@@ -5973,7 +5976,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 703,
                             CarId = 8,
                             MechanicId = 12,
-                            Price = 30.00591479678864792m,
+                            Price = 37.751309297206622m,
                             RepairServiceId = 1
                         },
                         new
@@ -5981,7 +5984,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 704,
                             CarId = 8,
                             MechanicId = 12,
-                            Price = 136.951992313053302m,
+                            Price = 184.190227872435378m,
                             RepairServiceId = 2
                         },
                         new
@@ -5989,7 +5992,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 705,
                             CarId = 8,
                             MechanicId = 12,
-                            Price = 42.3049715081278m,
+                            Price = 40.599531794055211m,
                             RepairServiceId = 3
                         },
                         new
@@ -5997,7 +6000,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 706,
                             CarId = 8,
                             MechanicId = 12,
-                            Price = 106.108008050563305m,
+                            Price = 149.112791553556367m,
                             RepairServiceId = 4
                         },
                         new
@@ -6005,7 +6008,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 707,
                             CarId = 8,
                             MechanicId = 12,
-                            Price = 46.942166090150458m,
+                            Price = 78.203451326004698m,
                             RepairServiceId = 5
                         },
                         new
@@ -6013,7 +6016,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 708,
                             CarId = 8,
                             MechanicId = 12,
-                            Price = 231.624566035484615m,
+                            Price = 209.441404845055214m,
                             RepairServiceId = 6
                         },
                         new
@@ -6021,7 +6024,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 709,
                             CarId = 9,
                             MechanicId = 12,
-                            Price = 31.867096880686773m,
+                            Price = 31.675717030034298m,
                             RepairServiceId = 1
                         },
                         new
@@ -6029,7 +6032,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 710,
                             CarId = 9,
                             MechanicId = 12,
-                            Price = 258.446249798557311m,
+                            Price = 250.384010508042011m,
                             RepairServiceId = 2
                         },
                         new
@@ -6037,7 +6040,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 711,
                             CarId = 9,
                             MechanicId = 12,
-                            Price = 28.780554046517785m,
+                            Price = 39.642379109953611m,
                             RepairServiceId = 3
                         },
                         new
@@ -6045,7 +6048,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 712,
                             CarId = 9,
                             MechanicId = 12,
-                            Price = 144.161750496750113m,
+                            Price = 108.548589307070128m,
                             RepairServiceId = 4
                         },
                         new
@@ -6053,7 +6056,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 713,
                             CarId = 9,
                             MechanicId = 12,
-                            Price = 80.347898987373708m,
+                            Price = 59.999084381328613m,
                             RepairServiceId = 5
                         },
                         new
@@ -6061,7 +6064,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 714,
                             CarId = 9,
                             MechanicId = 12,
-                            Price = 227.377595987200786m,
+                            Price = 247.19529724465873m,
                             RepairServiceId = 6
                         },
                         new
@@ -6069,7 +6072,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 715,
                             CarId = 10,
                             MechanicId = 12,
-                            Price = 37.528775500293488m,
+                            Price = 47.130244175501549m,
                             RepairServiceId = 1
                         },
                         new
@@ -6077,7 +6080,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 716,
                             CarId = 10,
                             MechanicId = 12,
-                            Price = 151.545237865338892m,
+                            Price = 210.21172818936782m,
                             RepairServiceId = 2
                         },
                         new
@@ -6085,7 +6088,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 717,
                             CarId = 10,
                             MechanicId = 12,
-                            Price = 48.407416076662034m,
+                            Price = 42.38486270562343m,
                             RepairServiceId = 3
                         },
                         new
@@ -6093,7 +6096,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 718,
                             CarId = 10,
                             MechanicId = 12,
-                            Price = 114.186642981607443m,
+                            Price = 121.267456687956316m,
                             RepairServiceId = 4
                         },
                         new
@@ -6101,7 +6104,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 719,
                             CarId = 10,
                             MechanicId = 12,
-                            Price = 69.952202084427083m,
+                            Price = 54.787137134790773m,
                             RepairServiceId = 5
                         },
                         new
@@ -6109,7 +6112,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 720,
                             CarId = 10,
                             MechanicId = 12,
-                            Price = 204.659137648568018m,
+                            Price = 210.45103762740576m,
                             RepairServiceId = 6
                         },
                         new
@@ -6117,7 +6120,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 721,
                             CarId = 1,
                             MechanicId = 13,
-                            Price = 46.661974162494788m,
+                            Price = 33.36222869111254m,
                             RepairServiceId = 1
                         },
                         new
@@ -6125,7 +6128,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 722,
                             CarId = 1,
                             MechanicId = 13,
-                            Price = 235.672520821782584m,
+                            Price = 231.0981430892675069m,
                             RepairServiceId = 2
                         },
                         new
@@ -6133,7 +6136,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 723,
                             CarId = 1,
                             MechanicId = 13,
-                            Price = 21.252820665007024m,
+                            Price = 21.730270334485833m,
                             RepairServiceId = 3
                         },
                         new
@@ -6141,7 +6144,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 724,
                             CarId = 1,
                             MechanicId = 13,
-                            Price = 134.642113927203539m,
+                            Price = 144.224808998480584m,
                             RepairServiceId = 4
                         },
                         new
@@ -6149,7 +6152,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 725,
                             CarId = 1,
                             MechanicId = 13,
-                            Price = 52.134257023839333m,
+                            Price = 68.120315499779004m,
                             RepairServiceId = 5
                         },
                         new
@@ -6157,7 +6160,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 726,
                             CarId = 1,
                             MechanicId = 13,
-                            Price = 229.0474434876787921m,
+                            Price = 217.145906206410198m,
                             RepairServiceId = 6
                         },
                         new
@@ -6165,7 +6168,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 727,
                             CarId = 2,
                             MechanicId = 13,
-                            Price = 32.197111812907975m,
+                            Price = 43.151508883726005m,
                             RepairServiceId = 1
                         },
                         new
@@ -6173,7 +6176,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 728,
                             CarId = 2,
                             MechanicId = 13,
-                            Price = 258.0763694725344389m,
+                            Price = 163.608977375565586m,
                             RepairServiceId = 2
                         },
                         new
@@ -6181,7 +6184,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 729,
                             CarId = 2,
                             MechanicId = 13,
-                            Price = 44.741067445870091m,
+                            Price = 44.0292914996220488m,
                             RepairServiceId = 3
                         },
                         new
@@ -6189,7 +6192,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 730,
                             CarId = 2,
                             MechanicId = 13,
-                            Price = 107.570689289154978m,
+                            Price = 135.456216981433592m,
                             RepairServiceId = 4
                         },
                         new
@@ -6197,7 +6200,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 731,
                             CarId = 2,
                             MechanicId = 13,
-                            Price = 67.70018773311902m,
+                            Price = 69.993611964266794m,
                             RepairServiceId = 5
                         },
                         new
@@ -6205,7 +6208,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 732,
                             CarId = 2,
                             MechanicId = 13,
-                            Price = 246.265760751983906m,
+                            Price = 218.683463298752687m,
                             RepairServiceId = 6
                         },
                         new
@@ -6213,7 +6216,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 733,
                             CarId = 3,
                             MechanicId = 13,
-                            Price = 35.291114881100847m,
+                            Price = 42.0200338299147268m,
                             RepairServiceId = 1
                         },
                         new
@@ -6221,7 +6224,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 734,
                             CarId = 3,
                             MechanicId = 13,
-                            Price = 183.284420372063969m,
+                            Price = 167.753681427848046m,
                             RepairServiceId = 2
                         },
                         new
@@ -6229,7 +6232,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 735,
                             CarId = 3,
                             MechanicId = 13,
-                            Price = 34.363840129195638m,
+                            Price = 45.201857569797918m,
                             RepairServiceId = 3
                         },
                         new
@@ -6237,7 +6240,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 736,
                             CarId = 3,
                             MechanicId = 13,
-                            Price = 134.385771991506709m,
+                            Price = 100.969771605312178m,
                             RepairServiceId = 4
                         },
                         new
@@ -6245,7 +6248,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 737,
                             CarId = 3,
                             MechanicId = 13,
-                            Price = 65.963142929364601m,
+                            Price = 73.30093821228484m,
                             RepairServiceId = 5
                         },
                         new
@@ -6253,7 +6256,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 738,
                             CarId = 3,
                             MechanicId = 13,
-                            Price = 217.762587191082525m,
+                            Price = 207.0625507479879676m,
                             RepairServiceId = 6
                         },
                         new
@@ -6261,7 +6264,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 739,
                             CarId = 4,
                             MechanicId = 13,
-                            Price = 37.409676415013724m,
+                            Price = 36.448967609357316m,
                             RepairServiceId = 1
                         },
                         new
@@ -6269,7 +6272,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 740,
                             CarId = 4,
                             MechanicId = 13,
-                            Price = 205.803872007269132m,
+                            Price = 238.0482068887910295m,
                             RepairServiceId = 2
                         },
                         new
@@ -6277,7 +6280,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 741,
                             CarId = 4,
                             MechanicId = 13,
-                            Price = 41.722711880900416m,
+                            Price = 30.0649468885781552m,
                             RepairServiceId = 3
                         },
                         new
@@ -6285,7 +6288,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 742,
                             CarId = 4,
                             MechanicId = 13,
-                            Price = 142.670751371319463m,
+                            Price = 135.925822690620112m,
                             RepairServiceId = 4
                         },
                         new
@@ -6293,7 +6296,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 743,
                             CarId = 4,
                             MechanicId = 13,
-                            Price = 64.743412191998873m,
+                            Price = 79.764565640042035m,
                             RepairServiceId = 5
                         },
                         new
@@ -6301,7 +6304,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 744,
                             CarId = 4,
                             MechanicId = 13,
-                            Price = 232.962773835183832m,
+                            Price = 229.937665031715636m,
                             RepairServiceId = 6
                         },
                         new
@@ -6309,7 +6312,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 745,
                             CarId = 5,
                             MechanicId = 13,
-                            Price = 42.86711097489205m,
+                            Price = 36.32660375073399m,
                             RepairServiceId = 1
                         },
                         new
@@ -6317,7 +6320,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 746,
                             CarId = 5,
                             MechanicId = 13,
-                            Price = 188.105423356383363m,
+                            Price = 245.98240409608268m,
                             RepairServiceId = 2
                         },
                         new
@@ -6325,7 +6328,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 747,
                             CarId = 5,
                             MechanicId = 13,
-                            Price = 44.267620654790897m,
+                            Price = 29.363880285642847m,
                             RepairServiceId = 3
                         },
                         new
@@ -6333,7 +6336,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 748,
                             CarId = 5,
                             MechanicId = 13,
-                            Price = 119.546580593137276m,
+                            Price = 110.830133729610379m,
                             RepairServiceId = 4
                         },
                         new
@@ -6341,7 +6344,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 749,
                             CarId = 5,
                             MechanicId = 13,
-                            Price = 74.283885966492325m,
+                            Price = 79.380838615918086m,
                             RepairServiceId = 5
                         },
                         new
@@ -6349,7 +6352,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 750,
                             CarId = 5,
                             MechanicId = 13,
-                            Price = 225.158996692654655m,
+                            Price = 234.996309820913071m,
                             RepairServiceId = 6
                         },
                         new
@@ -6357,7 +6360,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 751,
                             CarId = 6,
                             MechanicId = 13,
-                            Price = 46.542977394776026m,
+                            Price = 44.510388495919306m,
                             RepairServiceId = 1
                         },
                         new
@@ -6365,7 +6368,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 752,
                             CarId = 6,
                             MechanicId = 13,
-                            Price = 168.547817387183995m,
+                            Price = 230.65686004132312m,
                             RepairServiceId = 2
                         },
                         new
@@ -6373,7 +6376,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 753,
                             CarId = 6,
                             MechanicId = 13,
-                            Price = 24.0664038950915223m,
+                            Price = 32.516912599101606m,
                             RepairServiceId = 3
                         },
                         new
@@ -6381,7 +6384,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 754,
                             CarId = 6,
                             MechanicId = 13,
-                            Price = 137.780152355404006m,
+                            Price = 113.49526054683029m,
                             RepairServiceId = 4
                         },
                         new
@@ -6389,7 +6392,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 755,
                             CarId = 6,
                             MechanicId = 13,
-                            Price = 57.264975507340589m,
+                            Price = 69.188465860159327m,
                             RepairServiceId = 5
                         },
                         new
@@ -6397,7 +6400,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 756,
                             CarId = 6,
                             MechanicId = 13,
-                            Price = 213.670038871133447m,
+                            Price = 217.649697963532178m,
                             RepairServiceId = 6
                         },
                         new
@@ -6405,7 +6408,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 757,
                             CarId = 7,
                             MechanicId = 13,
-                            Price = 32.634044024267788m,
+                            Price = 46.282852212562119m,
                             RepairServiceId = 1
                         },
                         new
@@ -6413,7 +6416,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 758,
                             CarId = 7,
                             MechanicId = 13,
-                            Price = 231.457953890636005m,
+                            Price = 236.502059357387106m,
                             RepairServiceId = 2
                         },
                         new
@@ -6421,7 +6424,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 759,
                             CarId = 7,
                             MechanicId = 13,
-                            Price = 23.467078717760905m,
+                            Price = 20.322039365039785m,
                             RepairServiceId = 3
                         },
                         new
@@ -6429,7 +6432,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 760,
                             CarId = 7,
                             MechanicId = 13,
-                            Price = 121.98896040408513m,
+                            Price = 137.800102607539811m,
                             RepairServiceId = 4
                         },
                         new
@@ -6437,7 +6440,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 761,
                             CarId = 7,
                             MechanicId = 13,
-                            Price = 72.738535571373869m,
+                            Price = 74.0883032928035384m,
                             RepairServiceId = 5
                         },
                         new
@@ -6445,7 +6448,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 762,
                             CarId = 7,
                             MechanicId = 13,
-                            Price = 242.737135158814292m,
+                            Price = 224.642301361235211m,
                             RepairServiceId = 6
                         },
                         new
@@ -6453,7 +6456,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 763,
                             CarId = 8,
                             MechanicId = 13,
-                            Price = 41.138381831549197m,
+                            Price = 46.0981965612540652m,
                             RepairServiceId = 1
                         },
                         new
@@ -6461,7 +6464,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 764,
                             CarId = 8,
                             MechanicId = 13,
-                            Price = 144.276788588397944m,
+                            Price = 217.880400110652196m,
                             RepairServiceId = 2
                         },
                         new
@@ -6469,7 +6472,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 765,
                             CarId = 8,
                             MechanicId = 13,
-                            Price = 41.891023300206169m,
+                            Price = 23.693451080061313m,
                             RepairServiceId = 3
                         },
                         new
@@ -6477,7 +6480,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 766,
                             CarId = 8,
                             MechanicId = 13,
-                            Price = 106.3265767474795m,
+                            Price = 105.104386978436785m,
                             RepairServiceId = 4
                         },
                         new
@@ -6485,7 +6488,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 767,
                             CarId = 8,
                             MechanicId = 13,
-                            Price = 53.0270943601587482m,
+                            Price = 73.045988848071111m,
                             RepairServiceId = 5
                         },
                         new
@@ -6493,7 +6496,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 768,
                             CarId = 8,
                             MechanicId = 13,
-                            Price = 218.735585393368514m,
+                            Price = 237.552832045647856m,
                             RepairServiceId = 6
                         },
                         new
@@ -6501,7 +6504,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 769,
                             CarId = 9,
                             MechanicId = 13,
-                            Price = 30.748231042512268m,
+                            Price = 36.778496177710807m,
                             RepairServiceId = 1
                         },
                         new
@@ -6509,7 +6512,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 770,
                             CarId = 9,
                             MechanicId = 13,
-                            Price = 222.955417721807006m,
+                            Price = 248.0487378946794702m,
                             RepairServiceId = 2
                         },
                         new
@@ -6517,7 +6520,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 771,
                             CarId = 9,
                             MechanicId = 13,
-                            Price = 45.436292308181776m,
+                            Price = 26.881267026442267m,
                             RepairServiceId = 3
                         },
                         new
@@ -6525,7 +6528,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 772,
                             CarId = 9,
                             MechanicId = 13,
-                            Price = 108.990366446932234m,
+                            Price = 149.793849756077418m,
                             RepairServiceId = 4
                         },
                         new
@@ -6533,7 +6536,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 773,
                             CarId = 9,
                             MechanicId = 13,
-                            Price = 66.643346745311356m,
+                            Price = 63.74368655868851m,
                             RepairServiceId = 5
                         },
                         new
@@ -6541,7 +6544,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 774,
                             CarId = 9,
                             MechanicId = 13,
-                            Price = 235.551278249341422m,
+                            Price = 215.148101355734848m,
                             RepairServiceId = 6
                         },
                         new
@@ -6549,7 +6552,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 775,
                             CarId = 10,
                             MechanicId = 13,
-                            Price = 31.754206990566793m,
+                            Price = 40.765855459203822m,
                             RepairServiceId = 1
                         },
                         new
@@ -6557,7 +6560,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 776,
                             CarId = 10,
                             MechanicId = 13,
-                            Price = 162.0328648593556481m,
+                            Price = 200.0216827636203301m,
                             RepairServiceId = 2
                         },
                         new
@@ -6565,7 +6568,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 777,
                             CarId = 10,
                             MechanicId = 13,
-                            Price = 42.673518775485684m,
+                            Price = 22.0622045559118098m,
                             RepairServiceId = 3
                         },
                         new
@@ -6573,7 +6576,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 778,
                             CarId = 10,
                             MechanicId = 13,
-                            Price = 112.236481216048224m,
+                            Price = 122.829362234460905m,
                             RepairServiceId = 4
                         },
                         new
@@ -6581,7 +6584,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 779,
                             CarId = 10,
                             MechanicId = 13,
-                            Price = 78.667245074266705m,
+                            Price = 74.417524183171392m,
                             RepairServiceId = 5
                         },
                         new
@@ -6589,7 +6592,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 780,
                             CarId = 10,
                             MechanicId = 13,
-                            Price = 205.356701481257373m,
+                            Price = 212.50347896349929m,
                             RepairServiceId = 6
                         },
                         new
@@ -6597,7 +6600,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 781,
                             CarId = 1,
                             MechanicId = 14,
-                            Price = 42.907787734583224m,
+                            Price = 49.839814845519928m,
                             RepairServiceId = 1
                         },
                         new
@@ -6605,7 +6608,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 782,
                             CarId = 1,
                             MechanicId = 14,
-                            Price = 137.795488841739739m,
+                            Price = 157.994847588173219m,
                             RepairServiceId = 2
                         },
                         new
@@ -6613,7 +6616,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 783,
                             CarId = 1,
                             MechanicId = 14,
-                            Price = 35.625119375350458m,
+                            Price = 30.907272572000172m,
                             RepairServiceId = 3
                         },
                         new
@@ -6621,7 +6624,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 784,
                             CarId = 1,
                             MechanicId = 14,
-                            Price = 121.243344479204913m,
+                            Price = 116.43017787334827m,
                             RepairServiceId = 4
                         },
                         new
@@ -6629,7 +6632,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 785,
                             CarId = 1,
                             MechanicId = 14,
-                            Price = 74.450727393117762m,
+                            Price = 54.0163422429467277m,
                             RepairServiceId = 5
                         },
                         new
@@ -6637,7 +6640,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 786,
                             CarId = 1,
                             MechanicId = 14,
-                            Price = 248.955817239393036m,
+                            Price = 234.839737573121794m,
                             RepairServiceId = 6
                         },
                         new
@@ -6645,7 +6648,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 787,
                             CarId = 2,
                             MechanicId = 14,
-                            Price = 31.0267231146713941m,
+                            Price = 39.826420535609615m,
                             RepairServiceId = 1
                         },
                         new
@@ -6653,7 +6656,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 788,
                             CarId = 2,
                             MechanicId = 14,
-                            Price = 172.0994317669596068m,
+                            Price = 186.16222671749992m,
                             RepairServiceId = 2
                         },
                         new
@@ -6661,7 +6664,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 789,
                             CarId = 2,
                             MechanicId = 14,
-                            Price = 33.772352485798517m,
+                            Price = 44.00571380483187212m,
                             RepairServiceId = 3
                         },
                         new
@@ -6669,7 +6672,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 790,
                             CarId = 2,
                             MechanicId = 14,
-                            Price = 122.447941840498211m,
+                            Price = 108.891784573547678m,
                             RepairServiceId = 4
                         },
                         new
@@ -6677,7 +6680,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 791,
                             CarId = 2,
                             MechanicId = 14,
-                            Price = 59.928841894680876m,
+                            Price = 84.00740693948551063m,
                             RepairServiceId = 5
                         },
                         new
@@ -6685,7 +6688,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 792,
                             CarId = 2,
                             MechanicId = 14,
-                            Price = 228.244415116483803m,
+                            Price = 204.586948060235189m,
                             RepairServiceId = 6
                         },
                         new
@@ -6693,7 +6696,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 793,
                             CarId = 3,
                             MechanicId = 14,
-                            Price = 39.578414769336275m,
+                            Price = 43.48991604753468m,
                             RepairServiceId = 1
                         },
                         new
@@ -6701,7 +6704,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 794,
                             CarId = 3,
                             MechanicId = 14,
-                            Price = 144.791405833579794m,
+                            Price = 149.630197939651114m,
                             RepairServiceId = 2
                         },
                         new
@@ -6709,7 +6712,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 795,
                             CarId = 3,
                             MechanicId = 14,
-                            Price = 24.62582745582171m,
+                            Price = 46.171520603335236m,
                             RepairServiceId = 3
                         },
                         new
@@ -6717,7 +6720,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 796,
                             CarId = 3,
                             MechanicId = 14,
-                            Price = 110.0576281316249796m,
+                            Price = 119.263721287651513m,
                             RepairServiceId = 4
                         },
                         new
@@ -6725,7 +6728,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 797,
                             CarId = 3,
                             MechanicId = 14,
-                            Price = 85.140934157077354m,
+                            Price = 61.248221591260249m,
                             RepairServiceId = 5
                         },
                         new
@@ -6733,7 +6736,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 798,
                             CarId = 3,
                             MechanicId = 14,
-                            Price = 225.628576410589139m,
+                            Price = 234.66853986905706m,
                             RepairServiceId = 6
                         },
                         new
@@ -6741,7 +6744,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 799,
                             CarId = 4,
                             MechanicId = 14,
-                            Price = 30.0206308464819208m,
+                            Price = 31.326596952190958m,
                             RepairServiceId = 1
                         },
                         new
@@ -6749,7 +6752,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 800,
                             CarId = 4,
                             MechanicId = 14,
-                            Price = 184.851186873408971m,
+                            Price = 144.126415009809611m,
                             RepairServiceId = 2
                         },
                         new
@@ -6757,7 +6760,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 801,
                             CarId = 4,
                             MechanicId = 14,
-                            Price = 35.147562901652344m,
+                            Price = 40.249245804583374m,
                             RepairServiceId = 3
                         },
                         new
@@ -6765,7 +6768,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 802,
                             CarId = 4,
                             MechanicId = 14,
-                            Price = 127.548858267661588m,
+                            Price = 130.0731846780285074m,
                             RepairServiceId = 4
                         },
                         new
@@ -6773,7 +6776,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 803,
                             CarId = 4,
                             MechanicId = 14,
-                            Price = 85.74602110742053m,
+                            Price = 81.968213332651988m,
                             RepairServiceId = 5
                         },
                         new
@@ -6781,7 +6784,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 804,
                             CarId = 4,
                             MechanicId = 14,
-                            Price = 243.469907064563829m,
+                            Price = 220.468251444575432m,
                             RepairServiceId = 6
                         },
                         new
@@ -6789,7 +6792,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 805,
                             CarId = 5,
                             MechanicId = 14,
-                            Price = 45.115495742914854m,
+                            Price = 43.747199683296632m,
                             RepairServiceId = 1
                         },
                         new
@@ -6797,7 +6800,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 806,
                             CarId = 5,
                             MechanicId = 14,
-                            Price = 135.912816592500274m,
+                            Price = 255.0304084463104844m,
                             RepairServiceId = 2
                         },
                         new
@@ -6805,7 +6808,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 807,
                             CarId = 5,
                             MechanicId = 14,
-                            Price = 48.857377703214083m,
+                            Price = 28.050076495180134m,
                             RepairServiceId = 3
                         },
                         new
@@ -6813,7 +6816,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 808,
                             CarId = 5,
                             MechanicId = 14,
-                            Price = 105.182165945366456m,
+                            Price = 128.399015338318569m,
                             RepairServiceId = 4
                         },
                         new
@@ -6821,7 +6824,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 809,
                             CarId = 5,
                             MechanicId = 14,
-                            Price = 59.0651012501724546m,
+                            Price = 63.691991017641672m,
                             RepairServiceId = 5
                         },
                         new
@@ -6829,7 +6832,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 810,
                             CarId = 5,
                             MechanicId = 14,
-                            Price = 207.512624166315272m,
+                            Price = 247.950917879638516m,
                             RepairServiceId = 6
                         },
                         new
@@ -6837,7 +6840,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 811,
                             CarId = 6,
                             MechanicId = 14,
-                            Price = 33.16595383531578m,
+                            Price = 43.356571388941574m,
                             RepairServiceId = 1
                         },
                         new
@@ -6845,7 +6848,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 812,
                             CarId = 6,
                             MechanicId = 14,
-                            Price = 176.236249883166516m,
+                            Price = 141.585341607692808m,
                             RepairServiceId = 2
                         },
                         new
@@ -6853,7 +6856,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 813,
                             CarId = 6,
                             MechanicId = 14,
-                            Price = 38.834358041715525m,
+                            Price = 36.772582852583825m,
                             RepairServiceId = 3
                         },
                         new
@@ -6861,7 +6864,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 814,
                             CarId = 6,
                             MechanicId = 14,
-                            Price = 145.272889113000816m,
+                            Price = 115.414177175541017m,
                             RepairServiceId = 4
                         },
                         new
@@ -6869,7 +6872,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 815,
                             CarId = 6,
                             MechanicId = 14,
-                            Price = 64.427650111735599m,
+                            Price = 70.665803840062742m,
                             RepairServiceId = 5
                         },
                         new
@@ -6877,7 +6880,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 816,
                             CarId = 6,
                             MechanicId = 14,
-                            Price = 230.144038355849521m,
+                            Price = 212.937703951465992m,
                             RepairServiceId = 6
                         },
                         new
@@ -6885,7 +6888,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 817,
                             CarId = 7,
                             MechanicId = 14,
-                            Price = 36.492073524633098m,
+                            Price = 36.150248077254498m,
                             RepairServiceId = 1
                         },
                         new
@@ -6893,7 +6896,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 818,
                             CarId = 7,
                             MechanicId = 14,
-                            Price = 144.170411666324843m,
+                            Price = 214.866454841494104m,
                             RepairServiceId = 2
                         },
                         new
@@ -6901,7 +6904,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 819,
                             CarId = 7,
                             MechanicId = 14,
-                            Price = 26.555822568735084m,
+                            Price = 23.180357148141959m,
                             RepairServiceId = 3
                         },
                         new
@@ -6909,7 +6912,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 820,
                             CarId = 7,
                             MechanicId = 14,
-                            Price = 108.799506323645647m,
+                            Price = 121.710169593482265m,
                             RepairServiceId = 4
                         },
                         new
@@ -6917,7 +6920,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 821,
                             CarId = 7,
                             MechanicId = 14,
-                            Price = 63.58062691534411m,
+                            Price = 58.019791559519739m,
                             RepairServiceId = 5
                         },
                         new
@@ -6925,7 +6928,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 822,
                             CarId = 7,
                             MechanicId = 14,
-                            Price = 224.0847848331552045m,
+                            Price = 244.689081810765876m,
                             RepairServiceId = 6
                         },
                         new
@@ -6933,7 +6936,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 823,
                             CarId = 8,
                             MechanicId = 14,
-                            Price = 33.445491803157524m,
+                            Price = 38.66650619941118m,
                             RepairServiceId = 1
                         },
                         new
@@ -6941,7 +6944,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 824,
                             CarId = 8,
                             MechanicId = 14,
-                            Price = 197.174383120234919m,
+                            Price = 226.622402332641766m,
                             RepairServiceId = 2
                         },
                         new
@@ -6949,7 +6952,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 825,
                             CarId = 8,
                             MechanicId = 14,
-                            Price = 44.449736336009403m,
+                            Price = 48.941350484005204m,
                             RepairServiceId = 3
                         },
                         new
@@ -6957,7 +6960,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 826,
                             CarId = 8,
                             MechanicId = 14,
-                            Price = 107.558763342013402m,
+                            Price = 100.487646643222618m,
                             RepairServiceId = 4
                         },
                         new
@@ -6965,7 +6968,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 827,
                             CarId = 8,
                             MechanicId = 14,
-                            Price = 83.413222227678354m,
+                            Price = 63.76960942224881m,
                             RepairServiceId = 5
                         },
                         new
@@ -6973,7 +6976,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 828,
                             CarId = 8,
                             MechanicId = 14,
-                            Price = 228.547366064616999m,
+                            Price = 200.545058041132874m,
                             RepairServiceId = 6
                         },
                         new
@@ -6981,7 +6984,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 829,
                             CarId = 9,
                             MechanicId = 14,
-                            Price = 48.113486735495347m,
+                            Price = 43.296178564682582m,
                             RepairServiceId = 1
                         },
                         new
@@ -6989,7 +6992,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 830,
                             CarId = 9,
                             MechanicId = 14,
-                            Price = 203.125202280232625m,
+                            Price = 161.994844218883807m,
                             RepairServiceId = 2
                         },
                         new
@@ -6997,7 +7000,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 831,
                             CarId = 9,
                             MechanicId = 14,
-                            Price = 30.533425166558596m,
+                            Price = 28.523916793767455m,
                             RepairServiceId = 3
                         },
                         new
@@ -7005,7 +7008,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 832,
                             CarId = 9,
                             MechanicId = 14,
-                            Price = 117.302986406654413m,
+                            Price = 149.626873069419275m,
                             RepairServiceId = 4
                         },
                         new
@@ -7013,7 +7016,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 833,
                             CarId = 9,
                             MechanicId = 14,
-                            Price = 84.528601080301833m,
+                            Price = 72.6161737183895m,
                             RepairServiceId = 5
                         },
                         new
@@ -7021,7 +7024,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 834,
                             CarId = 9,
                             MechanicId = 14,
-                            Price = 220.221064482521326m,
+                            Price = 216.0573387403139672m,
                             RepairServiceId = 6
                         },
                         new
@@ -7029,7 +7032,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 835,
                             CarId = 10,
                             MechanicId = 14,
-                            Price = 30.229621747933516m,
+                            Price = 30.132687568698624m,
                             RepairServiceId = 1
                         },
                         new
@@ -7037,7 +7040,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 836,
                             CarId = 10,
                             MechanicId = 14,
-                            Price = 185.688651549480896m,
+                            Price = 245.915484616712087m,
                             RepairServiceId = 2
                         },
                         new
@@ -7045,7 +7048,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 837,
                             CarId = 10,
                             MechanicId = 14,
-                            Price = 22.032207120085637m,
+                            Price = 44.162417035826955m,
                             RepairServiceId = 3
                         },
                         new
@@ -7053,7 +7056,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 838,
                             CarId = 10,
                             MechanicId = 14,
-                            Price = 109.601659595256361m,
+                            Price = 120.913077908369618m,
                             RepairServiceId = 4
                         },
                         new
@@ -7061,7 +7064,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 839,
                             CarId = 10,
                             MechanicId = 14,
-                            Price = 78.680286368540812m,
+                            Price = 56.732473258259256m,
                             RepairServiceId = 5
                         },
                         new
@@ -7069,7 +7072,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 840,
                             CarId = 10,
                             MechanicId = 14,
-                            Price = 211.17557617088092m,
+                            Price = 231.594029525220468m,
                             RepairServiceId = 6
                         },
                         new
@@ -7077,7 +7080,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 841,
                             CarId = 1,
                             MechanicId = 15,
-                            Price = 41.52426148152862m,
+                            Price = 46.617960699319972m,
                             RepairServiceId = 1
                         },
                         new
@@ -7085,7 +7088,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 842,
                             CarId = 1,
                             MechanicId = 15,
-                            Price = 202.686397227170519m,
+                            Price = 229.34869094303136m,
                             RepairServiceId = 2
                         },
                         new
@@ -7093,7 +7096,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 843,
                             CarId = 1,
                             MechanicId = 15,
-                            Price = 34.197758166478116m,
+                            Price = 41.508967803026566m,
                             RepairServiceId = 3
                         },
                         new
@@ -7101,7 +7104,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 844,
                             CarId = 1,
                             MechanicId = 15,
-                            Price = 118.823690190873817m,
+                            Price = 125.136260465565569m,
                             RepairServiceId = 4
                         },
                         new
@@ -7109,7 +7112,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 845,
                             CarId = 1,
                             MechanicId = 15,
-                            Price = 65.0874402834394666m,
+                            Price = 45.818974235184931m,
                             RepairServiceId = 5
                         },
                         new
@@ -7117,7 +7120,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 846,
                             CarId = 1,
                             MechanicId = 15,
-                            Price = 232.863393117824625m,
+                            Price = 231.857981814331236m,
                             RepairServiceId = 6
                         },
                         new
@@ -7125,7 +7128,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 847,
                             CarId = 2,
                             MechanicId = 15,
-                            Price = 37.213062102225723m,
+                            Price = 37.257197361287194m,
                             RepairServiceId = 1
                         },
                         new
@@ -7133,7 +7136,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 848,
                             CarId = 2,
                             MechanicId = 15,
-                            Price = 239.848237315212432m,
+                            Price = 186.708717465664336m,
                             RepairServiceId = 2
                         },
                         new
@@ -7141,7 +7144,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 849,
                             CarId = 2,
                             MechanicId = 15,
-                            Price = 26.640425832346943m,
+                            Price = 38.661915589142695m,
                             RepairServiceId = 3
                         },
                         new
@@ -7149,7 +7152,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 850,
                             CarId = 2,
                             MechanicId = 15,
-                            Price = 133.506582343674185m,
+                            Price = 113.398418863447901m,
                             RepairServiceId = 4
                         },
                         new
@@ -7157,7 +7160,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 851,
                             CarId = 2,
                             MechanicId = 15,
-                            Price = 61.888550674722539m,
+                            Price = 62.648826439934227m,
                             RepairServiceId = 5
                         },
                         new
@@ -7165,7 +7168,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 852,
                             CarId = 2,
                             MechanicId = 15,
-                            Price = 235.79013039657878m,
+                            Price = 217.207993926463066m,
                             RepairServiceId = 6
                         },
                         new
@@ -7173,7 +7176,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 853,
                             CarId = 3,
                             MechanicId = 15,
-                            Price = 33.290594039420393m,
+                            Price = 43.168105541436506m,
                             RepairServiceId = 1
                         },
                         new
@@ -7181,7 +7184,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 854,
                             CarId = 3,
                             MechanicId = 15,
-                            Price = 212.359070624346002m,
+                            Price = 186.616185671539852m,
                             RepairServiceId = 2
                         },
                         new
@@ -7189,7 +7192,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 855,
                             CarId = 3,
                             MechanicId = 15,
-                            Price = 45.586076124724885m,
+                            Price = 26.0839380991695924m,
                             RepairServiceId = 3
                         },
                         new
@@ -7197,7 +7200,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 856,
                             CarId = 3,
                             MechanicId = 15,
-                            Price = 148.826610692227468m,
+                            Price = 131.453648849751367m,
                             RepairServiceId = 4
                         },
                         new
@@ -7205,7 +7208,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 857,
                             CarId = 3,
                             MechanicId = 15,
-                            Price = 71.842461185811862m,
+                            Price = 45.777944246820612m,
                             RepairServiceId = 5
                         },
                         new
@@ -7213,7 +7216,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 858,
                             CarId = 3,
                             MechanicId = 15,
-                            Price = 221.440302494953003m,
+                            Price = 245.9348692157201m,
                             RepairServiceId = 6
                         },
                         new
@@ -7221,7 +7224,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 859,
                             CarId = 4,
                             MechanicId = 15,
-                            Price = 45.260184644067895m,
+                            Price = 36.87208085792692m,
                             RepairServiceId = 1
                         },
                         new
@@ -7229,7 +7232,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 860,
                             CarId = 4,
                             MechanicId = 15,
-                            Price = 196.613755244377588m,
+                            Price = 147.469366335271399m,
                             RepairServiceId = 2
                         },
                         new
@@ -7237,7 +7240,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 861,
                             CarId = 4,
                             MechanicId = 15,
-                            Price = 37.660701973955681m,
+                            Price = 34.136387653134026m,
                             RepairServiceId = 3
                         },
                         new
@@ -7245,7 +7248,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 862,
                             CarId = 4,
                             MechanicId = 15,
-                            Price = 100.339760980738478m,
+                            Price = 138.568370036828784m,
                             RepairServiceId = 4
                         },
                         new
@@ -7253,7 +7256,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 863,
                             CarId = 4,
                             MechanicId = 15,
-                            Price = 74.307804586904352m,
+                            Price = 59.94609274096308m,
                             RepairServiceId = 5
                         },
                         new
@@ -7261,7 +7264,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 864,
                             CarId = 4,
                             MechanicId = 15,
-                            Price = 204.734837574275754m,
+                            Price = 222.809177004437643m,
                             RepairServiceId = 6
                         },
                         new
@@ -7269,7 +7272,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 865,
                             CarId = 5,
                             MechanicId = 15,
-                            Price = 31.16843250222699m,
+                            Price = 36.87391173340273m,
                             RepairServiceId = 1
                         },
                         new
@@ -7277,7 +7280,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 866,
                             CarId = 5,
                             MechanicId = 15,
-                            Price = 191.235746114185624m,
+                            Price = 220.934451097056256m,
                             RepairServiceId = 2
                         },
                         new
@@ -7285,7 +7288,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 867,
                             CarId = 5,
                             MechanicId = 15,
-                            Price = 28.512844570869987m,
+                            Price = 33.646066302123691m,
                             RepairServiceId = 3
                         },
                         new
@@ -7293,7 +7296,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 868,
                             CarId = 5,
                             MechanicId = 15,
-                            Price = 146.182721179347253m,
+                            Price = 133.243370820829262m,
                             RepairServiceId = 4
                         },
                         new
@@ -7301,7 +7304,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 869,
                             CarId = 5,
                             MechanicId = 15,
-                            Price = 68.679909370629048m,
+                            Price = 59.6647772568524m,
                             RepairServiceId = 5
                         },
                         new
@@ -7309,7 +7312,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 870,
                             CarId = 5,
                             MechanicId = 15,
-                            Price = 244.990822987435408m,
+                            Price = 232.391502376882615m,
                             RepairServiceId = 6
                         },
                         new
@@ -7317,7 +7320,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 871,
                             CarId = 6,
                             MechanicId = 15,
-                            Price = 37.366755214349027m,
+                            Price = 40.629291097852382m,
                             RepairServiceId = 1
                         },
                         new
@@ -7325,7 +7328,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 872,
                             CarId = 6,
                             MechanicId = 15,
-                            Price = 174.00154035678056308m,
+                            Price = 245.217415766576918m,
                             RepairServiceId = 2
                         },
                         new
@@ -7333,7 +7336,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 873,
                             CarId = 6,
                             MechanicId = 15,
-                            Price = 20.58066233550806m,
+                            Price = 34.440873820534365m,
                             RepairServiceId = 3
                         },
                         new
@@ -7341,7 +7344,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 874,
                             CarId = 6,
                             MechanicId = 15,
-                            Price = 123.267670967174856m,
+                            Price = 102.403104834432306m,
                             RepairServiceId = 4
                         },
                         new
@@ -7349,7 +7352,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 875,
                             CarId = 6,
                             MechanicId = 15,
-                            Price = 50.336205448124275m,
+                            Price = 55.812018887405532m,
                             RepairServiceId = 5
                         },
                         new
@@ -7357,7 +7360,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 876,
                             CarId = 6,
                             MechanicId = 15,
-                            Price = 243.841146441397641m,
+                            Price = 246.933117033897442m,
                             RepairServiceId = 6
                         },
                         new
@@ -7365,7 +7368,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 877,
                             CarId = 7,
                             MechanicId = 15,
-                            Price = 36.247131501880171m,
+                            Price = 32.949346324641172m,
                             RepairServiceId = 1
                         },
                         new
@@ -7373,7 +7376,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 878,
                             CarId = 7,
                             MechanicId = 15,
-                            Price = 222.135630472997798m,
+                            Price = 198.529088181297725m,
                             RepairServiceId = 2
                         },
                         new
@@ -7381,7 +7384,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 879,
                             CarId = 7,
                             MechanicId = 15,
-                            Price = 29.611048255201567m,
+                            Price = 34.437630035824188m,
                             RepairServiceId = 3
                         },
                         new
@@ -7389,7 +7392,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 880,
                             CarId = 7,
                             MechanicId = 15,
-                            Price = 103.535432746923541m,
+                            Price = 140.793015929776651m,
                             RepairServiceId = 4
                         },
                         new
@@ -7397,7 +7400,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 881,
                             CarId = 7,
                             MechanicId = 15,
-                            Price = 50.0224137403946938m,
+                            Price = 49.672117369638042m,
                             RepairServiceId = 5
                         },
                         new
@@ -7405,7 +7408,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 882,
                             CarId = 7,
                             MechanicId = 15,
-                            Price = 202.126156959777018m,
+                            Price = 248.918569935953374m,
                             RepairServiceId = 6
                         },
                         new
@@ -7413,7 +7416,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 883,
                             CarId = 8,
                             MechanicId = 15,
-                            Price = 48.109249847966072m,
+                            Price = 41.541452553852092m,
                             RepairServiceId = 1
                         },
                         new
@@ -7421,7 +7424,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 884,
                             CarId = 8,
                             MechanicId = 15,
-                            Price = 230.546349537737161m,
+                            Price = 171.416326371939628m,
                             RepairServiceId = 2
                         },
                         new
@@ -7429,7 +7432,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 885,
                             CarId = 8,
                             MechanicId = 15,
-                            Price = 26.00977467325200776m,
+                            Price = 23.196976332107355m,
                             RepairServiceId = 3
                         },
                         new
@@ -7437,7 +7440,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 886,
                             CarId = 8,
                             MechanicId = 15,
-                            Price = 103.609665916778351m,
+                            Price = 119.898442638862649m,
                             RepairServiceId = 4
                         },
                         new
@@ -7445,7 +7448,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 887,
                             CarId = 8,
                             MechanicId = 15,
-                            Price = 69.519126405001899m,
+                            Price = 45.0118416425196411m,
                             RepairServiceId = 5
                         },
                         new
@@ -7453,7 +7456,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 888,
                             CarId = 8,
                             MechanicId = 15,
-                            Price = 237.511433765194692m,
+                            Price = 207.0103860234840094m,
                             RepairServiceId = 6
                         },
                         new
@@ -7461,7 +7464,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 889,
                             CarId = 9,
                             MechanicId = 15,
-                            Price = 37.630745025437335m,
+                            Price = 46.585233364087482m,
                             RepairServiceId = 1
                         },
                         new
@@ -7469,7 +7472,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 890,
                             CarId = 9,
                             MechanicId = 15,
-                            Price = 238.718615528537391m,
+                            Price = 138.640179034495718m,
                             RepairServiceId = 2
                         },
                         new
@@ -7477,7 +7480,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 891,
                             CarId = 9,
                             MechanicId = 15,
-                            Price = 41.0405941952887848m,
+                            Price = 36.486567652097291m,
                             RepairServiceId = 3
                         },
                         new
@@ -7485,7 +7488,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 892,
                             CarId = 9,
                             MechanicId = 15,
-                            Price = 139.232659817474267m,
+                            Price = 105.0779202727692139m,
                             RepairServiceId = 4
                         },
                         new
@@ -7493,7 +7496,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 893,
                             CarId = 9,
                             MechanicId = 15,
-                            Price = 76.178415898095115m,
+                            Price = 52.156856263612907m,
                             RepairServiceId = 5
                         },
                         new
@@ -7501,7 +7504,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 894,
                             CarId = 9,
                             MechanicId = 15,
-                            Price = 238.542930386121348m,
+                            Price = 204.186777601917731m,
                             RepairServiceId = 6
                         },
                         new
@@ -7509,7 +7512,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 895,
                             CarId = 10,
                             MechanicId = 15,
-                            Price = 34.157265097189992m,
+                            Price = 39.608665098779175m,
                             RepairServiceId = 1
                         },
                         new
@@ -7517,7 +7520,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 896,
                             CarId = 10,
                             MechanicId = 15,
-                            Price = 190.0530952461789493m,
+                            Price = 189.914110997403529m,
                             RepairServiceId = 2
                         },
                         new
@@ -7525,7 +7528,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 897,
                             CarId = 10,
                             MechanicId = 15,
-                            Price = 25.156130376533719m,
+                            Price = 30.692643910225916m,
                             RepairServiceId = 3
                         },
                         new
@@ -7533,7 +7536,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 898,
                             CarId = 10,
                             MechanicId = 15,
-                            Price = 142.798187810584397m,
+                            Price = 148.503006295028484m,
                             RepairServiceId = 4
                         },
                         new
@@ -7541,7 +7544,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 899,
                             CarId = 10,
                             MechanicId = 15,
-                            Price = 73.481457840419719m,
+                            Price = 74.59149561599577m,
                             RepairServiceId = 5
                         },
                         new
@@ -7549,7 +7552,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 900,
                             CarId = 10,
                             MechanicId = 15,
-                            Price = 219.122595694945026m,
+                            Price = 231.407406346489386m,
                             RepairServiceId = 6
                         },
                         new
@@ -7557,7 +7560,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 901,
                             CarId = 1,
                             MechanicId = 16,
-                            Price = 34.737282029660728m,
+                            Price = 35.127341066202399m,
                             RepairServiceId = 1
                         },
                         new
@@ -7565,7 +7568,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 902,
                             CarId = 1,
                             MechanicId = 16,
-                            Price = 256.518913095075447m,
+                            Price = 197.543882055065705m,
                             RepairServiceId = 2
                         },
                         new
@@ -7573,7 +7576,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 903,
                             CarId = 1,
                             MechanicId = 16,
-                            Price = 39.24165413424998m,
+                            Price = 21.131606488756266m,
                             RepairServiceId = 3
                         },
                         new
@@ -7581,7 +7584,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 904,
                             CarId = 1,
                             MechanicId = 16,
-                            Price = 138.49659299521602m,
+                            Price = 101.495775283467454m,
                             RepairServiceId = 4
                         },
                         new
@@ -7589,7 +7592,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 905,
                             CarId = 1,
                             MechanicId = 16,
-                            Price = 49.313806675462872m,
+                            Price = 46.104127014961864m,
                             RepairServiceId = 5
                         },
                         new
@@ -7597,7 +7600,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 906,
                             CarId = 1,
                             MechanicId = 16,
-                            Price = 229.560780271410535m,
+                            Price = 224.428709746460393m,
                             RepairServiceId = 6
                         },
                         new
@@ -7605,7 +7608,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 907,
                             CarId = 2,
                             MechanicId = 16,
-                            Price = 48.697896559015728m,
+                            Price = 48.265453700035008m,
                             RepairServiceId = 1
                         },
                         new
@@ -7613,7 +7616,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 908,
                             CarId = 2,
                             MechanicId = 16,
-                            Price = 256.367440302911398m,
+                            Price = 148.336710867285508m,
                             RepairServiceId = 2
                         },
                         new
@@ -7621,7 +7624,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 909,
                             CarId = 2,
                             MechanicId = 16,
-                            Price = 42.282922349341366m,
+                            Price = 47.265404952908966m,
                             RepairServiceId = 3
                         },
                         new
@@ -7629,7 +7632,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 910,
                             CarId = 2,
                             MechanicId = 16,
-                            Price = 143.995703566147904m,
+                            Price = 104.164575903192195m,
                             RepairServiceId = 4
                         },
                         new
@@ -7637,7 +7640,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 911,
                             CarId = 2,
                             MechanicId = 16,
-                            Price = 73.0125485737894117m,
+                            Price = 86.307844186004571m,
                             RepairServiceId = 5
                         },
                         new
@@ -7645,7 +7648,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 912,
                             CarId = 2,
                             MechanicId = 16,
-                            Price = 242.578575274429425m,
+                            Price = 224.597727681503207m,
                             RepairServiceId = 6
                         },
                         new
@@ -7653,7 +7656,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 913,
                             CarId = 3,
                             MechanicId = 16,
-                            Price = 40.670799211314552m,
+                            Price = 47.0878569672374899m,
                             RepairServiceId = 1
                         },
                         new
@@ -7661,7 +7664,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 914,
                             CarId = 3,
                             MechanicId = 16,
-                            Price = 232.881297400006367m,
+                            Price = 258.266429818478634m,
                             RepairServiceId = 2
                         },
                         new
@@ -7669,7 +7672,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 915,
                             CarId = 3,
                             MechanicId = 16,
-                            Price = 32.969261512556283m,
+                            Price = 43.268074618358853m,
                             RepairServiceId = 3
                         },
                         new
@@ -7677,7 +7680,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 916,
                             CarId = 3,
                             MechanicId = 16,
-                            Price = 117.119278504622111m,
+                            Price = 137.0483222408687595m,
                             RepairServiceId = 4
                         },
                         new
@@ -7685,7 +7688,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 917,
                             CarId = 3,
                             MechanicId = 16,
-                            Price = 50.603595146759045m,
+                            Price = 59.849061603623484m,
                             RepairServiceId = 5
                         },
                         new
@@ -7693,7 +7696,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 918,
                             CarId = 3,
                             MechanicId = 16,
-                            Price = 229.895735433026655m,
+                            Price = 221.865473044986789m,
                             RepairServiceId = 6
                         },
                         new
@@ -7701,7 +7704,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 919,
                             CarId = 4,
                             MechanicId = 16,
-                            Price = 40.351897383236929m,
+                            Price = 43.03492143713283m,
                             RepairServiceId = 1
                         },
                         new
@@ -7709,7 +7712,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 920,
                             CarId = 4,
                             MechanicId = 16,
-                            Price = 210.772559070709302m,
+                            Price = 236.149802820603541m,
                             RepairServiceId = 2
                         },
                         new
@@ -7717,7 +7720,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 921,
                             CarId = 4,
                             MechanicId = 16,
-                            Price = 48.0108765146113436m,
+                            Price = 40.916913874336961m,
                             RepairServiceId = 3
                         },
                         new
@@ -7725,7 +7728,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 922,
                             CarId = 4,
                             MechanicId = 16,
-                            Price = 135.71049136974984m,
+                            Price = 137.262801944100062m,
                             RepairServiceId = 4
                         },
                         new
@@ -7733,7 +7736,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 923,
                             CarId = 4,
                             MechanicId = 16,
-                            Price = 53.843274018003735m,
+                            Price = 57.669282300596148m,
                             RepairServiceId = 5
                         },
                         new
@@ -7741,7 +7744,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 924,
                             CarId = 4,
                             MechanicId = 16,
-                            Price = 203.106220211241434m,
+                            Price = 203.795756043618021m,
                             RepairServiceId = 6
                         },
                         new
@@ -7749,7 +7752,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 925,
                             CarId = 5,
                             MechanicId = 16,
-                            Price = 47.063307850051639m,
+                            Price = 32.897572939228236m,
                             RepairServiceId = 1
                         },
                         new
@@ -7757,7 +7760,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 926,
                             CarId = 5,
                             MechanicId = 16,
-                            Price = 151.567333023654912m,
+                            Price = 210.386859535186283m,
                             RepairServiceId = 2
                         },
                         new
@@ -7765,7 +7768,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 927,
                             CarId = 5,
                             MechanicId = 16,
-                            Price = 34.103247776575186m,
+                            Price = 38.478028587818301m,
                             RepairServiceId = 3
                         },
                         new
@@ -7773,7 +7776,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 928,
                             CarId = 5,
                             MechanicId = 16,
-                            Price = 131.151406628954109m,
+                            Price = 133.0240420691036608m,
                             RepairServiceId = 4
                         },
                         new
@@ -7781,7 +7784,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 929,
                             CarId = 5,
                             MechanicId = 16,
-                            Price = 45.282964759162426m,
+                            Price = 74.517271236038658m,
                             RepairServiceId = 5
                         },
                         new
@@ -7789,7 +7792,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 930,
                             CarId = 5,
                             MechanicId = 16,
-                            Price = 244.273542880070054m,
+                            Price = 206.92146190159966m,
                             RepairServiceId = 6
                         },
                         new
@@ -7797,7 +7800,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 931,
                             CarId = 6,
                             MechanicId = 16,
-                            Price = 47.217201264156207m,
+                            Price = 30.499907515145274m,
                             RepairServiceId = 1
                         },
                         new
@@ -7805,7 +7808,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 932,
                             CarId = 6,
                             MechanicId = 16,
-                            Price = 215.75095951447006m,
+                            Price = 177.569212985424265m,
                             RepairServiceId = 2
                         },
                         new
@@ -7813,7 +7816,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 933,
                             CarId = 6,
                             MechanicId = 16,
-                            Price = 41.630633724426678m,
+                            Price = 30.903492322167089m,
                             RepairServiceId = 3
                         },
                         new
@@ -7821,7 +7824,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 934,
                             CarId = 6,
                             MechanicId = 16,
-                            Price = 122.495237627781236m,
+                            Price = 136.770707177140497m,
                             RepairServiceId = 4
                         },
                         new
@@ -7829,7 +7832,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 935,
                             CarId = 6,
                             MechanicId = 16,
-                            Price = 57.442936043986562m,
+                            Price = 62.0423968761163329m,
                             RepairServiceId = 5
                         },
                         new
@@ -7837,7 +7840,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 936,
                             CarId = 6,
                             MechanicId = 16,
-                            Price = 235.0435042457603235m,
+                            Price = 225.922173620345887m,
                             RepairServiceId = 6
                         },
                         new
@@ -7845,7 +7848,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 937,
                             CarId = 7,
                             MechanicId = 16,
-                            Price = 42.460233546904219m,
+                            Price = 38.867780420969175m,
                             RepairServiceId = 1
                         },
                         new
@@ -7853,7 +7856,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 938,
                             CarId = 7,
                             MechanicId = 16,
-                            Price = 232.993583720210485m,
+                            Price = 245.378746306810852m,
                             RepairServiceId = 2
                         },
                         new
@@ -7861,7 +7864,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 939,
                             CarId = 7,
                             MechanicId = 16,
-                            Price = 24.0110260936218881m,
+                            Price = 33.947427020755828m,
                             RepairServiceId = 3
                         },
                         new
@@ -7869,7 +7872,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 940,
                             CarId = 7,
                             MechanicId = 16,
-                            Price = 134.268908265904823m,
+                            Price = 114.697890779216295m,
                             RepairServiceId = 4
                         },
                         new
@@ -7877,7 +7880,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 941,
                             CarId = 7,
                             MechanicId = 16,
-                            Price = 60.533740956686199m,
+                            Price = 58.65840895475352m,
                             RepairServiceId = 5
                         },
                         new
@@ -7885,7 +7888,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 942,
                             CarId = 7,
                             MechanicId = 16,
-                            Price = 223.905288154742439m,
+                            Price = 214.415091754205138m,
                             RepairServiceId = 6
                         },
                         new
@@ -7893,7 +7896,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 943,
                             CarId = 8,
                             MechanicId = 16,
-                            Price = 43.905343957189165m,
+                            Price = 32.787850810728054m,
                             RepairServiceId = 1
                         },
                         new
@@ -7901,7 +7904,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 944,
                             CarId = 8,
                             MechanicId = 16,
-                            Price = 207.342454694465613m,
+                            Price = 160.912032328124177m,
                             RepairServiceId = 2
                         },
                         new
@@ -7909,7 +7912,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 945,
                             CarId = 8,
                             MechanicId = 16,
-                            Price = 26.470699547574197m,
+                            Price = 28.684732447143108m,
                             RepairServiceId = 3
                         },
                         new
@@ -7917,7 +7920,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 946,
                             CarId = 8,
                             MechanicId = 16,
-                            Price = 147.341142441565697m,
+                            Price = 113.133987010296498m,
                             RepairServiceId = 4
                         },
                         new
@@ -7925,7 +7928,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 947,
                             CarId = 8,
                             MechanicId = 16,
-                            Price = 49.462940402564916m,
+                            Price = 80.72675585997673m,
                             RepairServiceId = 5
                         },
                         new
@@ -7933,7 +7936,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 948,
                             CarId = 8,
                             MechanicId = 16,
-                            Price = 240.105720896567967m,
+                            Price = 215.939431597104286m,
                             RepairServiceId = 6
                         },
                         new
@@ -7941,7 +7944,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 949,
                             CarId = 9,
                             MechanicId = 16,
-                            Price = 48.398067576994729m,
+                            Price = 48.856260575850134m,
                             RepairServiceId = 1
                         },
                         new
@@ -7949,7 +7952,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 950,
                             CarId = 9,
                             MechanicId = 16,
-                            Price = 135.527642972101517m,
+                            Price = 135.0507736723258825m,
                             RepairServiceId = 2
                         },
                         new
@@ -7957,7 +7960,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 951,
                             CarId = 9,
                             MechanicId = 16,
-                            Price = 34.175551707109583m,
+                            Price = 23.143401746441349m,
                             RepairServiceId = 3
                         },
                         new
@@ -7965,7 +7968,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 952,
                             CarId = 9,
                             MechanicId = 16,
-                            Price = 130.905799039771167m,
+                            Price = 115.828831688621524m,
                             RepairServiceId = 4
                         },
                         new
@@ -7973,7 +7976,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 953,
                             CarId = 9,
                             MechanicId = 16,
-                            Price = 60.698563244784565m,
+                            Price = 63.478296258899903m,
                             RepairServiceId = 5
                         },
                         new
@@ -7981,7 +7984,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 954,
                             CarId = 9,
                             MechanicId = 16,
-                            Price = 212.233381939895778m,
+                            Price = 205.0998118768801654m,
                             RepairServiceId = 6
                         },
                         new
@@ -7989,7 +7992,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 955,
                             CarId = 10,
                             MechanicId = 16,
-                            Price = 37.978224169486608m,
+                            Price = 45.865557968052832m,
                             RepairServiceId = 1
                         },
                         new
@@ -7997,7 +8000,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 956,
                             CarId = 10,
                             MechanicId = 16,
-                            Price = 228.249860503335491m,
+                            Price = 222.127793051964972m,
                             RepairServiceId = 2
                         },
                         new
@@ -8005,7 +8008,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 957,
                             CarId = 10,
                             MechanicId = 16,
-                            Price = 39.803545460781039m,
+                            Price = 38.877868675943716m,
                             RepairServiceId = 3
                         },
                         new
@@ -8013,7 +8016,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 958,
                             CarId = 10,
                             MechanicId = 16,
-                            Price = 106.278216901242671m,
+                            Price = 100.201160024193312m,
                             RepairServiceId = 4
                         },
                         new
@@ -8021,7 +8024,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 959,
                             CarId = 10,
                             MechanicId = 16,
-                            Price = 58.0270816884385771m,
+                            Price = 66.838753529674932m,
                             RepairServiceId = 5
                         },
                         new
@@ -8029,7 +8032,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 960,
                             CarId = 10,
                             MechanicId = 16,
-                            Price = 232.0330096385551689m,
+                            Price = 244.217879245993772m,
                             RepairServiceId = 6
                         },
                         new
@@ -8037,7 +8040,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 961,
                             CarId = 1,
                             MechanicId = 17,
-                            Price = 33.717695071204088m,
+                            Price = 40.0190599937092386m,
                             RepairServiceId = 1
                         },
                         new
@@ -8045,7 +8048,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 962,
                             CarId = 1,
                             MechanicId = 17,
-                            Price = 171.987537921439655m,
+                            Price = 176.791515969250809m,
                             RepairServiceId = 2
                         },
                         new
@@ -8053,7 +8056,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 963,
                             CarId = 1,
                             MechanicId = 17,
-                            Price = 46.114986477780073m,
+                            Price = 31.754800270347511m,
                             RepairServiceId = 3
                         },
                         new
@@ -8061,7 +8064,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 964,
                             CarId = 1,
                             MechanicId = 17,
-                            Price = 108.0643413206676867m,
+                            Price = 134.0538600347882391m,
                             RepairServiceId = 4
                         },
                         new
@@ -8069,7 +8072,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 965,
                             CarId = 1,
                             MechanicId = 17,
-                            Price = 81.308000617506971m,
+                            Price = 49.955099957199597m,
                             RepairServiceId = 5
                         },
                         new
@@ -8077,7 +8080,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 966,
                             CarId = 1,
                             MechanicId = 17,
-                            Price = 216.455308689256588m,
+                            Price = 235.392416659020762m,
                             RepairServiceId = 6
                         },
                         new
@@ -8085,7 +8088,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 967,
                             CarId = 2,
                             MechanicId = 17,
-                            Price = 35.931399805233045m,
+                            Price = 37.245288680577101m,
                             RepairServiceId = 1
                         },
                         new
@@ -8093,7 +8096,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 968,
                             CarId = 2,
                             MechanicId = 17,
-                            Price = 259.200703379922034m,
+                            Price = 165.958270416100547m,
                             RepairServiceId = 2
                         },
                         new
@@ -8101,7 +8104,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 969,
                             CarId = 2,
                             MechanicId = 17,
-                            Price = 29.41467565406177m,
+                            Price = 45.210603038354801m,
                             RepairServiceId = 3
                         },
                         new
@@ -8109,7 +8112,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 970,
                             CarId = 2,
                             MechanicId = 17,
-                            Price = 131.0532458856437028m,
+                            Price = 143.956168618595352m,
                             RepairServiceId = 4
                         },
                         new
@@ -8117,7 +8120,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 971,
                             CarId = 2,
                             MechanicId = 17,
-                            Price = 47.484717512863072m,
+                            Price = 62.246332997841683m,
                             RepairServiceId = 5
                         },
                         new
@@ -8125,7 +8128,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 972,
                             CarId = 2,
                             MechanicId = 17,
-                            Price = 237.119255856808565m,
+                            Price = 222.724126524645384m,
                             RepairServiceId = 6
                         },
                         new
@@ -8133,7 +8136,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 973,
                             CarId = 3,
                             MechanicId = 17,
-                            Price = 39.792351342669928m,
+                            Price = 44.421596218810068m,
                             RepairServiceId = 1
                         },
                         new
@@ -8141,7 +8144,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 974,
                             CarId = 3,
                             MechanicId = 17,
-                            Price = 228.617893265741949m,
+                            Price = 207.0265541903724427m,
                             RepairServiceId = 2
                         },
                         new
@@ -8149,7 +8152,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 975,
                             CarId = 3,
                             MechanicId = 17,
-                            Price = 32.971888982579262m,
+                            Price = 34.0407996203465409m,
                             RepairServiceId = 3
                         },
                         new
@@ -8157,7 +8160,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 976,
                             CarId = 3,
                             MechanicId = 17,
-                            Price = 121.556594998509135m,
+                            Price = 143.614495806657989m,
                             RepairServiceId = 4
                         },
                         new
@@ -8165,7 +8168,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 977,
                             CarId = 3,
                             MechanicId = 17,
-                            Price = 71.771189174937857m,
+                            Price = 55.560886070130248m,
                             RepairServiceId = 5
                         },
                         new
@@ -8173,7 +8176,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 978,
                             CarId = 3,
                             MechanicId = 17,
-                            Price = 220.463779322477128m,
+                            Price = 222.117199918476927m,
                             RepairServiceId = 6
                         },
                         new
@@ -8181,7 +8184,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 979,
                             CarId = 4,
                             MechanicId = 17,
-                            Price = 31.807984430679976m,
+                            Price = 30.301858897428214m,
                             RepairServiceId = 1
                         },
                         new
@@ -8189,7 +8192,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 980,
                             CarId = 4,
                             MechanicId = 17,
-                            Price = 237.80021283535956m,
+                            Price = 213.993275940850891m,
                             RepairServiceId = 2
                         },
                         new
@@ -8197,7 +8200,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 981,
                             CarId = 4,
                             MechanicId = 17,
-                            Price = 38.465023929575218m,
+                            Price = 23.239447042984964m,
                             RepairServiceId = 3
                         },
                         new
@@ -8205,7 +8208,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 982,
                             CarId = 4,
                             MechanicId = 17,
-                            Price = 129.0544307578395565m,
+                            Price = 110.0532255803295321m,
                             RepairServiceId = 4
                         },
                         new
@@ -8213,7 +8216,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 983,
                             CarId = 4,
                             MechanicId = 17,
-                            Price = 86.188006355976213m,
+                            Price = 55.381585289207342m,
                             RepairServiceId = 5
                         },
                         new
@@ -8221,7 +8224,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 984,
                             CarId = 4,
                             MechanicId = 17,
-                            Price = 243.678479716724684m,
+                            Price = 230.784058307887228m,
                             RepairServiceId = 6
                         },
                         new
@@ -8229,7 +8232,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 985,
                             CarId = 5,
                             MechanicId = 17,
-                            Price = 30.33472423267403m,
+                            Price = 32.791029643582127m,
                             RepairServiceId = 1
                         },
                         new
@@ -8237,7 +8240,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 986,
                             CarId = 5,
                             MechanicId = 17,
-                            Price = 173.688151012352624m,
+                            Price = 171.807170074502244m,
                             RepairServiceId = 2
                         },
                         new
@@ -8245,7 +8248,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 987,
                             CarId = 5,
                             MechanicId = 17,
-                            Price = 39.603590445323643m,
+                            Price = 20.0725455324048245m,
                             RepairServiceId = 3
                         },
                         new
@@ -8253,7 +8256,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 988,
                             CarId = 5,
                             MechanicId = 17,
-                            Price = 148.00270051986397613m,
+                            Price = 123.0918199062696031m,
                             RepairServiceId = 4
                         },
                         new
@@ -8261,7 +8264,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 989,
                             CarId = 5,
                             MechanicId = 17,
-                            Price = 66.165822957604765m,
+                            Price = 72.758203616058158m,
                             RepairServiceId = 5
                         },
                         new
@@ -8269,7 +8272,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 990,
                             CarId = 5,
                             MechanicId = 17,
-                            Price = 245.93918397681277m,
+                            Price = 201.668394092083431m,
                             RepairServiceId = 6
                         },
                         new
@@ -8277,7 +8280,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 991,
                             CarId = 6,
                             MechanicId = 17,
-                            Price = 37.0107910288451405m,
+                            Price = 35.389775750856209m,
                             RepairServiceId = 1
                         },
                         new
@@ -8285,7 +8288,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 992,
                             CarId = 6,
                             MechanicId = 17,
-                            Price = 146.0973799787431249m,
+                            Price = 232.97936390900208m,
                             RepairServiceId = 2
                         },
                         new
@@ -8293,7 +8296,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 993,
                             CarId = 6,
                             MechanicId = 17,
-                            Price = 20.393376074833801m,
+                            Price = 21.11447923065215m,
                             RepairServiceId = 3
                         },
                         new
@@ -8301,7 +8304,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 994,
                             CarId = 6,
                             MechanicId = 17,
-                            Price = 114.641093936159061m,
+                            Price = 127.319302776970446m,
                             RepairServiceId = 4
                         },
                         new
@@ -8309,7 +8312,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 995,
                             CarId = 6,
                             MechanicId = 17,
-                            Price = 66.94189121283706m,
+                            Price = 66.749617446465691m,
                             RepairServiceId = 5
                         },
                         new
@@ -8317,7 +8320,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 996,
                             CarId = 6,
                             MechanicId = 17,
-                            Price = 242.158502927870518m,
+                            Price = 221.03055331283172m,
                             RepairServiceId = 6
                         },
                         new
@@ -8325,7 +8328,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 997,
                             CarId = 7,
                             MechanicId = 17,
-                            Price = 44.0524143088327217m,
+                            Price = 40.416190569355553m,
                             RepairServiceId = 1
                         },
                         new
@@ -8333,7 +8336,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 998,
                             CarId = 7,
                             MechanicId = 17,
-                            Price = 183.343380429366249m,
+                            Price = 153.133838827469114m,
                             RepairServiceId = 2
                         },
                         new
@@ -8341,7 +8344,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 999,
                             CarId = 7,
                             MechanicId = 17,
-                            Price = 28.504694033945565m,
+                            Price = 20.818914521939649m,
                             RepairServiceId = 3
                         },
                         new
@@ -8349,7 +8352,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1000,
                             CarId = 7,
                             MechanicId = 17,
-                            Price = 110.54290615560447m,
+                            Price = 129.0878093224729904m,
                             RepairServiceId = 4
                         },
                         new
@@ -8357,7 +8360,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1001,
                             CarId = 7,
                             MechanicId = 17,
-                            Price = 45.550379278526658m,
+                            Price = 66.405801442034514m,
                             RepairServiceId = 5
                         },
                         new
@@ -8365,7 +8368,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1002,
                             CarId = 7,
                             MechanicId = 17,
-                            Price = 224.975209918990126m,
+                            Price = 237.0808806931426454m,
                             RepairServiceId = 6
                         },
                         new
@@ -8373,7 +8376,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1003,
                             CarId = 8,
                             MechanicId = 17,
-                            Price = 37.719090283402586m,
+                            Price = 40.898688281857917m,
                             RepairServiceId = 1
                         },
                         new
@@ -8381,7 +8384,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1004,
                             CarId = 8,
                             MechanicId = 17,
-                            Price = 168.876754099600924m,
+                            Price = 200.296225707079438m,
                             RepairServiceId = 2
                         },
                         new
@@ -8389,7 +8392,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1005,
                             CarId = 8,
                             MechanicId = 17,
-                            Price = 40.153535928344314m,
+                            Price = 35.0580457925723098m,
                             RepairServiceId = 3
                         },
                         new
@@ -8397,7 +8400,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1006,
                             CarId = 8,
                             MechanicId = 17,
-                            Price = 131.917491311607519m,
+                            Price = 112.965941417475469m,
                             RepairServiceId = 4
                         },
                         new
@@ -8405,7 +8408,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1007,
                             CarId = 8,
                             MechanicId = 17,
-                            Price = 54.0808991821658666m,
+                            Price = 49.0006382293031435m,
                             RepairServiceId = 5
                         },
                         new
@@ -8413,7 +8416,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1008,
                             CarId = 8,
                             MechanicId = 17,
-                            Price = 221.92900866765929m,
+                            Price = 244.563532684523145m,
                             RepairServiceId = 6
                         },
                         new
@@ -8421,7 +8424,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1009,
                             CarId = 9,
                             MechanicId = 17,
-                            Price = 41.5029733957311m,
+                            Price = 39.592492715901134m,
                             RepairServiceId = 1
                         },
                         new
@@ -8429,7 +8432,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1010,
                             CarId = 9,
                             MechanicId = 17,
-                            Price = 154.827595239015596m,
+                            Price = 178.958876539907751m,
                             RepairServiceId = 2
                         },
                         new
@@ -8437,7 +8440,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1011,
                             CarId = 9,
                             MechanicId = 17,
-                            Price = 22.207064438208625m,
+                            Price = 22.633628592665955m,
                             RepairServiceId = 3
                         },
                         new
@@ -8445,7 +8448,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1012,
                             CarId = 9,
                             MechanicId = 17,
-                            Price = 139.26493766965445m,
+                            Price = 137.65944386217216m,
                             RepairServiceId = 4
                         },
                         new
@@ -8453,7 +8456,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1013,
                             CarId = 9,
                             MechanicId = 17,
-                            Price = 61.635162580577461m,
+                            Price = 85.501899854034466m,
                             RepairServiceId = 5
                         },
                         new
@@ -8461,7 +8464,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1014,
                             CarId = 9,
                             MechanicId = 17,
-                            Price = 232.117639824832729m,
+                            Price = 249.279303990951179m,
                             RepairServiceId = 6
                         },
                         new
@@ -8469,7 +8472,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1015,
                             CarId = 10,
                             MechanicId = 17,
-                            Price = 36.786693780471258m,
+                            Price = 49.96429296922615m,
                             RepairServiceId = 1
                         },
                         new
@@ -8477,7 +8480,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1016,
                             CarId = 10,
                             MechanicId = 17,
-                            Price = 193.534111610005892m,
+                            Price = 205.599178706991852m,
                             RepairServiceId = 2
                         },
                         new
@@ -8485,7 +8488,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1017,
                             CarId = 10,
                             MechanicId = 17,
-                            Price = 34.837281506569144m,
+                            Price = 37.916562439075986m,
                             RepairServiceId = 3
                         },
                         new
@@ -8493,7 +8496,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1018,
                             CarId = 10,
                             MechanicId = 17,
-                            Price = 136.270592912133322m,
+                            Price = 104.388047092953156m,
                             RepairServiceId = 4
                         },
                         new
@@ -8501,7 +8504,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1019,
                             CarId = 10,
                             MechanicId = 17,
-                            Price = 51.0345121816705525m,
+                            Price = 86.892810448827066m,
                             RepairServiceId = 5
                         },
                         new
@@ -8509,7 +8512,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1020,
                             CarId = 10,
                             MechanicId = 17,
-                            Price = 210.903762514834809m,
+                            Price = 236.744779897927799m,
                             RepairServiceId = 6
                         },
                         new
@@ -8517,7 +8520,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1021,
                             CarId = 1,
                             MechanicId = 18,
-                            Price = 37.585948170285778m,
+                            Price = 35.87760503224173m,
                             RepairServiceId = 1
                         },
                         new
@@ -8525,7 +8528,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1022,
                             CarId = 1,
                             MechanicId = 18,
-                            Price = 136.478115988949405m,
+                            Price = 235.219721747259491m,
                             RepairServiceId = 2
                         },
                         new
@@ -8533,7 +8536,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1023,
                             CarId = 1,
                             MechanicId = 18,
-                            Price = 35.555635062474618m,
+                            Price = 40.735390796954281m,
                             RepairServiceId = 3
                         },
                         new
@@ -8541,7 +8544,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1024,
                             CarId = 1,
                             MechanicId = 18,
-                            Price = 120.565571699876131m,
+                            Price = 106.903724443219891m,
                             RepairServiceId = 4
                         },
                         new
@@ -8549,7 +8552,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1025,
                             CarId = 1,
                             MechanicId = 18,
-                            Price = 63.131768304438809m,
+                            Price = 46.776882815410696m,
                             RepairServiceId = 5
                         },
                         new
@@ -8557,7 +8560,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1026,
                             CarId = 1,
                             MechanicId = 18,
-                            Price = 200.68761990552453m,
+                            Price = 230.845169160814627m,
                             RepairServiceId = 6
                         },
                         new
@@ -8565,7 +8568,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1027,
                             CarId = 2,
                             MechanicId = 18,
-                            Price = 42.100624987355356m,
+                            Price = 43.456832544995708m,
                             RepairServiceId = 1
                         },
                         new
@@ -8573,7 +8576,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1028,
                             CarId = 2,
                             MechanicId = 18,
-                            Price = 228.0615465909467664m,
+                            Price = 159.189856926869894m,
                             RepairServiceId = 2
                         },
                         new
@@ -8581,7 +8584,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1029,
                             CarId = 2,
                             MechanicId = 18,
-                            Price = 36.264549619236753m,
+                            Price = 26.0358056782211914m,
                             RepairServiceId = 3
                         },
                         new
@@ -8589,7 +8592,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1030,
                             CarId = 2,
                             MechanicId = 18,
-                            Price = 144.467417822154462m,
+                            Price = 117.768183002447611m,
                             RepairServiceId = 4
                         },
                         new
@@ -8597,7 +8600,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1031,
                             CarId = 2,
                             MechanicId = 18,
-                            Price = 51.857406137567425m,
+                            Price = 81.250459743436722m,
                             RepairServiceId = 5
                         },
                         new
@@ -8605,7 +8608,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1032,
                             CarId = 2,
                             MechanicId = 18,
-                            Price = 203.427872448265954m,
+                            Price = 217.903212995425433m,
                             RepairServiceId = 6
                         },
                         new
@@ -8613,7 +8616,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1033,
                             CarId = 3,
                             MechanicId = 18,
-                            Price = 34.618566142407794m,
+                            Price = 45.949541850077345m,
                             RepairServiceId = 1
                         },
                         new
@@ -8621,7 +8624,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1034,
                             CarId = 3,
                             MechanicId = 18,
-                            Price = 142.354136483552326m,
+                            Price = 227.569924556185339m,
                             RepairServiceId = 2
                         },
                         new
@@ -8629,7 +8632,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1035,
                             CarId = 3,
                             MechanicId = 18,
-                            Price = 48.908632071295555m,
+                            Price = 39.666325071040207m,
                             RepairServiceId = 3
                         },
                         new
@@ -8637,7 +8640,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1036,
                             CarId = 3,
                             MechanicId = 18,
-                            Price = 135.175720588048409m,
+                            Price = 116.486673815809562m,
                             RepairServiceId = 4
                         },
                         new
@@ -8645,7 +8648,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1037,
                             CarId = 3,
                             MechanicId = 18,
-                            Price = 46.766844033981511m,
+                            Price = 49.162816427559711m,
                             RepairServiceId = 5
                         },
                         new
@@ -8653,7 +8656,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1038,
                             CarId = 3,
                             MechanicId = 18,
-                            Price = 242.913926140474801m,
+                            Price = 222.576301580017912m,
                             RepairServiceId = 6
                         },
                         new
@@ -8661,7 +8664,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1039,
                             CarId = 4,
                             MechanicId = 18,
-                            Price = 30.133023152360528m,
+                            Price = 30.804503606830411m,
                             RepairServiceId = 1
                         },
                         new
@@ -8669,7 +8672,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1040,
                             CarId = 4,
                             MechanicId = 18,
-                            Price = 182.375273539228872m,
+                            Price = 217.725795762967123m,
                             RepairServiceId = 2
                         },
                         new
@@ -8677,7 +8680,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1041,
                             CarId = 4,
                             MechanicId = 18,
-                            Price = 31.712337032100495m,
+                            Price = 33.897396414047451m,
                             RepairServiceId = 3
                         },
                         new
@@ -8685,7 +8688,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1042,
                             CarId = 4,
                             MechanicId = 18,
-                            Price = 106.388791169058567m,
+                            Price = 144.179783375287765m,
                             RepairServiceId = 4
                         },
                         new
@@ -8693,7 +8696,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1043,
                             CarId = 4,
                             MechanicId = 18,
-                            Price = 76.154123132987592m,
+                            Price = 55.131360534551783m,
                             RepairServiceId = 5
                         },
                         new
@@ -8701,7 +8704,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1044,
                             CarId = 4,
                             MechanicId = 18,
-                            Price = 207.0583858943071223m,
+                            Price = 237.855155852640516m,
                             RepairServiceId = 6
                         },
                         new
@@ -8709,7 +8712,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1045,
                             CarId = 5,
                             MechanicId = 18,
-                            Price = 36.521338994816353m,
+                            Price = 38.446776886304197m,
                             RepairServiceId = 1
                         },
                         new
@@ -8717,7 +8720,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1046,
                             CarId = 5,
                             MechanicId = 18,
-                            Price = 247.893963403734237m,
+                            Price = 166.516862198427555m,
                             RepairServiceId = 2
                         },
                         new
@@ -8725,7 +8728,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1047,
                             CarId = 5,
                             MechanicId = 18,
-                            Price = 43.26805709309223m,
+                            Price = 39.550490234185676m,
                             RepairServiceId = 3
                         },
                         new
@@ -8733,7 +8736,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1048,
                             CarId = 5,
                             MechanicId = 18,
-                            Price = 103.707956308813144m,
+                            Price = 139.935279027767618m,
                             RepairServiceId = 4
                         },
                         new
@@ -8741,7 +8744,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1049,
                             CarId = 5,
                             MechanicId = 18,
-                            Price = 66.370913915696237m,
+                            Price = 52.902844109666976m,
                             RepairServiceId = 5
                         },
                         new
@@ -8749,7 +8752,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1050,
                             CarId = 5,
                             MechanicId = 18,
-                            Price = 241.396026305728932m,
+                            Price = 212.109738485789594m,
                             RepairServiceId = 6
                         },
                         new
@@ -8757,7 +8760,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1051,
                             CarId = 6,
                             MechanicId = 18,
-                            Price = 49.793174522274467m,
+                            Price = 32.769453826176312m,
                             RepairServiceId = 1
                         },
                         new
@@ -8765,7 +8768,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1052,
                             CarId = 6,
                             MechanicId = 18,
-                            Price = 230.251340467543158m,
+                            Price = 256.987678092180112m,
                             RepairServiceId = 2
                         },
                         new
@@ -8773,7 +8776,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1053,
                             CarId = 6,
                             MechanicId = 18,
-                            Price = 37.109189422727219m,
+                            Price = 28.412251193223857m,
                             RepairServiceId = 3
                         },
                         new
@@ -8781,7 +8784,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1054,
                             CarId = 6,
                             MechanicId = 18,
-                            Price = 103.115672821300346m,
+                            Price = 127.848714755820081m,
                             RepairServiceId = 4
                         },
                         new
@@ -8789,7 +8792,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1055,
                             CarId = 6,
                             MechanicId = 18,
-                            Price = 54.510423218093148m,
+                            Price = 68.940384909002733m,
                             RepairServiceId = 5
                         },
                         new
@@ -8797,7 +8800,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1056,
                             CarId = 6,
                             MechanicId = 18,
-                            Price = 230.751485326894936m,
+                            Price = 242.0769669663887414m,
                             RepairServiceId = 6
                         },
                         new
@@ -8805,7 +8808,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1057,
                             CarId = 7,
                             MechanicId = 18,
-                            Price = 48.767261697411699m,
+                            Price = 39.32603638009881m,
                             RepairServiceId = 1
                         },
                         new
@@ -8813,7 +8816,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1058,
                             CarId = 7,
                             MechanicId = 18,
-                            Price = 229.767900463962419m,
+                            Price = 146.649263654187231m,
                             RepairServiceId = 2
                         },
                         new
@@ -8821,7 +8824,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1059,
                             CarId = 7,
                             MechanicId = 18,
-                            Price = 21.270749795725354m,
+                            Price = 40.0155159262226723m,
                             RepairServiceId = 3
                         },
                         new
@@ -8829,7 +8832,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1060,
                             CarId = 7,
                             MechanicId = 18,
-                            Price = 128.383449171427719m,
+                            Price = 116.192722052783013m,
                             RepairServiceId = 4
                         },
                         new
@@ -8837,7 +8840,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1061,
                             CarId = 7,
                             MechanicId = 18,
-                            Price = 48.805538820488345m,
+                            Price = 45.409899007228661m,
                             RepairServiceId = 5
                         },
                         new
@@ -8845,7 +8848,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1062,
                             CarId = 7,
                             MechanicId = 18,
-                            Price = 219.159859667335054m,
+                            Price = 206.48410726751199m,
                             RepairServiceId = 6
                         },
                         new
@@ -8853,7 +8856,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1063,
                             CarId = 8,
                             MechanicId = 18,
-                            Price = 30.13705900720577m,
+                            Price = 36.269234414848679m,
                             RepairServiceId = 1
                         },
                         new
@@ -8861,7 +8864,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1064,
                             CarId = 8,
                             MechanicId = 18,
-                            Price = 175.623027835333605m,
+                            Price = 150.627191612800769m,
                             RepairServiceId = 2
                         },
                         new
@@ -8869,7 +8872,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1065,
                             CarId = 8,
                             MechanicId = 18,
-                            Price = 45.688695092904339m,
+                            Price = 45.221177324015416m,
                             RepairServiceId = 3
                         },
                         new
@@ -8877,7 +8880,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1066,
                             CarId = 8,
                             MechanicId = 18,
-                            Price = 132.784167307383834m,
+                            Price = 106.392356653915006m,
                             RepairServiceId = 4
                         },
                         new
@@ -8885,7 +8888,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1067,
                             CarId = 8,
                             MechanicId = 18,
-                            Price = 68.850227799109284m,
+                            Price = 70.890039700178615m,
                             RepairServiceId = 5
                         },
                         new
@@ -8893,7 +8896,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1068,
                             CarId = 8,
                             MechanicId = 18,
-                            Price = 225.445114113087728m,
+                            Price = 233.671013877753412m,
                             RepairServiceId = 6
                         },
                         new
@@ -8901,7 +8904,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1069,
                             CarId = 9,
                             MechanicId = 18,
-                            Price = 46.110301671225079m,
+                            Price = 41.360612338746654m,
                             RepairServiceId = 1
                         },
                         new
@@ -8909,7 +8912,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1070,
                             CarId = 9,
                             MechanicId = 18,
-                            Price = 176.897853875609308m,
+                            Price = 177.0365485406134722m,
                             RepairServiceId = 2
                         },
                         new
@@ -8917,7 +8920,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1071,
                             CarId = 9,
                             MechanicId = 18,
-                            Price = 46.192765647479728m,
+                            Price = 33.604993034536369m,
                             RepairServiceId = 3
                         },
                         new
@@ -8925,7 +8928,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1072,
                             CarId = 9,
                             MechanicId = 18,
-                            Price = 141.182693526104975m,
+                            Price = 100.403252841589259m,
                             RepairServiceId = 4
                         },
                         new
@@ -8933,7 +8936,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1073,
                             CarId = 9,
                             MechanicId = 18,
-                            Price = 63.240169460764175m,
+                            Price = 68.889316768946458m,
                             RepairServiceId = 5
                         },
                         new
@@ -8941,7 +8944,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1074,
                             CarId = 9,
                             MechanicId = 18,
-                            Price = 245.633476422055607m,
+                            Price = 213.167429968343185m,
                             RepairServiceId = 6
                         },
                         new
@@ -8949,7 +8952,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1075,
                             CarId = 10,
                             MechanicId = 18,
-                            Price = 41.609125533030115m,
+                            Price = 46.789932124356364m,
                             RepairServiceId = 1
                         },
                         new
@@ -8957,7 +8960,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1076,
                             CarId = 10,
                             MechanicId = 18,
-                            Price = 247.121366566780528m,
+                            Price = 200.655000636380186m,
                             RepairServiceId = 2
                         },
                         new
@@ -8965,7 +8968,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1077,
                             CarId = 10,
                             MechanicId = 18,
-                            Price = 21.191877345264992m,
+                            Price = 39.188786306497616m,
                             RepairServiceId = 3
                         },
                         new
@@ -8973,7 +8976,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1078,
                             CarId = 10,
                             MechanicId = 18,
-                            Price = 113.331550778531809m,
+                            Price = 105.994370647405065m,
                             RepairServiceId = 4
                         },
                         new
@@ -8981,7 +8984,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1079,
                             CarId = 10,
                             MechanicId = 18,
-                            Price = 75.521348891259189m,
+                            Price = 76.224462556480534m,
                             RepairServiceId = 5
                         },
                         new
@@ -8989,7 +8992,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1080,
                             CarId = 10,
                             MechanicId = 18,
-                            Price = 244.323543264332938m,
+                            Price = 234.754758469752297m,
                             RepairServiceId = 6
                         },
                         new
@@ -8997,7 +9000,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1081,
                             CarId = 1,
                             MechanicId = 19,
-                            Price = 35.416996824610438m,
+                            Price = 36.544502384839564m,
                             RepairServiceId = 1
                         },
                         new
@@ -9005,7 +9008,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1082,
                             CarId = 1,
                             MechanicId = 19,
-                            Price = 248.0236169300882867m,
+                            Price = 213.526692193827008m,
                             RepairServiceId = 2
                         },
                         new
@@ -9013,7 +9016,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1083,
                             CarId = 1,
                             MechanicId = 19,
-                            Price = 33.0487443107291908m,
+                            Price = 37.273052695772623m,
                             RepairServiceId = 3
                         },
                         new
@@ -9021,7 +9024,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1084,
                             CarId = 1,
                             MechanicId = 19,
-                            Price = 114.127450136405167m,
+                            Price = 111.573477718709256m,
                             RepairServiceId = 4
                         },
                         new
@@ -9029,7 +9032,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1085,
                             CarId = 1,
                             MechanicId = 19,
-                            Price = 56.0810559648556774m,
+                            Price = 85.246750394757665m,
                             RepairServiceId = 5
                         },
                         new
@@ -9037,7 +9040,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1086,
                             CarId = 1,
                             MechanicId = 19,
-                            Price = 232.570339994323448m,
+                            Price = 231.358270497223113m,
                             RepairServiceId = 6
                         },
                         new
@@ -9045,7 +9048,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1087,
                             CarId = 2,
                             MechanicId = 19,
-                            Price = 40.461221712593236m,
+                            Price = 48.574468428187084m,
                             RepairServiceId = 1
                         },
                         new
@@ -9053,7 +9056,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1088,
                             CarId = 2,
                             MechanicId = 19,
-                            Price = 190.751887201134636m,
+                            Price = 168.105674234928431m,
                             RepairServiceId = 2
                         },
                         new
@@ -9061,7 +9064,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1089,
                             CarId = 2,
                             MechanicId = 19,
-                            Price = 23.00707852181106838m,
+                            Price = 30.288858092964414m,
                             RepairServiceId = 3
                         },
                         new
@@ -9069,7 +9072,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1090,
                             CarId = 2,
                             MechanicId = 19,
-                            Price = 101.276604901537171m,
+                            Price = 146.420169097602698m,
                             RepairServiceId = 4
                         },
                         new
@@ -9077,7 +9080,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1091,
                             CarId = 2,
                             MechanicId = 19,
-                            Price = 60.823195674938643m,
+                            Price = 54.793372531328409m,
                             RepairServiceId = 5
                         },
                         new
@@ -9085,7 +9088,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1092,
                             CarId = 2,
                             MechanicId = 19,
-                            Price = 239.19089823998163m,
+                            Price = 200.704133803441853m,
                             RepairServiceId = 6
                         },
                         new
@@ -9093,7 +9096,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1093,
                             CarId = 3,
                             MechanicId = 19,
-                            Price = 32.897791118846824m,
+                            Price = 39.252517571826495m,
                             RepairServiceId = 1
                         },
                         new
@@ -9101,7 +9104,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1094,
                             CarId = 3,
                             MechanicId = 19,
-                            Price = 157.419005310616364m,
+                            Price = 224.92980647566298m,
                             RepairServiceId = 2
                         },
                         new
@@ -9109,7 +9112,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1095,
                             CarId = 3,
                             MechanicId = 19,
-                            Price = 29.4957304723905m,
+                            Price = 47.645886580760585m,
                             RepairServiceId = 3
                         },
                         new
@@ -9117,7 +9120,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1096,
                             CarId = 3,
                             MechanicId = 19,
-                            Price = 128.979912599579828m,
+                            Price = 101.152350924444049m,
                             RepairServiceId = 4
                         },
                         new
@@ -9125,7 +9128,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1097,
                             CarId = 3,
                             MechanicId = 19,
-                            Price = 67.345520863594563m,
+                            Price = 80.902006645105355m,
                             RepairServiceId = 5
                         },
                         new
@@ -9133,7 +9136,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1098,
                             CarId = 3,
                             MechanicId = 19,
-                            Price = 228.0286235793019595m,
+                            Price = 214.695625520521638m,
                             RepairServiceId = 6
                         },
                         new
@@ -9141,7 +9144,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1099,
                             CarId = 4,
                             MechanicId = 19,
-                            Price = 40.146806256304595m,
+                            Price = 30.316668003439214m,
                             RepairServiceId = 1
                         },
                         new
@@ -9149,7 +9152,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1100,
                             CarId = 4,
                             MechanicId = 19,
-                            Price = 205.277490798941182m,
+                            Price = 207.0785650203269868m,
                             RepairServiceId = 2
                         },
                         new
@@ -9157,7 +9160,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1101,
                             CarId = 4,
                             MechanicId = 19,
-                            Price = 29.261120730504306m,
+                            Price = 24.0583893135122144m,
                             RepairServiceId = 3
                         },
                         new
@@ -9165,7 +9168,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1102,
                             CarId = 4,
                             MechanicId = 19,
-                            Price = 117.652477966524302m,
+                            Price = 147.245725807836247m,
                             RepairServiceId = 4
                         },
                         new
@@ -9173,7 +9176,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1103,
                             CarId = 4,
                             MechanicId = 19,
-                            Price = 72.662057790408993m,
+                            Price = 60.566305461504097m,
                             RepairServiceId = 5
                         },
                         new
@@ -9181,7 +9184,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1104,
                             CarId = 4,
                             MechanicId = 19,
-                            Price = 231.337424302521582m,
+                            Price = 234.400384295024396m,
                             RepairServiceId = 6
                         },
                         new
@@ -9189,7 +9192,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1105,
                             CarId = 5,
                             MechanicId = 19,
-                            Price = 42.560927195712377m,
+                            Price = 49.631785697757394m,
                             RepairServiceId = 1
                         },
                         new
@@ -9197,7 +9200,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1106,
                             CarId = 5,
                             MechanicId = 19,
-                            Price = 206.999604855886306m,
+                            Price = 190.416959111406739m,
                             RepairServiceId = 2
                         },
                         new
@@ -9205,7 +9208,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1107,
                             CarId = 5,
                             MechanicId = 19,
-                            Price = 23.430066812713757m,
+                            Price = 47.334019419277512m,
                             RepairServiceId = 3
                         },
                         new
@@ -9213,7 +9216,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1108,
                             CarId = 5,
                             MechanicId = 19,
-                            Price = 141.260792821623047m,
+                            Price = 131.184748610619214m,
                             RepairServiceId = 4
                         },
                         new
@@ -9221,7 +9224,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1109,
                             CarId = 5,
                             MechanicId = 19,
-                            Price = 72.247854884504243m,
+                            Price = 49.398415520708333m,
                             RepairServiceId = 5
                         },
                         new
@@ -9229,7 +9232,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1110,
                             CarId = 5,
                             MechanicId = 19,
-                            Price = 228.0822511095776679m,
+                            Price = 208.159565176129726m,
                             RepairServiceId = 6
                         },
                         new
@@ -9237,7 +9240,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1111,
                             CarId = 6,
                             MechanicId = 19,
-                            Price = 31.303610635008854m,
+                            Price = 45.813050010577464m,
                             RepairServiceId = 1
                         },
                         new
@@ -9245,7 +9248,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1112,
                             CarId = 6,
                             MechanicId = 19,
-                            Price = 141.415826377529274m,
+                            Price = 228.872636909028171m,
                             RepairServiceId = 2
                         },
                         new
@@ -9253,7 +9256,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1113,
                             CarId = 6,
                             MechanicId = 19,
-                            Price = 21.748552812365661m,
+                            Price = 35.14338224083814m,
                             RepairServiceId = 3
                         },
                         new
@@ -9261,7 +9264,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1114,
                             CarId = 6,
                             MechanicId = 19,
-                            Price = 115.568275828084335m,
+                            Price = 126.750981483578948m,
                             RepairServiceId = 4
                         },
                         new
@@ -9269,7 +9272,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1115,
                             CarId = 6,
                             MechanicId = 19,
-                            Price = 82.746886524287301m,
+                            Price = 55.0429076681047299m,
                             RepairServiceId = 5
                         },
                         new
@@ -9277,7 +9280,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1116,
                             CarId = 6,
                             MechanicId = 19,
-                            Price = 247.430343840825613m,
+                            Price = 249.562277112297315m,
                             RepairServiceId = 6
                         },
                         new
@@ -9285,7 +9288,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1117,
                             CarId = 7,
                             MechanicId = 19,
-                            Price = 48.663399389487632m,
+                            Price = 48.0908951851856796m,
                             RepairServiceId = 1
                         },
                         new
@@ -9293,7 +9296,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1118,
                             CarId = 7,
                             MechanicId = 19,
-                            Price = 250.460424646449931m,
+                            Price = 136.831803027104178m,
                             RepairServiceId = 2
                         },
                         new
@@ -9301,7 +9304,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1119,
                             CarId = 7,
                             MechanicId = 19,
-                            Price = 31.55923877719921m,
+                            Price = 42.751114408662146m,
                             RepairServiceId = 3
                         },
                         new
@@ -9309,7 +9312,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1120,
                             CarId = 7,
                             MechanicId = 19,
-                            Price = 143.925543682323579m,
+                            Price = 105.325845134464992m,
                             RepairServiceId = 4
                         },
                         new
@@ -9317,7 +9320,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1121,
                             CarId = 7,
                             MechanicId = 19,
-                            Price = 81.976025673686051m,
+                            Price = 86.643928399712192m,
                             RepairServiceId = 5
                         },
                         new
@@ -9325,7 +9328,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1122,
                             CarId = 7,
                             MechanicId = 19,
-                            Price = 237.954471778503596m,
+                            Price = 204.0721956284124879m,
                             RepairServiceId = 6
                         },
                         new
@@ -9333,7 +9336,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1123,
                             CarId = 8,
                             MechanicId = 19,
-                            Price = 33.964432332388658m,
+                            Price = 38.813387970721906m,
                             RepairServiceId = 1
                         },
                         new
@@ -9341,7 +9344,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1124,
                             CarId = 8,
                             MechanicId = 19,
-                            Price = 171.176172303673956m,
+                            Price = 207.273618493039292m,
                             RepairServiceId = 2
                         },
                         new
@@ -9349,7 +9352,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1125,
                             CarId = 8,
                             MechanicId = 19,
-                            Price = 27.518490395076825m,
+                            Price = 24.458069290269938m,
                             RepairServiceId = 3
                         },
                         new
@@ -9357,7 +9360,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1126,
                             CarId = 8,
                             MechanicId = 19,
-                            Price = 140.840469185002251m,
+                            Price = 136.535512380436781m,
                             RepairServiceId = 4
                         },
                         new
@@ -9365,7 +9368,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1127,
                             CarId = 8,
                             MechanicId = 19,
-                            Price = 75.111649067155229m,
+                            Price = 69.858550903744152m,
                             RepairServiceId = 5
                         },
                         new
@@ -9373,7 +9376,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1128,
                             CarId = 8,
                             MechanicId = 19,
-                            Price = 249.971546475839448m,
+                            Price = 236.843125482074648m,
                             RepairServiceId = 6
                         },
                         new
@@ -9381,7 +9384,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1129,
                             CarId = 9,
                             MechanicId = 19,
-                            Price = 36.372067033192136m,
+                            Price = 49.743404209045439m,
                             RepairServiceId = 1
                         },
                         new
@@ -9389,7 +9392,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1130,
                             CarId = 9,
                             MechanicId = 19,
-                            Price = 148.654071019441811m,
+                            Price = 159.14506431364026m,
                             RepairServiceId = 2
                         },
                         new
@@ -9397,7 +9400,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1131,
                             CarId = 9,
                             MechanicId = 19,
-                            Price = 26.720540668746268m,
+                            Price = 30.524017676896296m,
                             RepairServiceId = 3
                         },
                         new
@@ -9405,7 +9408,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1132,
                             CarId = 9,
                             MechanicId = 19,
-                            Price = 129.231161757590939m,
+                            Price = 107.00308622452794649m,
                             RepairServiceId = 4
                         },
                         new
@@ -9413,7 +9416,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1133,
                             CarId = 9,
                             MechanicId = 19,
-                            Price = 63.0881317483172164m,
+                            Price = 72.938546807151296m,
                             RepairServiceId = 5
                         },
                         new
@@ -9421,7 +9424,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1134,
                             CarId = 9,
                             MechanicId = 19,
-                            Price = 241.0793093170889518m,
+                            Price = 248.744346681022975m,
                             RepairServiceId = 6
                         },
                         new
@@ -9429,7 +9432,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1135,
                             CarId = 10,
                             MechanicId = 19,
-                            Price = 37.79494647822933m,
+                            Price = 48.0827948294446479m,
                             RepairServiceId = 1
                         },
                         new
@@ -9437,7 +9440,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1136,
                             CarId = 10,
                             MechanicId = 19,
-                            Price = 245.984649579043744m,
+                            Price = 237.0677716282354542m,
                             RepairServiceId = 2
                         },
                         new
@@ -9445,7 +9448,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1137,
                             CarId = 10,
                             MechanicId = 19,
-                            Price = 20.928226908173707m,
+                            Price = 38.119919372093353m,
                             RepairServiceId = 3
                         },
                         new
@@ -9453,7 +9456,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1138,
                             CarId = 10,
                             MechanicId = 19,
-                            Price = 107.814324239490254m,
+                            Price = 104.416987293627464m,
                             RepairServiceId = 4
                         },
                         new
@@ -9461,7 +9464,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1139,
                             CarId = 10,
                             MechanicId = 19,
-                            Price = 52.0409619371507298m,
+                            Price = 49.71701844175728m,
                             RepairServiceId = 5
                         },
                         new
@@ -9469,7 +9472,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1140,
                             CarId = 10,
                             MechanicId = 19,
-                            Price = 203.435367564928754m,
+                            Price = 218.0115433441370664m,
                             RepairServiceId = 6
                         },
                         new
@@ -9477,7 +9480,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1141,
                             CarId = 1,
                             MechanicId = 20,
-                            Price = 49.138779963636917m,
+                            Price = 46.0567989311878937m,
                             RepairServiceId = 1
                         },
                         new
@@ -9485,7 +9488,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1142,
                             CarId = 1,
                             MechanicId = 20,
-                            Price = 189.988807832809012m,
+                            Price = 205.942809774338943m,
                             RepairServiceId = 2
                         },
                         new
@@ -9493,7 +9496,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1143,
                             CarId = 1,
                             MechanicId = 20,
-                            Price = 43.904780891887452m,
+                            Price = 40.662647339444636m,
                             RepairServiceId = 3
                         },
                         new
@@ -9501,7 +9504,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1144,
                             CarId = 1,
                             MechanicId = 20,
-                            Price = 117.93439009790163m,
+                            Price = 142.816708202550073m,
                             RepairServiceId = 4
                         },
                         new
@@ -9509,7 +9512,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1145,
                             CarId = 1,
                             MechanicId = 20,
-                            Price = 61.672073322769987m,
+                            Price = 86.409928004486579m,
                             RepairServiceId = 5
                         },
                         new
@@ -9517,7 +9520,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1146,
                             CarId = 1,
                             MechanicId = 20,
-                            Price = 221.75653458471209m,
+                            Price = 212.749184770337899m,
                             RepairServiceId = 6
                         },
                         new
@@ -9525,7 +9528,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1147,
                             CarId = 2,
                             MechanicId = 20,
-                            Price = 46.115280616971608m,
+                            Price = 36.688606344211563m,
                             RepairServiceId = 1
                         },
                         new
@@ -9533,7 +9536,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1148,
                             CarId = 2,
                             MechanicId = 20,
-                            Price = 203.861148196223794m,
+                            Price = 141.294526387227016m,
                             RepairServiceId = 2
                         },
                         new
@@ -9541,7 +9544,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1149,
                             CarId = 2,
                             MechanicId = 20,
-                            Price = 33.160542142828436m,
+                            Price = 30.113656591016502m,
                             RepairServiceId = 3
                         },
                         new
@@ -9549,7 +9552,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1150,
                             CarId = 2,
                             MechanicId = 20,
-                            Price = 110.922462566404442m,
+                            Price = 140.504514692271269m,
                             RepairServiceId = 4
                         },
                         new
@@ -9557,7 +9560,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1151,
                             CarId = 2,
                             MechanicId = 20,
-                            Price = 84.274397643072809m,
+                            Price = 56.961399854762841m,
                             RepairServiceId = 5
                         },
                         new
@@ -9565,7 +9568,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1152,
                             CarId = 2,
                             MechanicId = 20,
-                            Price = 202.916937861640106m,
+                            Price = 222.438267667840588m,
                             RepairServiceId = 6
                         },
                         new
@@ -9573,7 +9576,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1153,
                             CarId = 3,
                             MechanicId = 20,
-                            Price = 33.785417516459657m,
+                            Price = 31.16879871306844m,
                             RepairServiceId = 1
                         },
                         new
@@ -9581,7 +9584,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1154,
                             CarId = 3,
                             MechanicId = 20,
-                            Price = 249.708624933320084m,
+                            Price = 252.187417470208389m,
                             RepairServiceId = 2
                         },
                         new
@@ -9589,7 +9592,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1155,
                             CarId = 3,
                             MechanicId = 20,
-                            Price = 42.616828465247789m,
+                            Price = 22.809976717466791m,
                             RepairServiceId = 3
                         },
                         new
@@ -9597,7 +9600,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1156,
                             CarId = 3,
                             MechanicId = 20,
-                            Price = 123.466921292914345m,
+                            Price = 145.0589410359144112m,
                             RepairServiceId = 4
                         },
                         new
@@ -9605,7 +9608,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1157,
                             CarId = 3,
                             MechanicId = 20,
-                            Price = 78.527232809692388m,
+                            Price = 58.461330457603163m,
                             RepairServiceId = 5
                         },
                         new
@@ -9613,7 +9616,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1158,
                             CarId = 3,
                             MechanicId = 20,
-                            Price = 248.321354760135159m,
+                            Price = 244.81086236234299m,
                             RepairServiceId = 6
                         },
                         new
@@ -9621,7 +9624,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1159,
                             CarId = 4,
                             MechanicId = 20,
-                            Price = 38.604689498914999m,
+                            Price = 37.569530206932483m,
                             RepairServiceId = 1
                         },
                         new
@@ -9629,7 +9632,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1160,
                             CarId = 4,
                             MechanicId = 20,
-                            Price = 232.893440700459395m,
+                            Price = 178.967240594866294m,
                             RepairServiceId = 2
                         },
                         new
@@ -9637,7 +9640,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1161,
                             CarId = 4,
                             MechanicId = 20,
-                            Price = 46.299283574935657m,
+                            Price = 24.925218347549666m,
                             RepairServiceId = 3
                         },
                         new
@@ -9645,7 +9648,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1162,
                             CarId = 4,
                             MechanicId = 20,
-                            Price = 132.350443748279121m,
+                            Price = 111.058456904834733m,
                             RepairServiceId = 4
                         },
                         new
@@ -9653,7 +9656,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1163,
                             CarId = 4,
                             MechanicId = 20,
-                            Price = 85.764431282054743m,
+                            Price = 64.0491126483889314m,
                             RepairServiceId = 5
                         },
                         new
@@ -9661,7 +9664,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1164,
                             CarId = 4,
                             MechanicId = 20,
-                            Price = 224.835828972721985m,
+                            Price = 245.135963970957885m,
                             RepairServiceId = 6
                         },
                         new
@@ -9669,7 +9672,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1165,
                             CarId = 5,
                             MechanicId = 20,
-                            Price = 37.256488285676131m,
+                            Price = 31.656890265192888m,
                             RepairServiceId = 1
                         },
                         new
@@ -9677,7 +9680,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1166,
                             CarId = 5,
                             MechanicId = 20,
-                            Price = 212.154133764641668m,
+                            Price = 215.996050507774237m,
                             RepairServiceId = 2
                         },
                         new
@@ -9685,7 +9688,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1167,
                             CarId = 5,
                             MechanicId = 20,
-                            Price = 30.310014155333901m,
+                            Price = 40.197142629873062m,
                             RepairServiceId = 3
                         },
                         new
@@ -9693,7 +9696,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1168,
                             CarId = 5,
                             MechanicId = 20,
-                            Price = 130.699846175897276m,
+                            Price = 117.302484666596423m,
                             RepairServiceId = 4
                         },
                         new
@@ -9701,7 +9704,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1169,
                             CarId = 5,
                             MechanicId = 20,
-                            Price = 81.398220674904879m,
+                            Price = 65.446349608947453m,
                             RepairServiceId = 5
                         },
                         new
@@ -9709,7 +9712,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1170,
                             CarId = 5,
                             MechanicId = 20,
-                            Price = 227.216373465341973m,
+                            Price = 248.24165795414222m,
                             RepairServiceId = 6
                         },
                         new
@@ -9717,7 +9720,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1171,
                             CarId = 6,
                             MechanicId = 20,
-                            Price = 44.0905837084650951m,
+                            Price = 34.414419005492189m,
                             RepairServiceId = 1
                         },
                         new
@@ -9725,7 +9728,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1172,
                             CarId = 6,
                             MechanicId = 20,
-                            Price = 157.554165713169182m,
+                            Price = 259.31493468851067m,
                             RepairServiceId = 2
                         },
                         new
@@ -9733,7 +9736,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1173,
                             CarId = 6,
                             MechanicId = 20,
-                            Price = 33.174107039344427m,
+                            Price = 22.875235416045549m,
                             RepairServiceId = 3
                         },
                         new
@@ -9741,7 +9744,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1174,
                             CarId = 6,
                             MechanicId = 20,
-                            Price = 142.811930494240684m,
+                            Price = 115.0617869078456032m,
                             RepairServiceId = 4
                         },
                         new
@@ -9749,7 +9752,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1175,
                             CarId = 6,
                             MechanicId = 20,
-                            Price = 62.662516220721077m,
+                            Price = 80.148515380266443m,
                             RepairServiceId = 5
                         },
                         new
@@ -9757,7 +9760,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1176,
                             CarId = 6,
                             MechanicId = 20,
-                            Price = 240.992972755929809m,
+                            Price = 201.0198589810734937m,
                             RepairServiceId = 6
                         },
                         new
@@ -9765,7 +9768,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1177,
                             CarId = 7,
                             MechanicId = 20,
-                            Price = 30.241199957045838m,
+                            Price = 49.92815600679013m,
                             RepairServiceId = 1
                         },
                         new
@@ -9773,7 +9776,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1178,
                             CarId = 7,
                             MechanicId = 20,
-                            Price = 227.490021584821649m,
+                            Price = 162.900163922973421m,
                             RepairServiceId = 2
                         },
                         new
@@ -9781,7 +9784,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1179,
                             CarId = 7,
                             MechanicId = 20,
-                            Price = 28.421998522707544m,
+                            Price = 43.445678474269763m,
                             RepairServiceId = 3
                         },
                         new
@@ -9789,7 +9792,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1180,
                             CarId = 7,
                             MechanicId = 20,
-                            Price = 134.41751897387842m,
+                            Price = 140.651350593981423m,
                             RepairServiceId = 4
                         },
                         new
@@ -9797,7 +9800,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1181,
                             CarId = 7,
                             MechanicId = 20,
-                            Price = 72.232866643939736m,
+                            Price = 80.99553038306153m,
                             RepairServiceId = 5
                         },
                         new
@@ -9805,7 +9808,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1182,
                             CarId = 7,
                             MechanicId = 20,
-                            Price = 237.0525255238830506m,
+                            Price = 242.583041964884522m,
                             RepairServiceId = 6
                         },
                         new
@@ -9813,7 +9816,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1183,
                             CarId = 8,
                             MechanicId = 20,
-                            Price = 35.361967434896743m,
+                            Price = 33.150015257724082m,
                             RepairServiceId = 1
                         },
                         new
@@ -9821,7 +9824,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1184,
                             CarId = 8,
                             MechanicId = 20,
-                            Price = 251.154683638407109m,
+                            Price = 209.842354362338239m,
                             RepairServiceId = 2
                         },
                         new
@@ -9829,7 +9832,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1185,
                             CarId = 8,
                             MechanicId = 20,
-                            Price = 29.497305384784982m,
+                            Price = 43.445802099309626m,
                             RepairServiceId = 3
                         },
                         new
@@ -9837,7 +9840,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1186,
                             CarId = 8,
                             MechanicId = 20,
-                            Price = 110.785799762018021m,
+                            Price = 113.998062263636637m,
                             RepairServiceId = 4
                         },
                         new
@@ -9845,7 +9848,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1187,
                             CarId = 8,
                             MechanicId = 20,
-                            Price = 78.832799424883144m,
+                            Price = 62.907476892519297m,
                             RepairServiceId = 5
                         },
                         new
@@ -9853,7 +9856,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1188,
                             CarId = 8,
                             MechanicId = 20,
-                            Price = 233.594998682063928m,
+                            Price = 223.0361437841508098m,
                             RepairServiceId = 6
                         },
                         new
@@ -9861,7 +9864,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1189,
                             CarId = 9,
                             MechanicId = 20,
-                            Price = 40.402387381191955m,
+                            Price = 46.0079016642049361m,
                             RepairServiceId = 1
                         },
                         new
@@ -9869,7 +9872,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1190,
                             CarId = 9,
                             MechanicId = 20,
-                            Price = 242.855395309004475m,
+                            Price = 163.5424358891933m,
                             RepairServiceId = 2
                         },
                         new
@@ -9877,7 +9880,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1191,
                             CarId = 9,
                             MechanicId = 20,
-                            Price = 37.777321903543433m,
+                            Price = 45.777459105081643m,
                             RepairServiceId = 3
                         },
                         new
@@ -9885,7 +9888,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1192,
                             CarId = 9,
                             MechanicId = 20,
-                            Price = 139.0529472356438623m,
+                            Price = 120.950256672796437m,
                             RepairServiceId = 4
                         },
                         new
@@ -9893,7 +9896,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1193,
                             CarId = 9,
                             MechanicId = 20,
-                            Price = 68.570742910242172m,
+                            Price = 85.329906109702576m,
                             RepairServiceId = 5
                         },
                         new
@@ -9901,7 +9904,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1194,
                             CarId = 9,
                             MechanicId = 20,
-                            Price = 233.328055818834317m,
+                            Price = 245.00393065063185516m,
                             RepairServiceId = 6
                         },
                         new
@@ -9909,7 +9912,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1195,
                             CarId = 10,
                             MechanicId = 20,
-                            Price = 43.991978946492366m,
+                            Price = 48.497404970049271m,
                             RepairServiceId = 1
                         },
                         new
@@ -9917,7 +9920,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1196,
                             CarId = 10,
                             MechanicId = 20,
-                            Price = 204.238620986449501m,
+                            Price = 255.162824356805682m,
                             RepairServiceId = 2
                         },
                         new
@@ -9925,7 +9928,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1197,
                             CarId = 10,
                             MechanicId = 20,
-                            Price = 46.65410581238865m,
+                            Price = 28.595841004963201m,
                             RepairServiceId = 3
                         },
                         new
@@ -9933,7 +9936,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1198,
                             CarId = 10,
                             MechanicId = 20,
-                            Price = 106.99081376195942m,
+                            Price = 126.832665499890416m,
                             RepairServiceId = 4
                         },
                         new
@@ -9941,7 +9944,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1199,
                             CarId = 10,
                             MechanicId = 20,
-                            Price = 73.258707777536901m,
+                            Price = 57.472375956464019m,
                             RepairServiceId = 5
                         },
                         new
@@ -9949,7 +9952,7 @@ namespace DrCarQuotesData.Migrations
                             Id = 1200,
                             CarId = 10,
                             MechanicId = 20,
-                            Price = 227.426370993243654m,
+                            Price = 242.844654668259782m,
                             RepairServiceId = 6
                         });
                 });
