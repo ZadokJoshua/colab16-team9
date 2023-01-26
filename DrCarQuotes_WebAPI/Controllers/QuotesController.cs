@@ -38,10 +38,10 @@ public class QuotesController : ControllerBase
     {
         if (!await _repairServiceRepository.HasRepairServiceAsync(repairServiceId))
         {
-            return NotFound("Repair Service Not Found")
+            return NotFound("Repair Service Not Found");
         }
 
-        if(!await _carRepository.HasCarAsync(carId))
+        if (!await _carRepository.HasCarAsync(carId))
         {
             return NotFound("Car Not Found");
         }

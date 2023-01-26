@@ -8,6 +8,7 @@ namespace DrCarQuotes_WebAPI.Controllers;
 
 [Route("api/repairservices")]
 [ApiController]
+[Produces("application/json")]
 public class RepairServicesController : ControllerBase
 {
     private readonly IRepairServiceRepository _repairServiceRepository;
