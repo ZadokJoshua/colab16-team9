@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrCarQuotes_WebAPI", "DrCarQuotes_WebAPI\DrCarQuotes_WebAPI.csproj", "{1E6BF3AA-A67D-490D-84A8-4D183B3B1A30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrCarQuotes_WebAPI", "DrCarQuotes_WebAPI\DrCarQuotes_WebAPI.csproj", "{1E6BF3AA-A67D-490D-84A8-4D183B3B1A30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrCarQuotes_Data", "DrCarQuotes_Data\DrCarQuotes_Data.csproj", "{E9F68DCE-6874-40D7-80D5-50716ED80684}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrCarQuotes_Data", "DrCarQuotes_Data\DrCarQuotes_Data.csproj", "{E9F68DCE-6874-40D7-80D5-50716ED80684}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrCarQuotes_Domain", "DrCarQuotes_Domain\DrCarQuotes_Domain.csproj", "{F2F2A59F-235D-44A7-8CB0-735995A0ECEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrCarQuotes_Domain", "DrCarQuotes_Domain\DrCarQuotes_Domain.csproj", "{F2F2A59F-235D-44A7-8CB0-735995A0ECEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrCarQuotes_MSTest", "DrCarQuotes_MSTest\DrCarQuotes_MSTest.csproj", "{503701EA-6056-4C56-A131-72B68D22A8D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{F2F2A59F-235D-44A7-8CB0-735995A0ECEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2F2A59F-235D-44A7-8CB0-735995A0ECEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2F2A59F-235D-44A7-8CB0-735995A0ECEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{503701EA-6056-4C56-A131-72B68D22A8D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{503701EA-6056-4C56-A131-72B68D22A8D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{503701EA-6056-4C56-A131-72B68D22A8D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{503701EA-6056-4C56-A131-72B68D22A8D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
