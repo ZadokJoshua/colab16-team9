@@ -9,7 +9,7 @@
 ## Tools & Technologies:
 .NET 7, C#, SQL Server, ASP.NET, Entity Framework Core and Visual Studio 2022.
 
-## Endpoints
+## API Endpoints
 ### Cars 
 
 ```js
