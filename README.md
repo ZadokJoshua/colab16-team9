@@ -8,5 +8,28 @@
 
 ## Tools & Technologies:
 .NET 7, C#, SQL Server, ASP.NET, Entity Framework Core and Visual Studio 2022.
+
+## Endpoints
+### Cars 
+
+```js
+GET /cars/get-all-cars
+GET /cars/{id}
+```
+
+### Quotes
+
+```js
+GET /quotes/get-best-quotes
+GET /quotes/{id}
+```
+
+### Repair Services 
+
+```js
+GET /repairservices/get-all-repairservices
+GET /repairservices/{id}
+```
+
 #
 *🛠 More updates coming soon!*
