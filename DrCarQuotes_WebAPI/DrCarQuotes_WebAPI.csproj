@@ -25,11 +25,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\" />
-    <Folder Include="Mapper\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\DrCarQuotes_Data\DrCarQuotes_Data.csproj" />
     <ProjectReference Include="..\DrCarQuotes_Domain\DrCarQuotes_Domain.csproj" />
   </ItemGroup>
