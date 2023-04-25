@@ -32,4 +32,3 @@ GET /repairservices/{id}
 ```
 
 #
-*🛠 More updates coming soon!*
